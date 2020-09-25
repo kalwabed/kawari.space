@@ -3,11 +3,18 @@ module.exports = {
 		removeDeprecatedGapUtilities: true,
 		purgeLayersByDefault: true,
 	},
-	purge: ['./components/**/*.{tsx}', './pages/**/*.{tsx}'],
+	purge: ['./src/components/**/*.{tsx}', './src/pages/**/*.{tsx}'],
 	theme: {
 		extend: {
 			colors: {
-				'accent-1': '#333',
+				dark: '#293241',
+				primary: '#3D5A80',
+				light: '#E0FBFC',
+				secondary: '#EE6C4D',
+				info: '#98C1D9',
+			},
+			fontFamily: {
+				primary: ['Karla'],
 			},
 		},
 	},
