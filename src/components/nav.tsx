@@ -20,7 +20,7 @@ export default function Nav({ page = 'whoami' }) {
 		<nav>
 			<ul className='flex justify-center items-center p-4 bg-primary'>
 				{links.map(link => (
-					<li className='p-1 mr-2'>
+					<li className='p-1 mr-2' key={link.label}>
 						<Link href={link.href}>
 							<a className='no-underline'>{link.label}</a>
 						</Link>
