@@ -1,6 +1,11 @@
 {
 	"name": "kawari-portofolio",
 	"version": "1.0.0",
+	"author": {
+		"email": "kalwabedrzk@pm.me",
+		"name": "Kalwabed Rizki",
+		"url": "https://github.com/kaliwa"
+	},
 	"scripts": {
 		"dev": "next",
 		"build": "next build",

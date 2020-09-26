@@ -40,7 +40,7 @@ class MyDocument extends Document {
 					<link
 						rel='apple-touch-icon'
 						sizes='180x180'
-						href='/apple-touch-icon.png'
+						href='/icons/apple-touch-icon.png'
 						type='image/png'
 					/>
 				</Head>
