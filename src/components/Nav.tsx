@@ -14,6 +14,7 @@ const links = [
 		label: 'blog',
 	},
 ]
+const githubLink = 'https://github.com/kaliwa'
 
 export default function Nav({ page = 'whoami' }) {
 	return (
@@ -35,7 +36,9 @@ export default function Nav({ page = 'whoami' }) {
 					))}
 				</nav>
 				<div className='inline-flex items-center text-base mt-4 md:mt-0'>
-					<img src='/img/github-logo.png' alt='GitHub logo' className='w-5' />
+					<a href={githubLink} target='_blank' rel='noreferrer noopener'>
+						<img src='/img/github-logo.png' alt='GitHub logo' className='w-5' />
+					</a>
 				</div>
 			</div>
 		</header>
