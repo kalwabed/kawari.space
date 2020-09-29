@@ -7,7 +7,7 @@ const Index = () => {
 		<Page>
 			<Nav page='blog' />
 			<Content>
-				<h2>ini blog</h2>
+				<h1 className='container d-flex p-48'>Halaman blog</h1>
 			</Content>
 		</Page>
 	)

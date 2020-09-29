@@ -20,16 +20,21 @@ const Index = () => {
 							Hi, I'm Kalwabed Rizki
 						</h1>
 						<p className='mb-8 text-base text-gray-600'>
-							JavaScript enthusiast (front-to-back)
+							Web application developer
 						</p>
-						<p className='italic leading-relaxed mb-8'>
-							programming as a hobby
+						<p className='italic leading-relaxed mb-4'>
+							JavaScript enthusiast, especially TypeScript
+							<br />
+							and also
+							<i className='devicon-react-original colored text-lg mx-1'></i>
+							<i className='devicon-nodejs-plain colored text-lg'></i>
 						</p>
+						<p className='leading-tight mb-2'>From Indonesia 🇮🇩</p>
 					</div>
 				</section>
 
 				<div className='container items-center flex flex-row mx-auto px-5 md:px-56 py-3'>
-					<div className='mr-1 p-1 h-1 bg-secondary w-1/12 rounded-sm' />
+					<div className='mr-1 p-1 h-1 bg-primary w-1/12 rounded-sm' />
 					<div className='font-bold text-4xl'>About</div>
 				</div>
 
@@ -44,7 +49,7 @@ const Index = () => {
 					</div>
 
 					<a
-						className='bg-primary hover:bg-secondary text-light font-bold py-2 px-8 my-12 border-b-4 border-secondary hover:border-primary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-secondary focus:border-primary cursor-pointer'
+						className='bg-secondary hover:bg-primary text-light font-bold py-2 px-8 my-12 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-primary focus:border-secondary cursor-pointer'
 						href='mailto:kalwabedrzk@pm.me'
 					>
 						<svg
