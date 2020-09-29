@@ -19,20 +19,16 @@ class MyDocument extends Document {
 					<meta charSet='UTF-8' />
 					<meta httpEquiv='X-UA-Compatible' content='ie=edge' />
 
-					<link
-						rel='shortcut icon'
-						href='/icons/favicon.ico'
-						type='image/x-icon'
-					/>
+					<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
 					<link rel='manifest' href='/manifest.webmanifest' />
 					<link
-						href='/icons/favicon-32x32.png'
+						href='/assets/icons/favicon-32x32.png'
 						rel='icon'
 						sizes='32x32'
 						type='image/png'
 					/>
 					<link
-						href='/icons/favicon-16x16.png'
+						href='/assets/icons/favicon-16x16.png'
 						rel='icon'
 						sizes='16x16'
 						type='image/png'
@@ -40,7 +36,7 @@ class MyDocument extends Document {
 					<link
 						rel='apple-touch-icon'
 						sizes='180x180'
-						href='/icons/apple-touch-icon.png'
+						href='/assets/icons/apple-touch-icon.png'
 						type='image/png'
 					/>
 					<link

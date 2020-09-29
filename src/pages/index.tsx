@@ -10,8 +10,8 @@ const Index = () => {
 				<section className='container mx-auto flex px-5 md:px-20 py-8 md:py-24 md:flex-row flex-col items-center'>
 					<div className='lg:max-w-lg lg:w-full md:w-1 w-full md:mb-0 mb-10'>
 						<img
-							src='/img/aku.png'
-							alt='profile'
+							src='/assets/img/aku.png'
+							alt='hero'
 							className='object-cover object-center shadow rounded-lg w-1/2 mx-auto md:mx-0 md:ml-auto'
 						/>
 					</div>
