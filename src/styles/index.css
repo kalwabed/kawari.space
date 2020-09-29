@@ -8,3 +8,8 @@
   height: 3px;
   background: #EE6C4D;
 }
+
+*::selection {
+  background-color: #EE6C4D;
+  color: #E0FBFC;
+}
