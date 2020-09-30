@@ -8,12 +8,16 @@ export default {
 		description: 'Kawari|Kalwabed Rizki personal landing page.',
 		images: [
 			{
+				secure_url: 'https://kawari.space/assets/img/aku.png',
 				url: 'https://kawari.space/assets/img/aku.png',
 				width: 800,
 				height: 600,
 				alt: 'Profile',
 			},
-			{ url: 'https://kawari.space/assets/img/aku.png' },
+			{
+				secure_url: 'https://kawari.space/assets/img/aku.png',
+				url: 'https://kawari.space/assets/img/aku.png',
+			},
 		],
 		type: 'website',
 		site_name: 'kawari',
@@ -23,10 +27,4 @@ export default {
 		site: '@site',
 		cardType: 'summary_large_image',
 	},
-	additionalMetaTags: [
-		{
-			name: 'viewport',
-			content: 'width=device-width, initial-scale=1.0',
-		},
-	],
 }

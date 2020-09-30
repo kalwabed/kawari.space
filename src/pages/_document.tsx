@@ -36,12 +36,6 @@ class MyDocument extends Document {
 						href='/assets/icons/apple-touch-icon.png'
 						type='image/png'
 					/>
-					<link
-						rel='stylesheet'
-						href='https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css'
-					></link>
-
-					<meta httpEquiv='X-UA-Compatible' content='ie=edge' />
 				</Head>
 
 				<body className='bg-dark text-light font-primary'>

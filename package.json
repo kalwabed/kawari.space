@@ -12,8 +12,13 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-optipng": "^8.0.0",
+		"imagemin-svgo": "^8.0.0",
 		"modern-normalize": "^1.0.0",
 		"next": "latest",
+		"next-compose-plugins": "^2.2.0",
+		"next-optimized-images": "^2.6.2",
 		"next-seo": "^4.10.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"

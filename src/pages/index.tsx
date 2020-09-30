@@ -9,7 +9,7 @@ const Index = () => {
 				<section className='container mx-auto flex px-5 md:px-20 py-8 md:py-24 md:flex-row flex-col items-center'>
 					<div className='lg:max-w-lg lg:w-full md:w-1 w-full md:mb-0 mb-10'>
 						<img
-							src='/assets/img/aku.png'
+							src={require('~/assets/img/aku.png')}
 							alt='hero'
 							className='object-cover object-center shadow rounded-lg w-1/2 mx-auto md:mx-0 md:ml-auto'
 						/>
@@ -23,12 +23,8 @@ const Index = () => {
 						</p>
 						<p className='italic leading-relaxed mb-4'>
 							JavaScript enthusiast, especially TypeScript
-							<br />
-							and also
-							<i className='devicon-react-original colored text-lg mx-1'></i>
-							<i className='devicon-nodejs-plain colored text-lg'></i>
 						</p>
-						<p className='leading-tight mb-2'>From Indonesia 🇮🇩</p>
+						<p className='leading-tight mb-3'>From Indonesia 🇮🇩</p>
 					</div>
 				</section>
 
