@@ -21,7 +21,7 @@ export default function Nav({ page = 'whoami' }) {
 		<header>
 			<div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-dark'>
 				<Link href='/'>
-					<a className='flex title-font font-medium items-center mb-4 md:mb-0'>
+					<a className='flex font-medium items-center mb-4 md:mb-0'>
 						<span className='ml-3 text-xl hover:text-info transition duration-300 ease-in inline-flex'>
 							kawari
 							<span className='p-1 h-1 bg-primary animate-pulse hover:bg-info self-start rounded-full'></span>
@@ -48,7 +48,7 @@ export default function Nav({ page = 'whoami' }) {
 					<a href={githubLink} target='_blank' rel='noreferrer noopener'>
 						<svg
 							viewBox='0 0 128 128'
-							className='fill-current h-6 w-6 hover:text-info'
+							className='fill-current h-6 w-6 hover:text-info transition ease-in duration-150'
 						>
 							<path
 								fill-rule='evenodd'

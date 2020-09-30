@@ -13,3 +13,7 @@
   background-color: #EE6C4D;
   color: #E0FBFC;
 }
+
+.link-external {
+  @apply border-b-2 border-transparent border-info transition ease-in duration-100;
+}
