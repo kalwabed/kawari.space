@@ -1,10 +1,9 @@
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
-import Page from '@/components/Page'
 
 const Index = () => {
 	return (
-		<Page>
+		<>
 			<Nav />
 			<Content>
 				<section className='container mx-auto flex px-5 md:px-20 py-8 md:py-24 md:flex-row flex-col items-center'>
@@ -65,7 +64,7 @@ const Index = () => {
 					</a>
 				</div>
 			</Content>
-		</Page>
+		</>
 	)
 }
 

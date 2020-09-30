@@ -1,20 +1,17 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
-import Page from '@/components/Page'
 
 const projects = () => {
 	return (
-		<Page>
-			<Head>
-				<title>projects | kawari</title>
-			</Head>
+		<>
+			<NextSeo title='kawari | projects' />
 			<Nav page='projects' />
 			<Content>
 				<h1>ini saya</h1>
 			</Content>
-		</Page>
+		</>
 	)
 }
 

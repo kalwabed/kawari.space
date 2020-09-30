@@ -16,9 +16,6 @@ class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
-					<meta charSet='UTF-8' />
-					<meta httpEquiv='X-UA-Compatible' content='ie=edge' />
-
 					<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
 					<link rel='manifest' href='/manifest.webmanifest' />
 					<link
@@ -43,6 +40,8 @@ class MyDocument extends Document {
 						rel='stylesheet'
 						href='https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css'
 					></link>
+
+					<meta httpEquiv='X-UA-Compatible' content='ie=edge' />
 				</Head>
 
 				<body className='bg-dark text-light font-primary'>
