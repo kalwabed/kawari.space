@@ -21,7 +21,8 @@
 		"next-optimized-images": "^2.6.2",
 		"next-seo": "^4.10.0",
 		"react": "^16.13.1",
-		"react-dom": "^16.13.1"
+		"react-dom": "^16.13.1",
+		"react-icons": "^3.11.0"
 	},
 	"devDependencies": {
 		"@types/node": "^14.11.2",

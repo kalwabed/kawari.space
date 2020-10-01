@@ -15,5 +15,5 @@
 }
 
 .link-external {
-  @apply border-b-2 border-transparent border-info transition ease-in duration-100;
+  @apply border-b-2 border-light transition ease-in duration-100;
 }

@@ -1,5 +1,6 @@
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
+import { IoIosMail } from 'react-icons/io'
 
 const Index = () => {
 	return (
@@ -30,10 +31,10 @@ const Index = () => {
 
 				<div className='container items-center flex flex-row mx-auto px-5 md:px-56 py-3'>
 					<div className='mr-1 p-1 h-1 bg-primary w-1/12 rounded-sm' />
-					<div className='font-bold text-4xl'>About</div>
+					<div className='font-bold text-4xl'>Me</div>
 				</div>
 
-				<div className='container flex flex-col items-center px-5 mx-auto md:px-56 pb-64'>
+				<div className='container flex flex-col items-center px-5 mx-auto md:px-56 pb-48'>
 					<div className='text-justify'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
 						veniam, exercitationem ex reprehenderit, quia natus, aspernatur
@@ -44,18 +45,10 @@ const Index = () => {
 					</div>
 
 					<a
-						className='bg-secondary hover:bg-primary text-light font-bold py-2 px-8 my-12 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-primary focus:border-secondary cursor-pointer'
+						className='bg-secondary hover:bg-primary text-light font-bold py-2 px-8 my-5 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-primary focus:border-secondary cursor-pointer'
 						href='mailto:kalwabedrzk@pm.me'
 					>
-						<svg
-							className='fill-current w-6 h-6 mr-2'
-							fill='currentColor'
-							viewBox='0 0 20 20'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
-							<path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
-						</svg>
+						<IoIosMail className='mr-2 h-6 w-6 fill-current' />
 						Get in touch
 					</a>
 				</div>
