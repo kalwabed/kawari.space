@@ -56,21 +56,28 @@ export default function Nav({ page = 'whoami' }) {
 					))}
 				</nav>
 				<div className='inline-flex items-center text-base mt-4 md:mt-0'>
-					<a href={social.github.url} target='_blank' rel='noreferrer noopener'>
+					<a
+						href={social.github.url}
+						target='_blank'
+						rel='noopener noreferrer'
+						aria-label='github'
+					>
 						<IoLogoGithub className='fill-current h-6 w-6 hover:text-info transition ease-in duration-150' />
 					</a>
 					<a
 						href={social.instagram.url}
 						target='_blank'
-						rel='noreferrer noopener'
+						rel='noopener noreferrer'
 						className='mx-2'
+						aria-label='instagram'
 					>
 						<IoLogoInstagram className='fill-current h-6 w-6 hover:text-info transition ease-in duration-150' />
 					</a>
 					<a
 						href={social.linkedin.url}
 						target='_blank'
-						rel='noreferrer noopener'
+						rel='noopener noreferrer'
+						aria-label='linkedin'
 					>
 						<IoLogoLinkedin className='fill-current h-6 w-6 hover:text-info transition ease-in duration-150' />
 					</a>

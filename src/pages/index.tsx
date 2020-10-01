@@ -19,7 +19,7 @@ const Index = () => {
 						<h1 className='sm:text-4xl text-3xl font-medium'>
 							Hi, I'm Kalwabed Rizki
 						</h1>
-						<p className='mb-8 text-base text-gray-600'>
+						<p className='mb-8 text-base text-gray-500'>
 							Web application developer
 						</p>
 						<p className='italic leading-relaxed mb-4'>

@@ -1,7 +1,7 @@
 export default {
 	title: 'kawari',
 	description: 'Kawari|Kalwabed Rizki personal landing page.',
-	canonical: 'https://www.canonical.ie/',
+	canonical: 'https://kawari.space/',
 	openGraph: {
 		url: 'https://kawari.space',
 		title: 'kawari',
