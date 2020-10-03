@@ -1,37 +1,42 @@
 {
-	"name": "kawari-portofolio",
-	"version": "1.0.0",
-	"description": "Kalwabed Rizki personal landing page",
-	"author": {
-		"email": "kalwabedrzk@pm.me",
-		"name": "Kalwabed Rizki"
-	},
-	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start"
-	},
-	"dependencies": {
-		"imagemin-mozjpeg": "^9.0.0",
-		"imagemin-optipng": "^8.0.0",
-		"imagemin-svgo": "^8.0.0",
-		"modern-normalize": "^1.0.0",
-		"next": "latest",
-		"next-compose-plugins": "^2.2.0",
-		"next-optimized-images": "^2.6.2",
-		"next-seo": "^4.10.0",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-icons": "^3.11.0",
-		"webp-loader": "^0.6.0"
-	},
-	"devDependencies": {
-		"@types/node": "^14.11.2",
-		"@types/react": "^16.9.49",
-		"postcss-flexbugs-fixes": "4.2.1",
-		"postcss-preset-env": "^6.7.0",
-		"tailwindcss": "^1.7.4",
-		"typescript": "^4.0.3"
-	},
-	"license": "MIT"
+  "name": "kawari-portofolio",
+  "version": "1.0.0",
+  "description": "Kalwabed Rizki personal landing page",
+  "author": {
+    "email": "kalwabedrzk@pm.me",
+    "name": "Kalwabed Rizki"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "modern-normalize": "^1.0.0",
+    "next": "latest",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.2",
+    "next-seo": "^4.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
+    "webp-loader": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@types/react": "^16.9.49",
+    "eslint": "^6.0.0",
+    "eslint-config-blvd": "^1.0.2",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
+    "tailwindcss": "^1.7.4",
+    "typescript": "^4.0.3"
+  },
+  "license": "MIT"
 }
