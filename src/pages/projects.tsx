@@ -1,10 +1,11 @@
-import { NextSeo } from 'next-seo'
 import React from 'react'
+import { NextPage } from 'next'
+import { NextSeo } from 'next-seo'
 
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
 
-const projects = () => {
+const projects: NextPage = () => {
   return (
     <>
       <NextSeo title="kawari | projects" />

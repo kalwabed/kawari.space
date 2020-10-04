@@ -1,11 +1,12 @@
 /* eslint-disable global-require */
 import React from 'react'
+import { NextPage } from 'next'
+import { IoIosMail } from 'react-icons/io'
 
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
-import { IoIosMail } from 'react-icons/io'
 
-const Index = () => {
+const Index: NextPage = () => {
   return (
     <>
       <Nav />
