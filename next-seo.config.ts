@@ -1,22 +1,17 @@
 export default {
   title: 'kawari',
-  description: 'Kawari|Kalwabed Rizki personal landing page.',
+  description: 'Kawari | Kalwabed Rizki personal landing page.',
   canonical: 'https://kawari.space/',
   openGraph: {
     url: 'https://kawari.space',
     title: 'kawari',
-    description: 'Kawari|Kalwabed Rizki personal landing page.',
+    description: 'Kawari | Kalwabed Rizki personal landing page.',
     images: [
       {
-        secure_url: 'https://kawari.space/assets/img/aku.png',
-        url: 'https://kawari.space/assets/img/aku.png',
-        width: 800,
-        height: 600,
-        alt: 'Profile'
-      },
-      {
-        secure_url: 'https://kawari.space/assets/img/aku.png',
-        url: 'https://kawari.space/assets/img/aku.png'
+        secure_url:
+          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fimg%2Faku.png&widths=auto&heights=auto",
+        url:
+          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fimg%2Faku.png&widths=auto&heights=auto"
       }
     ],
     type: 'website',
