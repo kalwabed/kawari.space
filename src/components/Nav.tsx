@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io'
 
+import siteConfig from '../../site-config'
+
 const links = [
   {
     href: '/',
@@ -17,19 +19,8 @@ const links = [
   }
 ]
 
-const social = {
-  github: {
-    url: 'https://github.com/kaliwa'
-  },
-  instagram: {
-    url: 'https://instagram.com/kaliwa__'
-  },
-  linkedin: {
-    url: 'https://linkedin.com/in/kaliwa/'
-  }
-}
-
 export default function Nav({ page = 'whoami' }) {
+  const { social } = siteConfig
   return (
     <header>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-dark">

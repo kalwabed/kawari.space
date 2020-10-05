@@ -1,11 +1,13 @@
+import siteConfig from 'site-config'
+
 export default {
-  title: 'kawari',
-  description: 'Kawari | Kalwabed Rizki personal landing page.',
-  canonical: 'https://kawari.space/',
+  title: siteConfig.title,
+  description: siteConfig.description,
+  canonical: siteConfig.url,
   openGraph: {
-    url: 'https://kawari.space',
-    title: 'kawari',
-    description: 'Kawari | Kalwabed Rizki personal landing page.',
+    url: siteConfig.url,
+    title: siteConfig.title,
+    description: siteConfig.description,
     images: [
       {
         secure_url:
@@ -16,10 +18,5 @@ export default {
     ],
     type: 'website',
     site_name: 'kawari'
-  },
-  twitter: {
-    handle: '@handle',
-    site: '@site',
-    cardType: 'summary_large_image'
   }
 }

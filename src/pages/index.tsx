@@ -5,8 +5,10 @@ import { IoIosMail } from 'react-icons/io'
 
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
+import siteConfig from '../../site-config'
 
 const Index: NextPage = () => {
+  const { home } = siteConfig
   return (
     <>
       <Nav />
@@ -21,8 +23,8 @@ const Index: NextPage = () => {
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="sm:text-4xl text-3xl font-medium">Hi, I&apos;m Kalwabed Rizki</h1>
-            <p className="mb-8 text-base text-gray-500">Web application developer</p>
-            <p className="italic leading-relaxed mb-4">JavaScript enthusiast, especially TypeScript</p>
+            <p className="mb-8 text-base text-gray-500">{home.subtitle}</p>
+            <p className="italic leading-relaxed mb-4">{home.skill}</p>
             <p className="leading-tight mb-3">
               From Indonesia{' '}
               <span role="img" aria-label="Indonesia">
@@ -47,7 +49,7 @@ const Index: NextPage = () => {
 
           <a
             className="bg-secondary hover:bg-primary text-light font-bold py-2 px-8 my-5 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-primary focus:border-secondary cursor-pointer"
-            href="mailto:kalwabedrzk@pm.me"
+            href={`mailto:${siteConfig.email}`}
           >
             <IoIosMail className="mr-2 h-6 w-6 fill-current" />
             Get in touch
