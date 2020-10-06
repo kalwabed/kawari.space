@@ -3,11 +3,23 @@ title: 'siapa saya ya?'
 subtitle: 'tentang saya atau siapa'
 date: '2020-10-04'
 readingTime: 4
+cover:
+  image: '/assets/img/example.jpg'
+  source: 'https://github.com/kaliwa'
+  name: 'Lipsum'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue nec lorem eget blandit. Curabitur ut quam ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum volutpat ac metus id tincidunt. Proin condimentum eleifend mi, eget rutrum justo. Duis blandit orci in nisl accumsan condimentum. Cras pharetra purus ligula, id gravida lorem venenatis sit amet. Curabitur nec condimentum risus. Nam et turpis cursus, faucibus massa a, finibus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin vitae odio sed egestas. Nam quis hendrerit massa.
 
-Pellentesque mauris risus, congue eu consectetur vel, finibus eget massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae porttitor leo. Morbi tempor vestibulum metus eget consectetur. Nullam vel est mauris. Integer vestibulum cursus neque in sodales. Sed convallis orci at nibh dapibus, ac tincidunt odio posuere. Fusce pretium vulputate metus, sed euismod metus fermentum mattis. Praesent vitae risus mollis, aliquam nisi quis, auctor nisl. Nam ullamcorper enim quam, a fermentum justo posuere nec. Maecenas lobortis venenatis feugiat. Vivamus lectus nulla, commodo nec arcu sed, porta dictum lectus. Donec facilisis vestibulum nibh, nec elementum ipsum elementum a.
+# apa ini
+
+Pellentesque mauris risus, congue eu consectetur vel, finibus eget massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae porttitor leo. Morbi tempor vestibulum metus eget consectetur. Nullam vel est mauris. Integer vestibulum cursus neque in sodales. Sed convallis orci at nibh dapibus, ac tincidunt odio posuere.
+
+<h1 class='text-3xl'>kawlabed</h1>
+
+# adasdadasdasdasd
+
+Fusce pretium vulputate metus, sed euismod metus fermentum mattis. Praesent vitae risus mollis, aliquam nisi quis, auctor nisl. Nam ullamcorper enim quam, a fermentum justo posuere nec. Maecenas lobortis venenatis feugiat. Vivamus lectus nulla, commodo nec arcu sed, porta dictum lectus. Donec facilisis vestibulum nibh, nec elementum ipsum elementum a.
 
 Phasellus vulputate elementum nibh, at varius ligula malesuada eget. Nunc malesuada purus eu tempor finibus. Duis tristique dui metus. Fusce ut pretium nisi. Nullam a sem turpis. Mauris sed semper elit. Pellentesque vel risus massa. Nulla pellentesque est justo, sit amet fringilla lorem rutrum a. Vestibulum auctor ipsum a eros ultrices, non consectetur metus elementum. Aenean semper orci magna, quis porta purus cursus eget. Praesent vehicula facilisis dolor non consectetur. Nulla tempus rhoncus nisl, at sodales mauris cursus eget. Vivamus quis vehicula sem.
 

@@ -18,5 +18,10 @@ export default {
     ],
     type: 'website',
     site_name: 'kawari'
+  },
+  twitter: {
+    handle: siteConfig.twitterUsername,
+    site: siteConfig.twitterUsername,
+    cardType: 'summary_large_image'
   }
 }

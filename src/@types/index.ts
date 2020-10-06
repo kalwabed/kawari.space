@@ -4,4 +4,9 @@ export interface Post {
   subtitle: string
   date: string
   readingTime: number
+  cover: {
+    image: string
+    source: string
+    name: string
+  }
 }
