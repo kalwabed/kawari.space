@@ -1,3 +1,10 @@
+- *
+  - restructure folder
+  - pecah page menjadi beberapa komponen
+  - refactor class untuk blog & lainnya dengan implementasi @layer
+
 - halaman blog content
-  - buat template untuk konten blog
   - buat list artikel lainnya
+
+- etc~
+  - aplikasikan stylelint untuk tailwind di portfolio @alaazarkone

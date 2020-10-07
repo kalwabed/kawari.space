@@ -22,6 +22,16 @@ html {
   @apply border-b-2 border-light transition ease-in duration-100;
 }
 
+@layer components {
+  .link-test {
+    @apply bg-green-500;
+  }
+
+  .link-test:hover {
+    @apply bg-secondary;
+  }
+}
+
 #nprogress {
   pointer-events: none;
 }

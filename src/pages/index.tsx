@@ -5,10 +5,13 @@ import { IoIosMail } from 'react-icons/io'
 
 import Content from '@/components/Content'
 import Nav from '@/components/Nav'
+import LinkExternal from '@/parts/LinkExternal'
+import { useEmail } from '@/hooks'
 import siteConfig from '../../site-config'
 
 const Index: NextPage = () => {
   const { home } = siteConfig
+
   return (
     <>
       <Nav />
@@ -34,25 +37,23 @@ const Index: NextPage = () => {
           </div>
         </section>
 
-        <div className="container items-center flex flex-row mx-auto px-5 md:px-56 py-3">
-          <div className="mr-1 p-1 h-1 bg-primary w-1/12 rounded-sm" />
-          <div className="font-bold text-4xl">Me</div>
-        </div>
-
         <div className="container flex flex-col items-center px-5 mx-auto md:px-56 pb-48">
           <div className="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veniam, exercitationem ex reprehenderit, quia natus,
-            aspernatur reiciendis libero excepturi odio est ipsa sit laborum accusamus? Suscipit enim voluptatum architecto reprehenderit?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, totam corporis quisquam voluptas illo sunt nisi minima
-            excepturi harum
+            Halo, nama saya Kalwabed Rizki, biasa dipanggil Kalwabed. Saya sedang menjalani pendidikan di{' '}
+            <LinkExternal href="smkn1banyuwangi.sch.id" label="SMKN 1 Banyuwangi" />, mengambil jurusan Rekaya perangkat lunak.
           </div>
 
-          <a
-            className="bg-secondary hover:bg-primary text-light font-bold py-2 px-8 my-5 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none focus:bg-primary focus:border-secondary cursor-pointer"
-            href={`mailto:${siteConfig.email}`}
+          <button
+            className="bg-secondary hover:bg-primary font-bold py-2 px-8 my-5 border-b-4 border-primary hover:border-secondary rounded transition ease-in duration-150 inline-flex items-center focus:outline-none"
+            onClick={useEmail}
+            type="button"
           >
             <IoIosMail className="mr-2 h-6 w-6 fill-current" />
-            Get in touch
+            Click to copy email
+          </button>
+
+          <a href="/" className="link-test">
+            tes
           </a>
         </div>
       </Content>

@@ -1,4 +1,5 @@
 import '@/styles/index.css'
+import 'notyf/notyf.min.css'
 import React from 'react'
 import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
