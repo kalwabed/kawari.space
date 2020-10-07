@@ -26,7 +26,7 @@ export default function Nav({ page = 'whoami' }) {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-dark">
         <Link href="/">
           <a className="flex font-medium items-center mb-4 md:mb-0">
-            <span className="ml-3 text-xl hover:text-info transition duration-300 ease-in inline-flex">
+            <span className="logo">
               kawari
               <span className="p-1 h-1 bg-primary animate-pulse hover:bg-info self-start rounded-full" />
             </span>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @import "tailwindcss/base";
-@import "tailwindcss/components";
 
 html {
   scroll-behavior: smooth;
@@ -11,24 +11,24 @@ html {
   color: #E0FBFC;
 }
 
+@import "tailwindcss/components";
+
 @layer components {
-  .link-test {
-    @apply bg-green-500;
+  .link-external {
+    @apply border-b-2 border-light transition ease-in duration-100;
   }
 
-  .link-test:hover {
-    @apply bg-secondary;
+  .link-external:hover {
+    @apply border-primary text-info;
   }
-}
 
-.link-active {
-  width: inherit;
-  height: 3px;
-  background: #EE6C4D;
-}
+  .logo {
+    @apply ml-3 text-xl inline-flex font-medium;
+  }
 
-.link-external {
-  @apply border-b-2 border-light transition ease-in duration-100;
+  .logo:hover {
+    @apply text-info transition duration-300 ease-in;
+  }
 }
 
 @import "tailwindcss/utilities";
