@@ -26,7 +26,7 @@ export default function Post({ postData }: { postData: Props }) {
       <Nav page="blog" />
       <Content>
         <div className="container flex flex-col pb-20 pt-16 md:pl-56 md:pr-48 mx-auto px-5">
-          <div className="text-4xl md:text-5xl">{postData.title}</div>
+          <div className="text-4xl md:text-5xl font-semibold">{postData.title}</div>
           <small className="text-gray-500 items-start">
             <Date dateString={postData.date} /> / ~{postData.readingTime} menit membaca
           </small>

@@ -1,5 +1,5 @@
 export default {
-  title: 'kawari',
+  title: 'Kalwabed Rizki',
   description: 'Kawari | Kalwabed Rizki personal landing page',
   url: 'https://kawari.space',
   email: 'kalwabedrzk@pm.me',
