@@ -47,7 +47,7 @@ export default function Post({ postData }: { postData: Props }) {
 
           <div className="border-t-2 border-secondary pt-5" />
 
-          <div className="group inline-flex items-center -mt-5 py-2 text-info w-1/6">
+          <div className="group inline-flex items-center -mt-5 py-2 text-info w-1/2 md:w-1/6">
             <svg
               className="ml-1 w-8 h-8 group-hover:text-primary"
               fill="currentColor"
