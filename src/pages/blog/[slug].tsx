@@ -5,11 +5,10 @@ import { NextSeo } from 'next-seo'
 import React from 'react'
 
 import { getAllPostsSlugs, getPostData } from '@/lib/posts'
-import Nav from '@/components/Nav'
-import Date from '@/components/dateConfig'
-import Content from '@/components/Content'
+import Date from '@/components/blog/dateConfig'
 import { Post as PostType } from '@/@types'
-import siteConfig from '../../../site-config'
+import Layout from '@/components/Layout'
+import siteConfig from 'site-config'
 
 interface Props extends PostType {
   contentHtml: string
@@ -18,13 +17,11 @@ interface Props extends PostType {
 export default function Post({ postData }: { postData: Props }) {
   return (
     <>
-      <NextSeo
-        title={postData.title}
-        openGraph={{ images: [{ url: siteConfig.url + postData.cover.image }], url: postData.title }}
-        description={postData.subtitle}
-      />
-      <Nav page="blog" />
-      <Content>
+      <Layout title={postData.title} page="blog">
+        <NextSeo
+          openGraph={{ images: [{ url: siteConfig.url + postData.cover.image }], url: postData.title }}
+          description={postData.subtitle}
+        />
         <div className="container flex flex-col pb-20 pt-16 md:pl-56 md:pr-48 mx-auto px-5">
           <div className="text-4xl md:text-5xl font-semibold">{postData.title}</div>
           <small className="text-gray-500 items-start">
@@ -49,7 +46,7 @@ export default function Post({ postData }: { postData: Props }) {
 
           <div className="border-b-2 border-secondary py-10" />
         </div>
-      </Content>
+      </Layout>
     </>
   )
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@import "tailwindcss/base";
+@tailwind base;
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +11,7 @@ html {
   color: #E0FBFC;
 }
 
-@import "tailwindcss/components";
+@tailwind components;
 
 @layer components {
   .link-external {
@@ -31,4 +31,4 @@ html {
   }
 }
 
-@import "tailwindcss/utilities";
+@tailwind utilities;

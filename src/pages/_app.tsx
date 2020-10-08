@@ -7,7 +7,6 @@ import { AppProps } from 'next/app'
 import NProgress from 'nprogress'
 import Router from 'next/router'
 
-import Footer from '@/components/Footer'
 import SEO from '../../next-seo.config'
 
 Router.events.on('routeChangeStart', () => NProgress.start())
@@ -19,7 +18,6 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
-      <Footer />
     </>
   )
 }

@@ -1,18 +1,14 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { NextSeo } from 'next-seo'
 
-import Content from '@/components/Content'
-import Nav from '@/components/Nav'
+import Layout from '@/components/Layout'
 
 const projects: NextPage = () => {
   return (
     <>
-      <NextSeo title="kawari | projects" />
-      <Nav page="projects" />
-      <Content>
+      <Layout page="projects" title="kawari | projects">
         <h1>ini saya</h1>
-      </Content>
+      </Layout>
     </>
   )
 }

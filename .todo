@@ -1,7 +1,2 @@
-- *
-  - restructure folder
-  - pecah page menjadi beberapa komponen
-  - refactor class untuk blog & lainnya dengan implementasi @layer
-
 - halaman blog content
-  - buat list artikel lainnya
+  - tombol kembali ke halaman blog
