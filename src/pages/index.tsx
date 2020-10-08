@@ -8,12 +8,10 @@ import Layout from '@/components/Layout'
 
 const Index: NextPage = () => {
   return (
-    <>
-      <Layout>
-        <Identity />
-        <About />
-      </Layout>
-    </>
+    <Layout>
+      <Identity />
+      <About />
+    </Layout>
   )
 }
 
