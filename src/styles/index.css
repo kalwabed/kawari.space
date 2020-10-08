@@ -6,6 +6,28 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer base {
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  ul {
+    @apply list-disc mb-10;
+  }
+
+  li {
+    @apply ml-8 transition ease-out duration-75 text-lg;
+  }
+
+  li:hover {
+    @apply text-primary;
+  }
+}
+
 *::selection {
   background-color: #EE6C4D;
   color: #E0FBFC;
@@ -20,14 +42,6 @@ html {
 
   .link-external:hover {
     @apply border-primary text-info;
-  }
-
-  .logo {
-    @apply ml-3 text-xl inline-flex font-medium;
-  }
-
-  .logo:hover {
-    @apply text-info transition duration-300 ease-in;
   }
 }
 

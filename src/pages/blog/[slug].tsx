@@ -9,6 +9,7 @@ import Date from '@/components/blog/dateConfig'
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import siteConfig from 'site-config'
+import Link from 'next/link'
 
 interface Props extends PostType {
   contentHtml: string
@@ -42,9 +43,29 @@ export default function Post({ postData }: { postData: Props }) {
             </caption>
           </div>
 
-          <article className="leading-normal mt-5 text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <article className="leading-normal mt-5 mb-12 text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
-          <div className="border-b-2 border-secondary py-10" />
+          <div className="border-t-2 border-secondary pt-5" />
+
+          <div className="group inline-flex items-center -mt-5 py-2 text-info w-1/6">
+            <svg
+              className="ml-1 w-8 h-8 group-hover:text-primary"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <div className="ml-2 text-2xl font-medium">
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
+            </div>
+          </div>
         </div>
       </Layout>
     </>

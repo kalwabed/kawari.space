@@ -5,6 +5,7 @@ import { NextSeo } from 'next-seo'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
+import styled from '@/styles/layout.module.css'
 import siteConfig from 'site-config'
 
 const links = [
@@ -35,24 +36,19 @@ const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed 
     <>
       <NextSeo title={title} canonical={url + router.pathname} />
       <header>
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center bg-dark">
+        <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">
             <a className="flex font-medium items-center mb-4 md:mb-0">
-              <span className="logo">
+              <span className={styled.logo}>
                 kawari
-                <span className="p-1 h-1 bg-primary animate-pulse hover:bg-info self-start rounded-full" />
+                <span className={`animate-pulse ${styled.planet}`} />
               </span>
             </a>
           </Link>
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-light flex flex-wrap items-center text-base justify-center">
+          <nav className={styled.nav}>
             {links.map(link => (
               <Link href={link.href} key={link.label}>
-                <a
-                  href={link.href}
-                  className={`mr-5 px-1 hover:text-info transition ease-in-out duration-100 ${
-                    link.label === page && 'border-b-4 border-primary hover:border-info'
-                  }`}
-                >
+                <a href={link.href} className={`${styled.navLink} ${link.label === page && 'border-b-4 border-primary hover:border-info'}`}>
                   {link.label}
                 </a>
               </Link>
@@ -60,13 +56,13 @@ const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed 
           </nav>
           <div className="inline-flex items-center text-base mt-4 md:mt-0">
             <a href={social.github.url} target="_blank" rel="noopener noreferrer" aria-label="github">
-              <IoLogoGithub className="fill-current h-6 w-6 hover:text-info transition ease-in duration-150" />
+              <IoLogoGithub className={styled.icon} />
             </a>
             <a href={social.instagram.url} target="_blank" rel="noopener noreferrer" className="mx-2" aria-label="instagram">
-              <IoLogoInstagram className="fill-current h-6 w-6 hover:text-info transition ease-in duration-150" />
+              <IoLogoInstagram className={styled.icon} />
             </a>
             <a href={social.linkedin.url} target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-              <IoLogoLinkedin className="fill-current h-6 w-6 hover:text-info transition ease-in duration-150" />
+              <IoLogoLinkedin className={styled.icon} />
             </a>
           </div>
         </div>
@@ -74,12 +70,12 @@ const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed 
 
       <main className={className}>{children}</main>
 
-      <footer className="container px-5 pt-8 pb-16 mx-auto flex items-center md:flex-row flex-col">
+      <footer className={`container ${styled.footerWrapper}`}>
         <Link href="/">
           <a className="flex items-center w-10 h-5 justify-center">
-            <span className="logo">
+            <span className={styled.logo}>
               kawari
-              <span className="p-1 h-1 bg-primary animate-pulse hover:bg-info self-start rounded-full" />
+              <span className={`animate-pulse ${styled.planet}`} />
             </span>
           </a>
         </Link>
