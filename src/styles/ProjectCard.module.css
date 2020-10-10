@@ -1,9 +1,9 @@
 .wrapper {
-  @apply w-full mb-10 px-4 pb-4 pt-2 text-center transition duration-100 ease-out rounded;
+  @apply w-full mb-10 px-4 pb-4 pt-2 text-center transition duration-150 ease-out rounded;
 }
 
 .wrapper:hover {
-  @apply shadow-lg;
+  @apply shadow-lg transform -translate-y-2;
 }
 
 .imgWrapper {
@@ -31,7 +31,7 @@
 }
 
 .button {
-  @apply flex bg-secondary border-0 mr-4 py-1 px-5 rounded transition duration-100 ease-out;
+  @apply flex items-center bg-secondary border-0 mr-4 py-1 px-5 rounded transition duration-100 ease-out;
 }
 
 .button:hover {
