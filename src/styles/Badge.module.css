@@ -1,0 +1,19 @@
+.react {
+  @apply px-2 mr-1 bg-blue-600 rounded-full font-semibold border-b border-light;
+}
+
+.express {
+  @apply px-2 mr-1 bg-gray-400 text-dark rounded-full font-semibold border-b border-light;
+}
+
+.bootstrap {
+  @apply px-2 mr-1 bg-purple-700 rounded-full font-semibold border-b border-light;
+}
+
+.nextjs {
+  @apply px-2 mr-1 bg-black rounded-full font-semibold border-b border-light;
+}
+
+.tailwindcss {
+  @apply px-2 mr-1 bg-teal-500 rounded-full font-semibold border-b border-light;
+}

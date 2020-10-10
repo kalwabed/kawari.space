@@ -1,0 +1,61 @@
+.wrapper {
+  @apply w-full mb-10 px-4 pb-4 pt-2 text-center transition duration-100 ease-out rounded;
+}
+
+.wrapper:hover {
+  @apply shadow-lg;
+}
+
+.imgWrapper {
+  @apply rounded-lg h-64 overflow-hidden;
+}
+
+.img {
+  @apply object-cover object-center h-full w-full;
+}
+
+.badgeWrapper {
+  @apply mt-1 flex flex-wrap flex-row items-center;
+}
+
+.title {
+  @apply text-2xl font-medium mt-6 mb-3;
+}
+
+.description {
+  @apply leading-relaxed text-base text-gray-500;
+}
+
+.buttonLinkWrapper {
+  @apply flex flex-row items-center mt-6 justify-center;
+}
+
+.button {
+  @apply flex bg-secondary border-0 mr-4 py-1 px-5 rounded transition duration-100 ease-out;
+}
+
+.button:hover {
+  @apply bg-primary;
+}
+
+.button:focus {
+  @apply outline-none;
+}
+
+.sourceLink {
+  @apply inline-flex items-center;
+}
+
+.sourceLink:hover {
+  @apply underline text-info;
+}
+
+@screen md {
+  .wrapper {
+    @apply w-1/2 text-left;
+  }
+
+  .buttonLinkWrapper {
+    @apply justify-start;
+  }
+}

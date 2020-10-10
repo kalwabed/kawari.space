@@ -10,3 +10,20 @@ export interface Post {
     name: string
   }
 }
+
+export enum Tech {
+  react = 'react',
+  nextjs = 'nextjs',
+  bootstrap = 'bootstrap',
+  tailwindcss = 'tailwindcss',
+  express = 'express'
+}
+
+export interface Project {
+  title: string
+  description: string
+  image: string
+  stack: Tech[]
+  demoUrl: string
+  source: string
+}
