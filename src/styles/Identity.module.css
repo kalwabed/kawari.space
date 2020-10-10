@@ -1,0 +1,61 @@
+.wrapper {
+  @apply mx-auto flex px-5 py-8 flex-col items-center;
+}
+
+.imgWrapper {
+  @apply w-full mb-10;
+}
+
+.img {
+  @apply object-cover object-center shadow rounded-lg w-1/2 mx-auto;
+}
+
+.summaryWrapper {
+  @apply flex flex-col items-center text-center;
+}
+
+.name {
+  @apply text-3xl font-medium;
+}
+
+.subtitle {
+  @apply mb-8 text-base text-gray-500;
+}
+
+.skill {
+  @apply leading-relaxed mb-4;
+}
+
+@screen sm {
+  .name {
+    @apply text-4xl;
+  }
+}
+
+@screen md {
+  .wrapper {
+    @apply px-20 py-24 flex-row;
+  }
+
+  .imgWrapper {
+    @apply w-1 mb-0;
+  }
+
+  .img {
+    @apply mx-0 ml-auto;
+  }
+
+  .summaryWrapper {
+    @apply w-1/2 pl-16 items-start text-left;
+  }
+}
+
+@screen lg {
+  .imgWrapper {
+    @apply max-w-lg w-full;
+  }
+
+  .summaryWrapper {
+    @apply flex-grow pl-24;
+  }
+}

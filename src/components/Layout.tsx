@@ -54,7 +54,7 @@ const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed 
               </Link>
             ))}
           </nav>
-          <div className="inline-flex items-center text-base mt-4 md:mt-0">
+          <div className={styled.socialWrapper}>
             <a href={social.github.url} target="_blank" rel="noopener noreferrer" aria-label="github">
               <IoLogoGithub className={styled.icon} />
             </a>

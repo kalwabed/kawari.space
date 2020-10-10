@@ -30,6 +30,10 @@
   @apply text-info;
 }
 
+.socialWrapper {
+  @apply inline-flex items-center text-base mt-4;
+}
+
 .icon {
   @apply fill-current h-6 w-6 transition ease-in duration-150;
 
@@ -52,6 +56,10 @@
 
   .nav {
     @apply mr-auto ml-4 py-1 pl-4 border-l border-light;
+  }
+
+  .socialWrapper {
+    @apply mt-0;
   }
 
   .footerWrapper {
