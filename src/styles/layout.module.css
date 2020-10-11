@@ -30,6 +30,10 @@
   @apply text-info;
 }
 
+.navLink:focus {
+  @apply outline-none;
+}
+
 .socialWrapper {
   @apply inline-flex items-center text-base mt-4;
 }

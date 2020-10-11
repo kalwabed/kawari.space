@@ -23,9 +23,9 @@ const ProjectLists = ({ demoUrl, description, image, source, stack, title, keyPr
       <div className={styled.title}>{title}</div>
       <p className={styled.description}>{description}</p>
       <div className={styled.buttonLinkWrapper}>
-        <a href={demoUrl} hidden={!demoUrl} rel="noopener noreferrer" target="_blank">
+        <a href={demoUrl} hidden={!demoUrl}>
           <button className={styled.button} type="button">
-            Demo <IcExternal />
+            Demo
           </button>
         </a>
         <a href={source} rel="noopener noreferrer" target="_blank" className={styled.sourceLink}>

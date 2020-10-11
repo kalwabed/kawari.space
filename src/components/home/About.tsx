@@ -10,7 +10,8 @@ const About = () => {
     <div className={`container ${styled.wrapper}`}>
       <div className="text-justify">
         Halo, nama saya Kalwabed Rizki, biasa dipanggil Kalwabed. Saya sedang menjalani pendidikan di{' '}
-        <LinkExternal href="smkn1banyuwangi.sch.id" label="SMKN 1 Banyuwangi" />, mengambil jurusan Rekaya perangkat lunak.
+        <LinkExternal href="smkn1banyuwangi.sch.id" label="SMKN 1 Banyuwangi" className="inline-flex items-baseline" icon />, mengambil
+        jurusan Rekaya perangkat lunak.
       </div>
 
       <button className={styled.emailButton} onClick={useEmail} type="button">
