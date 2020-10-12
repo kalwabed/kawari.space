@@ -15,6 +15,7 @@
   "dependencies": {
     "copee": "^1.0.6",
     "date-fns": "^2.16.1",
+    "disqus-react": "^1.0.10",
     "gray-matter": "^4.0.2",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",

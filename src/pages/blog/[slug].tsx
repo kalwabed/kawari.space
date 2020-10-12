@@ -1,8 +1,10 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
-import { GetStaticPaths, GetStaticProps } from 'next'
-import { NextSeo } from 'next-seo'
 import React from 'react'
+import type { GetStaticPaths, GetStaticProps } from 'next'
+import { useRouter } from 'next/router'
+import { NextSeo } from 'next-seo'
+import { DiscussionEmbed } from 'disqus-react'
 
 import { getAllPostsSlugs, getPostData } from '@/lib/posts'
 import Date from '@/components/blog/dateConfig'
@@ -10,14 +12,16 @@ import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import siteConfig from 'site-config'
 import Link from 'next/link'
+import { IcArrow } from '@/parts/Icon'
 
 interface Props extends PostType {
   contentHtml: string
 }
 
 export default function Post({ postData }: { postData: Props }) {
+  const router = useRouter()
   return (
-    <Layout title={postData.title} page="blog">
+    <Layout title={postData.title} page="">
       <NextSeo
         openGraph={{ images: [{ url: siteConfig.url + postData.cover.image }], url: postData.title }}
         description={postData.subtitle}
@@ -47,19 +51,21 @@ export default function Post({ postData }: { postData: Props }) {
         <div className="border-t-2 border-secondary pt-5" />
 
         <div className="group inline-flex items-center -mt-5 py-2 text-info w-1/2 md:w-1/6">
-          <svg className="ml-1 w-8 h-8 group-hover:text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fillRule="evenodd"
-              d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <Link href="/blog">
+            <a>
+              <IcArrow className="cursor-pointer" />
+            </a>
+          </Link>
           <div className="ml-2 text-2xl font-medium">
             <Link href="/blog">
               <a>Blog</a>
             </Link>
           </div>
         </div>
+        <DiscussionEmbed
+          shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
+          config={{ url: siteConfig.url + router.asPath, identifier: postData.slug, title: postData.title }}
+        />
       </div>
     </Layout>
   )
