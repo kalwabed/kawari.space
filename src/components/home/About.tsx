@@ -14,7 +14,7 @@ const About = () => {
         jurusan Rekaya perangkat lunak.
       </div>
 
-      <button className={styled.emailButton} onClick={useEmail} type="button">
+      <button className={`${styled.emailButton} umami--click--email-copy`} onClick={useEmail} type="button">
         <IoIosMail className={styled.icon} />
         Click to copy email
       </button>
