@@ -33,7 +33,7 @@ export default function Post({ postData }: { postData: Props }) {
         </small>
         <div className="md:mb-0 mb-8 py-5 w-full flex flex-col">
           <img src={postData.cover.image} alt="banner" className="object-center object-cover mx-auto w-full h-full rounded-md shadow" />
-          <caption className="leading-relaxed text-gray-500">
+          <div className="leading-relaxed text-gray-500">
             image from{' '}
             <a
               href={postData.cover.source}
@@ -43,7 +43,7 @@ export default function Post({ postData }: { postData: Props }) {
             >
               {postData.cover.name}
             </a>
-          </caption>
+          </div>
         </div>
 
         <article className="leading-normal mt-5 mb-12 text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

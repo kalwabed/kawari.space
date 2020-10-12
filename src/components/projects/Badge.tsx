@@ -6,15 +6,15 @@ import styled from '@/styles/Badge.module.css'
 // sementara pakai nested ternary
 const Badge = ({ badge }: { badge: string }) => {
   return badge === 'react' ? (
-    <caption className={styled.react}>React</caption>
+    <div className={styled.react}>React</div>
   ) : badge === 'bootstrap' ? (
-    <caption className={styled.bootstrap}>Bootstrap</caption>
+    <div className={styled.bootstrap}>Bootstrap</div>
   ) : badge === 'express' ? (
-    <caption className={styled.express}>Express</caption>
+    <div className={styled.express}>Express</div>
   ) : badge === 'nextjs' ? (
-    <caption className={styled.nextjs}>Next.js</caption>
+    <div className={styled.nextjs}>Next.js</div>
   ) : (
-    <caption className={styled.tailwindcss}>Tailwindcss</caption>
+    <div className={styled.tailwindcss}>Tailwindcss</div>
   )
 }
 
