@@ -23,5 +23,11 @@ export default {
     handle: siteConfig.twitterUsername,
     site: siteConfig.twitterUsername,
     cardType: 'summary_large_image'
-  }
+  },
+  additionalMetaTags: [
+    {
+      name: 'theme-color',
+      content: '#293241'
+    }
+  ]
 }

@@ -4,7 +4,7 @@ import React from 'react'
 import Date from './dateConfig'
 
 interface Props {
-  allPostsData: [Post]
+  allPostsData: Post[]
 }
 
 const Content = ({ allPostsData }: Props) => {
