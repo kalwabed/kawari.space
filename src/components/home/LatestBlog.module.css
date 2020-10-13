@@ -31,11 +31,11 @@
 }
 
 .morePosts {
-  @apply pl-2 mt-6 text-lg text-primary inline-flex items-center;
+  @apply pl-2 mt-6 text-lg inline-flex items-center;
 }
 
 .morePosts:hover {
-  @apply underline;
+  @apply underline text-info;
 }
 
 @screen md {

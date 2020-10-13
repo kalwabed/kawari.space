@@ -11,8 +11,7 @@ import Date from '@/components/blog/dateConfig'
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import siteConfig from 'site-config'
-import Link from 'next/link'
-import { IcArrow } from '@/parts/Icon'
+import styled from './[slug].module.css'
 
 interface Props extends PostType {
   contentHtml: string
@@ -20,37 +19,31 @@ interface Props extends PostType {
 
 export default function Post({ postData }: { postData: Props }) {
   const router = useRouter()
+  const { cover, date, readingTime, slug, subtitle, title, contentHtml } = postData
   return (
-    <Layout title={postData.title} page="">
-      <NextSeo
-        openGraph={{ images: [{ url: siteConfig.url + postData.cover.image }], url: postData.title }}
-        description={postData.subtitle}
-      />
-      <div className="container flex flex-col pb-20 pt-16 md:pl-56 md:pr-48 mx-auto px-5">
-        <div className="text-4xl md:text-5xl font-semibold">{postData.title}</div>
-        <small className="text-gray-500 items-start">
-          <Date dateString={postData.date} /> / ~{postData.readingTime} menit membaca
+    <Layout title={title} page="">
+      <NextSeo openGraph={{ images: [{ url: siteConfig.url + cover.image }], url: title }} description={subtitle} />
+      <div className={`container ${styled.wrapper}`}>
+        <div className={styled.title}>{title}</div>
+        <small className={styled.date}>
+          <Date dateString={date} /> / ~{readingTime} menit membaca
         </small>
-        <div className="md:mb-0 mb-8 py-5 w-full flex flex-col">
-          <img src={postData.cover.image} alt="banner" className="object-center object-cover mx-auto w-full h-full rounded-md shadow" />
-          <div className="leading-relaxed text-gray-500 text-center">
+        <div className={styled.imgWrapper}>
+          <img src={cover.image} alt="banner" className={styled.img} />
+          <div className={styled.imgFromWrapper}>
             image from{' '}
-            <a
-              href={postData.cover.source}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:border-primary border-b-2 border-secondary"
-            >
-              {postData.cover.name}
+            <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
+              {cover.name}
             </a>
           </div>
         </div>
 
-        <article className="leading-normal mt-5 mb-12 text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <div className="border-b-2 border-secondary mb-5" />
+        <article className={styled.article} dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <div className={styled.divider} />
+
         <DiscussionEmbed
           shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
-          config={{ url: siteConfig.url + router.asPath, identifier: postData.slug, title: postData.title }}
+          config={{ url: siteConfig.url + router.asPath, identifier: slug, title }}
         />
       </div>
     </Layout>

@@ -1,0 +1,53 @@
+.wrapper {
+  @apply flex flex-col pb-20 pt-16 mx-auto px-5;
+}
+
+.title {
+  @apply text-4xl font-semibold;
+}
+
+.date {
+  @apply text-gray-500 items-start;
+}
+
+.imgWrapper {
+  @apply mb-8 py-5 w-full flex flex-col;
+}
+
+.img {
+  @apply object-cover object-center mx-auto w-full h-full rounded-md shadow;
+}
+
+.imgFromWrapper {
+  @apply leading-relaxed text-gray-500 text-center;
+}
+
+.imgFromLink {
+  @apply border-b-2 border-secondary;
+}
+
+.imgFromLink:hover {
+  @apply border-primary;
+}
+
+.article {
+  @apply leading-normal mt-5 mb-12 text-justify;
+}
+
+.divider {
+  @apply border-b-2 border-secondary mb-5;
+}
+
+@screen md {
+  .wrapper {
+    @apply pl-56 pr-48;
+  }
+
+  .title {
+    @apply text-5xl;
+  }
+
+  .imgWrapper {
+    @apply mb-0;
+  }
+}
