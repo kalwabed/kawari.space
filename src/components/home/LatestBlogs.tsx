@@ -33,7 +33,7 @@ const LatestBlogs = ({ allPostsData }: Props) => {
           )
       )}
       <Link href="/blog">
-        <a className={styled.morePosts}>
+        <a className={`${styled.morePosts} umami--click--more-posts`}>
           More posts <IoMdArrowForward className="ml-2" />
         </a>
       </Link>

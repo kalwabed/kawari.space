@@ -4,7 +4,7 @@ subtitle: 'cuma contoh'
 date: '2020-10-12'
 readingTime: 3
 cover:
-  image: '/assets/img/aku.png'
+  image: '/assets/resources/profile.png'
   source: 'https://github.com/kaliwa'
   name: 'John Doe'
 ---

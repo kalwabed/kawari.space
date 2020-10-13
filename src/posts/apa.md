@@ -4,7 +4,7 @@ subtitle: 'tentang saya atau siapa'
 date: '2020-10-02'
 readingTime: 4
 cover:
-  image: '/assets/img/example.jpg'
+  image: '/assets/resources/example.jpg'
   source: 'https://github.com/kaliwa'
   name: 'Lipsum'
 ---

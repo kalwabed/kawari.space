@@ -4,7 +4,7 @@ subtitle: 'tentang saya atau siapa'
 date: '2020-10-04'
 readingTime: 4
 cover:
-  image: '/assets/img/example.jpg'
+  image: '/assets/resources/example.jpg'
   source: 'https://github.com/kaliwa'
   name: 'Lipsum'
 ---
@@ -14,8 +14,6 @@ cover:
 - [Kesimpulan](#kesimpulan)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue nec lorem eget blandit. Curabitur ut quam ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum volutpat ac metus id tincidunt. Proin condimentum eleifend mi, eget rutrum justo. Duis blandit orci in nisl accumsan condimentum. Cras pharetra purus ligula, id gravida lorem venenatis sit amet. Curabitur nec condimentum risus. Nam et turpis cursus, faucibus massa a, finibus lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sollicitudin vitae odio sed egestas. Nam quis hendrerit massa.
-
-<img src="/assets/img/aku.png" alt="gambar" class="p-8 md:p-48 w-full md:-my-32">
 
 # <a name='kalwabed'/> Kalwabed
 

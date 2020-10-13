@@ -11,9 +11,9 @@ export default {
     images: [
       {
         secure_url:
-          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fimg%2Faku.png&widths=auto&heights=auto",
+          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fresources%2Fprofile.png&widths=auto&heights=auto",
         url:
-          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fimg%2Faku.png&widths=auto&heights=auto"
+          "https://og-image.vercel.app/Hi,%20I'm%20**Kalwabed**%20Rizki.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fkawari.space%2Fassets%2Fresources%2Fprofile.png&widths=auto&heights=auto"
       }
     ],
     type: 'website',

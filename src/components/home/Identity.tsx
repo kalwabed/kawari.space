@@ -9,7 +9,7 @@ const Identity = () => {
   return (
     <section className={`container ${styled.wrapper}`}>
       <div className={styled.imgWrapper}>
-        <img src={require('~/assets/img/aku.png?webp')} alt="hero" className={styled.img} />
+        <img src={require('~/assets/resources/profile.png?webp')} alt="hero" className={styled.img} />
       </div>
       <div className={styled.summaryWrapper}>
         <div className={styled.name}>Hi, I&apos;m Kalwabed Rizki</div>
