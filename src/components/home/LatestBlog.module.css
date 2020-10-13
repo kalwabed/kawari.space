@@ -1,0 +1,33 @@
+.wrapper {
+  @apply flex flex-col items-start px-5 mx-auto pb-40;
+}
+
+.latestBlogs {
+  @apply text-4xl tracking-wide font-semibold;
+}
+
+.blogWrapper {
+  @apply flex flex-col flex-wrap mt-3 w-full transition ease-in duration-100;
+}
+
+.blogWrapper:hover {
+  @apply shadow-lg;
+}
+
+.title {
+  @apply font-medium text-2xl transition ease-out duration-75;
+}
+
+.title:hover {
+  @apply text-info;
+}
+
+.dateTime {
+  @apply text-gray-500 flex flex-row;
+}
+
+@screen md {
+  .wrapper {
+    @apply px-56;
+  }
+}

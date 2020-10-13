@@ -8,6 +8,7 @@ class MyDocument extends Document {
   }
 
   render() {
+    const isDev = process.env.NODE_ENV === 'development'
     return (
       <Html lang="en">
         <Head>
@@ -16,7 +17,7 @@ class MyDocument extends Document {
           <link href="/assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
           <link href="/assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
           <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" type="image/png" />
-          <script async defer data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID} src={process.env.NEXT_PUBLIC_UMAMI_LINK} />
+          <script async defer data-website-id={!isDev && process.env.NEXT_PUBLIC_UMAMI_ID} src={process.env.NEXT_PUBLIC_UMAMI_LINK} />
         </Head>
 
         <body className="bg-dark text-light font-primary">

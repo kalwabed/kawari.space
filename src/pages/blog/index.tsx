@@ -4,7 +4,6 @@ import { GetStaticProps, NextPage } from 'next'
 import { Post } from '@/@types'
 import { getSortedPostsData } from '@/lib/posts'
 import Layout from '@/components/Layout'
-// eslint-disable-next-line import/no-named-as-default-member
 import BlogList from '@/components/blog/BlogList'
 
 interface Props {

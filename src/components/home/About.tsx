@@ -3,7 +3,7 @@ import { IoIosMail } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
 import { useEmail } from '@/hooks/index'
-import styled from '@/styles/About.module.css'
+import styled from './About.module.css'
 
 const About = () => {
   return (

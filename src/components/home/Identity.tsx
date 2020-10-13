@@ -1,8 +1,8 @@
 /* eslint-disable global-require */
 import React from 'react'
 
-import styled from '@/styles/Identity.module.css'
 import siteConfig from 'site-config'
+import styled from './Identity.module.css'
 
 const Identity = () => {
   const { home } = siteConfig

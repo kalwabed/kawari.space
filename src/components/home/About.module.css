@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col items-center px-5 mx-auto pb-48;
+  @apply flex flex-col items-center px-5 mx-auto pb-20;
 }
 
 .emailButton {
