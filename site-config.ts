@@ -40,7 +40,7 @@ export default {
   },
   home: {
     subtitle: 'Web application developer',
-    skill: 'JavaScript enthusiast, especially TypeScript'
+    skill: 'Build and develop websites using modern JavaScript technology'
   },
   projects
 }

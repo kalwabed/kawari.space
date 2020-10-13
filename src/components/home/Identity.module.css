@@ -48,6 +48,10 @@
   .summaryWrapper {
     @apply w-1/2 pl-16 items-start text-left;
   }
+
+  .skill {
+    @apply pr-12;
+  }
 }
 
 @screen lg {
