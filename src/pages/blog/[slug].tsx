@@ -47,21 +47,7 @@ export default function Post({ postData }: { postData: Props }) {
         </div>
 
         <article className="leading-normal mt-5 mb-12 text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-
-        <div className="border-t-2 border-secondary pt-5" />
-
-        <div className="group inline-flex items-center -mt-5 py-2 text-info w-1/2 md:w-1/6">
-          <Link href="/blog">
-            <a>
-              <IcArrow className="cursor-pointer" />
-            </a>
-          </Link>
-          <div className="ml-2 text-2xl font-medium">
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
-          </div>
-        </div>
+        <div className="border-b-2 border-secondary mb-5" />
         <DiscussionEmbed
           shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
           config={{ url: siteConfig.url + router.asPath, identifier: postData.slug, title: postData.title }}

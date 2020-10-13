@@ -1,8 +1,8 @@
 import React from 'react'
 
-import styled from '@/styles/ProjectCard.module.css'
 import { Project } from '@/@types'
 import { IcExternal } from '@/parts/Icon'
+import styled from './ProjectCard.module.css'
 import Badge from './Badge'
 
 interface Props extends Project {

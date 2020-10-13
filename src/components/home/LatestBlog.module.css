@@ -14,16 +14,28 @@
   @apply shadow-lg;
 }
 
-.title {
+.titleWrapper {
   @apply font-medium text-2xl transition ease-out duration-75;
 }
 
+.title {
+  @apply border-dark border-b-2;
+}
+
 .title:hover {
-  @apply text-info;
+  @apply border-primary;
 }
 
 .dateTime {
   @apply text-gray-500 flex flex-row;
+}
+
+.morePosts {
+  @apply pl-2 mt-6 text-lg text-primary inline-flex items-center;
+}
+
+.morePosts:hover {
+  @apply underline;
 }
 
 @screen md {

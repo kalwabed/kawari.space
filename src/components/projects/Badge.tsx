@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react'
 
-import styled from '@/styles/Badge.module.css'
+import styled from './Badge.module.css'
 
 // sementara pakai nested ternary
 const Badge = ({ badge }: { badge: string }) => {

@@ -5,8 +5,8 @@ import { NextSeo } from 'next-seo'
 import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
-import styled from '@/styles/layout.module.css'
 import siteConfig from 'site-config'
+import styled from './layout.module.css'
 
 const links = [
   {
