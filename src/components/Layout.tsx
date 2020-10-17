@@ -85,7 +85,7 @@ const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed 
         </Link>
         <p className="text-sm sm:ml-6 sm:mt-0 mt-4">
           © 2020 under MIT License —
-          <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kaliwa" />
+          <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kaliwa/kawari.space" />
         </p>
         <span className="md:ml-auto md:mt-0 mt-4 justify-center">
           Made using <LinkExternal href="nextjs.org" label="Next.js" /> and <LinkExternal href="tailwindcss.com" label="Tailwindcss" />.

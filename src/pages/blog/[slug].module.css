@@ -11,11 +11,12 @@
 }
 
 .imgWrapper {
-  @apply mb-8 py-5 w-full flex flex-col;
+  @apply mb-8 py-5 w-full flex flex-col overflow-hidden;
 }
 
 .img {
-  @apply object-cover object-center mx-auto w-full h-full rounded-md shadow;
+  @apply object-fill mx-auto w-full rounded-md shadow;
+  height: 20rem;
 }
 
 .imgFromWrapper {
@@ -42,6 +43,10 @@
   @apply border-primary text-info;
 }
 
+.article h1 {
+  @apply text-4xl font-semibold mt-2;
+}
+
 .article h1 a {
   @apply border-b-0;
 }
@@ -56,6 +61,11 @@
 
 .article li a:hover {
   @apply text-current;
+}
+
+.article img {
+  @apply object-center mx-auto w-full my-2;
+  height: 20rem;
 }
 
 .divider {
