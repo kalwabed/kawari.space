@@ -10,13 +10,13 @@ const About = () => {
   return (
     <div className={`container ${styled.wrapper}`}>
       <div className="text-justify">
-        Hello, my name is Kalwabed Rizki aka Kawari, I build and develop website applications on the back-end, although now more often on
-        the front-end. I am a student majoring in software engineering at{' '}
+        Hello, my name is Kalwabed Rizki aka Kawari. I build and develop websites using JavaScript on the front-end and back-end. I am a
+        student majoring in software engineering at{' '}
         <LinkExternal href="smkn1banyuwangi.sch.id" label="SMKN 1 Banyuwangi" className="inline-flex items-baseline" icon />, and now I am
         exploring the world of programming, especially website development. For more details, please refer to my writing on{' '}
         <Link href="/blog/saya">
           <a className={styled.linkTo}>Saya</a>
-        </Link>{' '}
+        </Link>
         .<p className="mt-3">For business inquiries, contact me via email and let&apos;s talk.</p>
       </div>
 

@@ -12,7 +12,7 @@ const Identity = () => {
         <img src={require('~/assets/resources/profile.png?webp')} alt="hero" className={styled.img} />
       </div>
       <div className={styled.summaryWrapper}>
-        <div className={styled.name}>Hi, I&apos;m Kalwabed Rizki</div>
+        <h1 className={styled.name}>Hi, I&apos;m Kalwabed Rizki</h1>
         <p className={styled.subtitle}>{home.subtitle}</p>
         <p className={styled.skill}>{home.skill}</p>
         <p className="leading-tight mb-3">

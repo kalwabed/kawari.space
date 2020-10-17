@@ -22,7 +22,7 @@ export default function Post({ postData }: { postData: Props }) {
   const { cover, date, readingTime, slug, subtitle, title, contentHtml } = postData
   return (
     <Layout title={title} page="">
-      <NextSeo openGraph={{ images: [{ url: siteConfig.url + cover.image }], url: title }} description={subtitle} />
+      <NextSeo description={subtitle} />
       <div className={`container ${styled.wrapper}`}>
         <div className={styled.title}>{title}</div>
         <small className={styled.date}>

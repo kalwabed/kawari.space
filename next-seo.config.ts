@@ -28,6 +28,10 @@ export default {
     {
       name: 'theme-color',
       content: '#293241'
+    },
+    {
+      name: 'keyword',
+      content: 'Kalwabed-Rizki Porfolio Kalwabed Kawari'
     }
   ]
 }

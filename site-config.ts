@@ -28,15 +28,10 @@ export default {
   email: 'kalwabedrzk@pm.me',
   twitterUsername: '@kalwabed_rizki',
   social: {
-    github: {
-      url: 'https://github.com/kaliwa'
-    },
-    instagram: {
-      url: 'https://instagram.com/kaliwa__'
-    },
-    linkedin: {
-      url: 'https://linkedin.com/in/kaliwa/'
-    }
+    github: 'https://github.com/kaliwa',
+    instagram: 'https://instagram.com/kaliwa__',
+    linkedin: 'https://linkedin.com/in/kaliwa',
+    twitter: 'https://twitter.com/kalwabed_rizki'
   },
   home: {
     subtitle: 'Web application developer',

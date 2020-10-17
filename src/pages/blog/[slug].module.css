@@ -34,6 +34,30 @@
   @apply leading-normal mt-5 mb-12 text-justify;
 }
 
+.article a {
+  @apply border-b-2 border-light transition ease-in duration-100;
+}
+
+.article a:hover {
+  @apply border-primary text-info;
+}
+
+.article h1 a {
+  @apply border-b-0;
+}
+
+.article h1 a:hover {
+  @apply text-current;
+}
+
+.article li a {
+  @apply border-b-0;
+}
+
+.article li a:hover {
+  @apply text-current;
+}
+
 .divider {
   @apply border-b-2 border-secondary mb-5;
 }
