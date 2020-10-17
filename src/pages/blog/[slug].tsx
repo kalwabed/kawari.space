@@ -24,7 +24,7 @@ export default function Post({ postData }: { postData: Props }) {
     <Layout title={title} page="">
       <NextSeo description={subtitle} />
       <div className={`container ${styled.wrapper}`}>
-        <div className={styled.title}>{title}</div>
+        <h1 className={styled.title}>{title}</h1>
         <small className={styled.date}>
           <Date dateString={date} /> / ~{readingTime} menit membaca
         </small>

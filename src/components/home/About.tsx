@@ -8,7 +8,7 @@ import styled from './About.module.css'
 
 const About = () => {
   return (
-    <div className={`container ${styled.wrapper}`}>
+    <section className={`container ${styled.wrapper}`}>
       <div className="text-justify">
         Hello, my name is Kalwabed Rizki aka Kawari. I build and develop websites using JavaScript on the front-end and back-end. I am a
         student majoring in software engineering at{' '}
@@ -24,7 +24,7 @@ const About = () => {
         <IoIosMail className={styled.icon} />
         Click to copy email
       </button>
-    </div>
+    </section>
   )
 }
 

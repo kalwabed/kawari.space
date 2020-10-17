@@ -1,6 +1,7 @@
 {
   "name": "kawari-portofolio",
   "version": "1.0.0",
+  "private": true,
   "description": "Kalwabed Rizki personal landing page",
   "author": {
     "email": "kalwabedrzk@pm.me",
