@@ -1,6 +1,5 @@
 import type { Post } from '@/@types'
 import Link from 'next/link'
-import React from 'react'
 import { IoMdArrowForward } from 'react-icons/io'
 import Date from '../blog/dateConfig'
 import styled from './LatestBlog.module.css'

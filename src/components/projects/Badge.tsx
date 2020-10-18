@@ -1,6 +1,4 @@
 /* eslint-disable no-nested-ternary */
-import React from 'react'
-
 import styled from './Badge.module.css'
 
 // sementara pakai nested ternary

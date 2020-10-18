@@ -1,4 +1,3 @@
-import React from 'react'
 import { IcExternal } from './Icon'
 
 const LinkExternal = ({ href = '#', label = 'unknown', className = '', icon = false }) => {

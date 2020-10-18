@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
@@ -10,16 +9,16 @@ import styled from './layout.module.css'
 
 const links = [
   {
-    href: '/',
-    label: 'whoami'
-  },
-  {
     href: '/projects',
     label: 'projects'
   },
   {
     href: '/blog',
     label: 'blog'
+  },
+  {
+    href: '/about',
+    label: 'about'
   }
 ]
 
@@ -29,7 +28,7 @@ interface Props {
   className?: string
 }
 
-const Layout: React.FC<Props> = ({ page = 'whoami', children, title = 'Kalwabed Rizki', className = '' }) => {
+const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki', className = '' }) => {
   const { social, url } = siteConfig
   const router = useRouter()
   const fullPath = url + router.asPath

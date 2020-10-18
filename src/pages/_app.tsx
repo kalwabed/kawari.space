@@ -1,7 +1,6 @@
 import '@/styles/index.css'
 import '@/styles/nprogress.css'
 import 'notyf/notyf.min.css'
-import React from 'react'
 import { DefaultSeo, SocialProfileJsonLd } from 'next-seo'
 import { AppProps } from 'next/app'
 import NProgress from 'nprogress'

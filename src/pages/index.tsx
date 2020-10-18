@@ -1,5 +1,4 @@
 /* eslint-disable global-require */
-import React from 'react'
 import { IoMdWarning } from 'react-icons/io'
 import type { GetStaticProps, NextPage } from 'next'
 

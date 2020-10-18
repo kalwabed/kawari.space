@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Project } from '@/@types'
 import { IcExternal } from '@/parts/Icon'
 import styled from './ProjectCard.module.css'

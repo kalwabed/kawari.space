@@ -1,6 +1,4 @@
 /* eslint-disable import/prefer-default-export */
-import React from 'react'
-
 export const IcExternal = ({ className = 'w-4 h-4' }) => {
   return (
     <svg className={className} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

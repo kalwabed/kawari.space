@@ -1,6 +1,5 @@
 import { Post } from '@/@types'
 import Link from 'next/link'
-import React from 'react'
 import Date from './dateConfig'
 
 interface Props {

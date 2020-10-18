@@ -1,6 +1,4 @@
 /* eslint-disable global-require */
-import React from 'react'
-
 import siteConfig from 'site-config'
 import styled from './Identity.module.css'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoIosMail } from 'react-icons/io'
 import Link from 'next/link'
 
