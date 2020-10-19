@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
@@ -29,7 +29,7 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki', className = '' }) => {
-  const { social, url } = siteConfig
+  const { socials, url } = siteConfig
   const router = useRouter()
   const fullPath = url + router.asPath
   return (
@@ -48,23 +48,20 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           <nav className={styled.nav}>
             {links.map(link => (
               <Link href={link.href} key={link.label}>
-                <a href={link.href} className={`${styled.navLink} ${link.label === page && 'border-b-4 border-primary hover:border-info'}`}>
+                <a href={link.href} className={`${styled.navLink} ${link.label === page && 'border-b-2 border-primary hover:border-info'}`}>
                   {link.label}
                 </a>
               </Link>
             ))}
           </nav>
           <div className={styled.socialWrapper}>
-            <a href={social.github} target="_blank" rel="noopener noreferrer" aria-label="github">
+            <a href={socials.Github} target="_blank" rel="noopener noreferrer" aria-label="github">
               <IoLogoGithub className={styled.icon} />
             </a>
-            <a href={social.instagram} target="_blank" rel="noopener noreferrer" className="mx-2" aria-label="instagram">
-              <IoLogoInstagram className={styled.icon} />
-            </a>
-            <a href={social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="linkedin" className="mr-2">
+            <a href={socials.LinkedIn} target="_blank" rel="noopener noreferrer" aria-label="linkedin" className="mx-2">
               <IoLogoLinkedin className={styled.icon} />
             </a>
-            <a href={social.twitter} target="_blank" rel="noopener noreferrer" aria-label="twitter">
+            <a href={socials.Twitter} target="_blank" rel="noopener noreferrer" aria-label="twitter">
               <IoLogoTwitter className={styled.icon} />
             </a>
           </div>

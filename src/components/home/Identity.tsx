@@ -12,13 +12,6 @@ const Identity = () => {
       <div className={styled.summaryWrapper}>
         <h1 className={styled.name}>Hi, I&apos;m Kalwabed Rizki</h1>
         <p className={styled.subtitle}>{home.subtitle}</p>
-        <p className={styled.skill}>{home.skill}</p>
-        <p className="leading-tight mb-3">
-          From Indonesia{' '}
-          <span role="img" aria-label="Indonesia">
-            🇮🇩
-          </span>
-        </p>
       </div>
     </section>
   )

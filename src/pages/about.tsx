@@ -1,13 +1,15 @@
 import { NextPage } from 'next'
 
 import Layout from '@/components/Layout'
+import siteConfig from 'site-config'
+import LinkExternal from '@/parts/LinkExternal'
 
 const About: NextPage = () => {
   return (
     <Layout title="kawari | about me" page="about">
-      <section className="container mx-auto my-12 flex md:px-24 pb-48">
-        <div className="px-5 md:px-20 text-justify">
-          <h1>Tentang</h1>
+      <div className="container mx-auto my-12 flex flex-col md:px-24 pb-24 text-lg">
+        <section className="px-5 md:px-20 text-justify">
+          <h1>About</h1>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio voluptate officiis facilis saepe maiores sint repudiandae, quod
           eum doloremque. Tempora commodi dicta fugit. Perspiciatis veniam sint tenetur voluptatem, ipsa suscipit. Quisquam repellendus
           atque quaerat obcaecati fugiat eligendi qui ad expedita nisi autem voluptatibus cupiditate necessitatibus at laborum ab, quia
@@ -16,8 +18,23 @@ const About: NextPage = () => {
           sint ipsum ducimus! Earum dolorem officiis obcaecati. Repellat soluta asperiores officia praesentium rerum quos? Libero voluptate
           reprehenderit, enim facilis rem placeat molestias consectetur excepturi necessitatibus deserunt officia reiciendis officiis,
           aperiam ab! Aliquam temporibus quibusdam dolorum esse quam.
-        </div>
-      </section>
+          <p className="mt-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio impedit, labore eius animi accusantium tempora quidem eum sed
+            mollitia vero optio saepe aspernatur quam minima necessitatibus nobis cumque dolores reprehenderit.
+          </p>
+        </section>
+        <section className="px-5 md:px-20 mt-3">
+          <h1>Social media</h1>
+          <div className="flex flex-col flex-wrap md:flex-no-wrap">
+            Get in touch with me on various platform and social media.
+            {Object.entries(siteConfig.socials).map(([k, v]) => (
+              <div className="leading-loose" key={k}>
+                {k} - <LinkExternal href={v.replace(/^http(s?):\/\//, '')} label={v.replace(/^http(s?):\/\//, '')} />{' '}
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </Layout>
   )
 }

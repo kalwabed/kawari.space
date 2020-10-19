@@ -1,22 +1,15 @@
 import { IoIosMail } from 'react-icons/io'
-import Link from 'next/link'
 
-import LinkExternal from '@/parts/LinkExternal'
 import { useEmail } from '@/hooks/index'
 import styled from './About.module.css'
 
 const About = () => {
   return (
     <section className={`container ${styled.wrapper}`}>
-      <div className="text-justify">
-        Hello, my name is Kalwabed Rizki aka Kawari. I build and develop websites using JavaScript on the front-end and back-end. I am a
-        student majoring in software engineering at{' '}
-        <LinkExternal href="smkn1banyuwangi.sch.id" label="SMKN 1 Banyuwangi" className="inline-flex items-baseline" icon />, and now I am
-        exploring the world of programming, especially website development. For more details, please refer to my writing on{' '}
-        <Link href="/blog/saya">
-          <a className={styled.linkTo}>Saya</a>
-        </Link>
-        .<p className="mt-3">For business inquiries, contact me via email and let&apos;s talk.</p>
+      <div className="">
+        I&apos;m a student majoring in software engineering at SMKN 1 Banyuwangi. I love coffee, literature, discussion and programming.
+        Currently learning: Deno, FaunaDB, Next.js & Tailwindcss.
+        <p className="mt-3">For business inquiries, contact me via email and let&apos;s talk.</p>
       </div>
 
       <button className={`${styled.emailButton} umami--click--email-copy`} onClick={useEmail} type="button">

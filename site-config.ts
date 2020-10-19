@@ -27,15 +27,16 @@ export default {
   url: 'https://kawari.space',
   email: 'kalwabedrzk@pm.me',
   twitterUsername: '@kalwabed_rizki',
-  social: {
-    github: 'https://github.com/kaliwa',
-    instagram: 'https://instagram.com/kaliwa__',
-    linkedin: 'https://linkedin.com/in/kaliwa',
-    twitter: 'https://twitter.com/kalwabed_rizki'
+  socials: {
+    'DEV Community': 'https://dev.to/kawari',
+    Github: 'https://github.com/kaliwa',
+    Instagram: 'https://instagram.com/kaliwa__',
+    LinkedIn: 'https://linkedin.com/in/kaliwa',
+    Twitter: 'https://twitter.com/kalwabed_rizki',
+    Telegram: 'https://t.me/kalwabed'
   },
   home: {
-    subtitle: 'Web application developer',
-    skill: 'Build and develop websites using modern JavaScript technology'
+    subtitle: 'Fullstack JavaScript developer'
   },
   projects
 }

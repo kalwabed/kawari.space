@@ -55,6 +55,10 @@
     @apply w-1/2 text-left;
   }
 
+  .img {
+    @apply object-fill;
+  }
+
   .buttonLinkWrapper {
     @apply justify-start;
   }
