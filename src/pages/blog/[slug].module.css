@@ -24,11 +24,11 @@
 }
 
 .imgFromLink {
-  @apply border-b-2 border-secondary;
+  @apply text-primary transition-colors duration-75 ease-out;
 }
 
 .imgFromLink:hover {
-  @apply border-primary;
+  @apply underline text-info;
 }
 
 .article {
@@ -36,11 +36,11 @@
 }
 
 .article a {
-  @apply border-b-2 border-light transition ease-in duration-100;
+  @apply text-primary transition-colors ease-out duration-75;
 }
 
 .article a:hover {
-  @apply border-primary text-info;
+  @apply underline text-info;
 }
 
 .article h1 {
@@ -48,15 +48,27 @@
 }
 
 .article h1 a {
-  @apply border-b-0;
+  @apply border-b-0 text-current;
 }
 
 .article h1 a:hover {
-  @apply text-current;
+  @apply text-current no-underline;
+}
+
+.article ul {
+  @apply list-disc mb-10;
+}
+
+.article li {
+  @apply ml-8 transition-colors text-light ease-out duration-75 text-lg;
+}
+
+.article li:hover {
+  @apply underline;
 }
 
 .article li a {
-  @apply border-b-0;
+  @apply text-current;
 }
 
 .article li a:hover {

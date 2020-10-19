@@ -15,7 +15,7 @@
 }
 
 .badgeWrapper {
-  @apply mt-1 flex flex-wrap flex-row items-center;
+  @apply mt-1 flex flex-wrap flex-row items-center justify-center;
 }
 
 .title {

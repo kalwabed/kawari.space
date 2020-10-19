@@ -14,18 +14,6 @@ html {
   h2 {
     @apply text-3xl font-semibold;
   }
-
-  ul {
-    @apply list-disc mb-10;
-  }
-
-  li {
-    @apply ml-8 transition ease-out duration-75 text-lg;
-  }
-
-  li:hover {
-    @apply text-primary;
-  }
 }
 
 *::selection {
@@ -37,11 +25,15 @@ html {
 
 @layer components {
   .link-external {
-    @apply border-b-2 border-light transition ease-in duration-100;
+    @apply text-primary transition-colors ease-in duration-100;
   }
 
   .link-external:hover {
-    @apply border-primary text-info;
+    @apply underline text-info;
+  }
+
+  .link-external:focus {
+    @apply shadow-outline;
   }
 }
 

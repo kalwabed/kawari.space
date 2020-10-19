@@ -23,7 +23,7 @@ export interface Project {
   title: string
   description: string
   image: string
-  stack: Tech[]
+  stack: string
   demoUrl: string
   source: string
 }

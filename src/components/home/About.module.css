@@ -2,28 +2,12 @@
   @apply flex flex-col items-center px-5 mx-auto pb-20;
 }
 
-.linkTo {
-  @apply border-b-2 border-light transition duration-75 ease-out;
+.email {
+  @apply cursor-pointer inline-flex items-baseline text-primary transition-colors duration-75 ease-out;
 }
 
-.linkTo:hover {
-  @apply border-primary text-info;
-}
-
-.emailButton {
-  @apply bg-secondary font-bold py-2 px-8 my-5 border-b-4 border-primary rounded transition ease-in duration-150 inline-flex items-center;
-}
-
-.emailButton:focus {
-  @apply outline-none;
-}
-
-.emailButton:hover {
-  @apply bg-primary border-secondary;
-}
-
-.icon {
-  @apply mr-2 h-6 w-6 fill-current;
+.email:hover {
+  @apply text-info;
 }
 
 @screen md {
