@@ -38,7 +38,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
       <header>
         <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">
-            <a className="flex font-medium items-center mb-4 md:mb-0">
+            <a className="flex items-center mb-4 md:mb-0">
               <span className={styled.logo}>
                 kawari
                 <span className={`animate-pulse ${styled.planet}`} />
@@ -79,14 +79,14 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
             </span>
           </a>
         </Link>
-        <p className="text-sm sm:ml-6 sm:mt-0 mt-4">
+        <p className={styled.license}>
           © 2020 under MIT License —
           <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kaliwa/kawari.space" />
         </p>
-        <span className="md:ml-auto md:mt-0 mt-4 justify-center">
+        <span className={styled.madeWrapper}>
           Made using <LinkExternal href="nextjs.org" label="Next.js" /> and <LinkExternal href="tailwindcss.com" label="Tailwindcss" />.
-          <div className="flex sm:flex-row md:inline-block justify-center mt-1 md:mt-0 ml-1">
-            Hosted on <LinkExternal href="vercel.com" label="Vercel" className="ml-1" />
+          <div className={styled.hosted}>
+            Hosted on <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
           </div>
         </span>
       </footer>

@@ -1,17 +1,7 @@
-.wrapper {
-  @apply flex flex-col items-center px-5 mx-auto pb-20 text-lg;
-}
-
 .email {
   @apply cursor-pointer inline-flex items-baseline text-primary transition-colors duration-75 ease-out;
 }
 
 .email:hover {
   @apply text-info;
-}
-
-@screen md {
-  .wrapper {
-    @apply px-56;
-  }
 }

@@ -51,7 +51,23 @@
   @apply px-5 pt-8 pb-16 mx-auto flex items-center flex-col;
 }
 
+.license {
+  @apply text-sm mt-4 font-semibold;
+}
 
+.madeWrapper {
+  @apply mt-4 justify-center tracking-wide;
+}
+
+.hosted {
+  @apply flex flex-row justify-center mt-1 ml-1;
+}
+
+@screen sm {
+  .license {
+    @apply ml-6 mt-0;
+  }
+}
 
 @screen md {
   .headerWrapper {
@@ -68,5 +84,13 @@
 
   .footerWrapper {
     @apply flex-row;
+  }
+
+  .madeWrapper {
+    @apply ml-auto mt-0;
+  }
+
+  .hosted {
+    @apply inline-block mt-0;
   }
 }
