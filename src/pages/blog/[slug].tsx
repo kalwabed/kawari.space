@@ -25,15 +25,15 @@ export default function Post({ postData }: { postData: Props }) {
       <div className={`container ${styled.wrapper}`}>
         <h1 className={styled.title}>{title}</h1>
         <small className={styled.date}>
-          <Date dateString={date} /> / ~{readingTime} menit membaca
+          <Date dateString={date} /> / ~{readingTime} menit membaca / {subtitle}
         </small>
         <div className={styled.imgWrapper}>
           <img src={cover.image} alt="banner" className={styled.img} />
           <div className={styled.imgFromWrapper}>
-            image from{' '}
+            Photo by{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
               {cover.name}
-            </a>
+            </a>{' '}
           </div>
         </div>
 

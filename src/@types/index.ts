@@ -11,14 +11,6 @@ export interface Post {
   }
 }
 
-export enum Tech {
-  react = 'react',
-  nextjs = 'nextjs',
-  bootstrap = 'bootstrap',
-  tailwindcss = 'tailwindcss',
-  express = 'express'
-}
-
 export interface Project {
   title: string
   description: string

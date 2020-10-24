@@ -32,7 +32,11 @@
 }
 
 .article {
-  @apply leading-normal mt-5 mb-12 text-justify;
+  @apply leading-normal mt-5 mb-12 text-justify text-lg;
+}
+
+.article p {
+  @apply mt-1;
 }
 
 .article a {
@@ -55,16 +59,28 @@
   @apply text-current no-underline;
 }
 
+.article h2 {
+  @apply mt-5;
+}
+
+.article h2 a {
+  @apply border-b-0 text-current;
+}
+
+.article h2 a:hover {
+  @apply text-current no-underline;
+}
+
 .article ul {
   @apply list-disc mb-10;
 }
 
 .article li {
-  @apply ml-8 transition-colors text-light ease-out duration-75 text-lg;
+  @apply ml-8 transition-colors text-light ease-out duration-75;
 }
 
 .article li:hover {
-  @apply underline;
+  @apply underline text-info;
 }
 
 .article li a {
@@ -86,7 +102,7 @@
 
 @screen md {
   .wrapper {
-    @apply pl-56 pr-48;
+    @apply px-64;
   }
 
   .title {
