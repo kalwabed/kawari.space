@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Kalwabed Rizki personal landing page",
+  "repository": {
+    "url": "https://github.com/kalwabed/kawari.space",
+    "type": "github"
+  },
   "author": {
     "email": "kalwabedrzk@pm.me",
     "name": "Kalwabed Rizki"

@@ -32,4 +32,4 @@ Saya putuskan membuat sebuah website pribadi yang isinya berupa tulisan, dan dok
 
 Selanjutnya, kenapa saya bikin template yang mengusung sistem yang sama? yang pertama, karena ini akan berguna untuk projek-projek saya selanjutnya, untuk mempercepat proses setup prototypenya; terakhir, karena saya merasa ini mungkin juga bisa membantu para pengembang lain untuk membangun websitenya, karena dengan adanya template ini pengembang hanya perlu fokus mengembangkan programnya tanpa harus risau dengan setup 'bumbu-bumbu pelengkapnya'.
 
-Kalau penasaran silahkan kunjungi demo websitenya di [nextwind.vercel.app](https://nextwind.vercel.app), atau sumber kodenya langsung [disini](https://github.com/kaliwa/nextwind), anda juga bisa temukan pada akun Github saya di [github.com/kaliwa](https://github.com/kaliwa), terimakasih.
+Kalau penasaran silahkan kunjungi demo websitenya di [nextwind.vercel.app](https://nextwind.vercel.app), atau sumber kodenya langsung [disini](https://github.com/kalwabed/nextwind), anda juga bisa temukan pada akun Github saya di [github.com/kalwabed](https://github.com/kalwabed), terimakasih.

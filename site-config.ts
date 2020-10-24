@@ -2,13 +2,21 @@ import { Project } from '@/@types'
 
 const projects: Project[] = [
   {
+    title: 'Nextwind',
+    description: 'Starter template that I made using Nextjs and Tailwindcss.',
+    image: '/assets/uploads/nextwind.png',
+    stack: 'Nextjs, Tailwindcss',
+    demoUrl: 'https://nextwind.vercel.app',
+    source: 'https://github.com/kalwabed/nextwind'
+  },
+  {
     title: 'Tuan Tanah',
     description:
       'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers.',
     image: '/assets/uploads/tuantanah.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://tuantanah.vercel.app',
-    source: 'https://github.com/kaliwa/tuantanah-website'
+    source: 'https://github.com/kalwabed/tuantanah-website'
   },
   {
     title: 'Kelas RPL 1',
@@ -16,7 +24,7 @@ const projects: Project[] = [
     image: '/assets/uploads/kitarpl1.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://kelasrpl.vercel.app',
-    source: 'https://github.com/kaliwa/kelasrpl'
+    source: 'https://github.com/kalwabed/kelasrpl'
   }
 ]
 
@@ -28,8 +36,8 @@ export default {
   twitterUsername: '@kalwabed_rizki',
   socials: {
     'DEV Community': 'https://dev.to/kawari',
-    Github: 'https://github.com/kaliwa',
-    Instagram: 'https://instagram.com/kaliwa__',
+    Github: 'https://github.com/kalwabed',
+    Instagram: 'https://instagram.com/kalwabed',
     Facebook: 'https://facebook.com/kalwabed.kr',
     LinkedIn: 'https://linkedin.com/in/kaliwa',
     Twitter: 'https://twitter.com/kalwabed_rizki',

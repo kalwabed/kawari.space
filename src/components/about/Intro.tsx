@@ -7,7 +7,8 @@ const Intro = () => {
   return (
     <>
       <h1>About</h1>
-      My name is Kalwabed Rizki, usually called Kalwabed. Born and raised in{' '}
+      My name is Kalwabed Rizki, usually called Kalwabed. When in some other place you cand find me as Kawari (formerly Kaliwa), that&apos;s
+      mean <b>Ka</b>l<b>wa</b>bed <b>Ri</b>zki. Born and raised in{' '}
       <LinkExternal href="banyuwangikab.go.id/" label="Banyuwangi, Indonesia" />. Currently studying as a software engineering student at
       SMKN 1 Banyuwangi.
       <div className="leading-normal mt-2">
