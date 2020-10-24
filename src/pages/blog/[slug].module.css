@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-4xl font-semibold;
+  @apply text-3xl font-semibold;
 }
 
 .date {
@@ -32,7 +32,7 @@
 }
 
 .article {
-  @apply leading-normal mt-5 mb-12 text-justify text-lg;
+  @apply mt-5 mb-12 text-lg;
 }
 
 .article p {
@@ -111,5 +111,9 @@
 
   .imgWrapper {
     @apply mb-0;
+  }
+
+  .article {
+    @apply text-justify;
   }
 }
