@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
+import RSS from '@/scripts/generate-rss'
 
 const postsDirectory = path.join(process.cwd(), 'src/posts')
 
@@ -28,6 +29,9 @@ export function getSortedPostsData() {
     }
   })
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+  // @ts-ignore
+  RSS({ posts: allPostsData })
   // sort posts by date
   return allPostsData.sort((a, b) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
