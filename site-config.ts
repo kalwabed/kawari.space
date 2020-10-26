@@ -35,7 +35,7 @@ export default {
   email: 'kalwabedrzk@pm.me',
   twitterUsername: '@kalwabed_rizki',
   socials: {
-    'DEV Community': 'https://dev.to/kawari',
+    'DEV Community': 'https://dev.to/kalwabed',
     Github: 'https://github.com/kalwabed',
     Instagram: 'https://instagram.com/kalwabed',
     Facebook: 'https://facebook.com/kalwabed.kr',
