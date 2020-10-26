@@ -2,6 +2,9 @@
 
 tailwind-default.js
 .eslintcache
+public/rss.xml
+public/rss.json
+public/atom.atom
 
 # dependencies
 /node_modules

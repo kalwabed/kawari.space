@@ -10,7 +10,7 @@ const ProjectLists = ({ demoUrl, description, image, source, stack, title, keyPr
   return (
     <div className={styled.wrapper} key={keyProp}>
       <div className={styled.imgWrapper}>
-        <img src={image} alt={title} className={styled.img} />
+        <img src={`https://cdn.statically.io/img/kawari.space/f=auto${image}`} alt={title} className={styled.img} />
       </div>
       <div className={styled.badgeWrapper}>{stack}</div>
       <div className={styled.title}>{title}</div>
