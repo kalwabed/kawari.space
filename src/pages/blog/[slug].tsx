@@ -21,14 +21,17 @@ export default function Post({ postData }: { postData: Props }) {
   const { cover, date, readingTime, slug, subtitle, title, contentHtml } = postData
   return (
     <Layout title={title} page="">
-      <NextSeo description={subtitle} />
+      <NextSeo
+        description={subtitle}
+        openGraph={{ images: [{ url: `https://cdn.statically.io/og/theme=dark/${encodeURI(title)}.png`, alt: title }] }}
+      />
       <div className={`container ${styled.wrapper}`}>
         <h1 className={styled.title}>{title}</h1>
         <small className={styled.date}>
           <Date dateString={date} /> / ~{readingTime} menit membaca / {subtitle}
         </small>
         <div className={styled.imgWrapper}>
-          <img src={cover.image} alt="banner" className={styled.img} />
+          <img src={`https://cdn.statically.io/img/kawari.space/f=auto${cover.image}`} alt="banner" className={styled.img} />
           <div className={styled.imgFromWrapper}>
             Photo by{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
