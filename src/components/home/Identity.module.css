@@ -3,7 +3,7 @@
 }
 
 .imgWrapper {
-  @apply w-full mb-8;
+  @apply w-full mb-8 flex justify-center;
 }
 
 .img {
@@ -38,7 +38,7 @@
   }
 
   .imgWrapper {
-    @apply w-1 mb-0 flex justify-end;
+    @apply w-1 mb-0 justify-end;
   }
 
   .img {

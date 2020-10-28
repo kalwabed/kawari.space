@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Project } from '@/@types'
 import { IcExternal } from '@/parts/Icon'
 import styled from './ProjectCard.module.css'
@@ -10,7 +12,7 @@ const ProjectLists = ({ demoUrl, description, image, source, stack, title, keyPr
   return (
     <div className={styled.wrapper} key={keyProp}>
       <div className={styled.imgWrapper}>
-        <img src={`https://cdn.statically.io/img/kawari.space/f=auto${image}`} alt={title} className={styled.img} />
+        <Image width={600} height={300} quality={100} src={image} className={styled.img} alt={title} />
       </div>
       <div className={styled.badgeWrapper}>{stack}</div>
       <div className={styled.title}>{title}</div>

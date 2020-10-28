@@ -11,11 +11,11 @@
 }
 
 .img {
-  @apply object-cover object-center h-full w-full;
+  @apply object-cover object-center;
 }
 
 .badgeWrapper {
-  @apply mt-1 flex flex-wrap flex-row items-center justify-center;
+  @apply -mt-12 flex flex-wrap flex-row items-center justify-center;
 }
 
 .title {
@@ -57,6 +57,10 @@
 
   .img {
     @apply object-fill;
+  }
+
+  .badgeWrapper {
+    @apply mt-1;
   }
 
   .buttonLinkWrapper {
