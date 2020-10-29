@@ -1,8 +1,7 @@
-/* eslint-disable import/no-dynamic-require */
-/* eslint-disable global-require */
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
+import Image from 'next/image'
 import { DiscussionEmbed } from 'disqus-react'
 
 import { getAllPostsSlugs, getPostData } from '@/lib/posts'
@@ -31,7 +30,7 @@ export default function Post({ postData }: { postData: Props }) {
           <Date dateString={date} /> / ~{readingTime} menit membaca / {subtitle}
         </small>
         <div className={styled.imgWrapper}>
-          <img src={`https://cdn.statically.io/img/kawari.space/f=auto${cover.image}`} alt="banner" className={styled.img} />
+          <Image width={850} height={360} quality={100} src={cover.image} className={styled.img} alt={title} />
           <div className={styled.imgFromWrapper}>
             Photo by{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>

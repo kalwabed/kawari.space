@@ -7,7 +7,7 @@ const About = () => {
     <section className={`container ${styled.wrapper}`}>
       <div className="">
         I&apos;m a student majoring in software engineering at SMKN 1 Banyuwangi. I love coffee, literature, discussion and programming.
-        Currently learning: Deno, FaunaDB, Next.js & Tailwindcss.
+        Currently learning: microservices architecture, Docker, & Kubernetes.
         <p className="mt-3">
           For business inquiries, drop a mail at{' '}
           <div className={styled.email} onClick={useEmail} aria-hidden="true">
