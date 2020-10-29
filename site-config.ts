@@ -39,7 +39,7 @@ export default {
     Github: 'https://github.com/kalwabed',
     Instagram: 'https://instagram.com/kalwabed',
     Facebook: 'https://facebook.com/kalwabed.kr',
-    LinkedIn: 'https://linkedin.com/in/kaliwa',
+    LinkedIn: 'https://linkedin.com/in/kalwabed',
     Twitter: 'https://twitter.com/kalwabed_rizki',
     Telegram: 'https://t.me/kalwabed'
   },
