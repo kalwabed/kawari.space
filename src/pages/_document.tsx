@@ -26,6 +26,8 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+          <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png" />
           <script async defer data-website-id={!isDev && process.env.NEXT_PUBLIC_UMAMI_ID} src={process.env.NEXT_PUBLIC_UMAMI_LINK} />

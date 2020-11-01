@@ -4,7 +4,7 @@ subtitle: 'cerita dibalik pembuatan Nextwind dan kawari.space'
 date: '2020-10-22'
 readingTime: 3
 cover:
-  image: '/assets/uploads/og-next-tailwind.png'
+  image: '/assets/blogs/og-next-tailwind.png'
   source: 'https://og-image.vercel.app'
   name: 'og-image.vercel.app'
 ---

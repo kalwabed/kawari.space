@@ -4,7 +4,7 @@ subtitle: 'pernah menjadi seorang pengembang php'
 date: '2020-10-21'
 readingTime: 2
 cover:
-  image: '/assets/uploads/berangkat-d-php.jpg'
+  image: '/assets/blogs/berangkat-d-php.jpg'
   source: 'https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Markus Spiske'
 ---
