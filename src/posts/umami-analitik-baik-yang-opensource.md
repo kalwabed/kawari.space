@@ -4,7 +4,7 @@ subtitle: 'analitik alternatif selain Google Analytics'
 date: '2020-10-23'
 readingTime: 3
 cover:
-  image: '/assets/uploads/umami-baik.jpg'
+  image: '/assets/blogs/umami-baik.jpg'
   source: 'https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Luke Chesser'
 ---

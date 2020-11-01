@@ -4,7 +4,7 @@ const projects: Project[] = [
   {
     title: 'Nextwind',
     description: 'Starter template that I made using Nextjs and Tailwindcss.',
-    image: '/assets/uploads/nextwind.png',
+    image: '/assets/projects/nextwind.png',
     stack: 'Nextjs, Tailwindcss',
     demoUrl: 'https://nextwind.vercel.app',
     source: 'https://github.com/kalwabed/nextwind'
@@ -13,7 +13,7 @@ const projects: Project[] = [
     title: 'Tuan Tanah',
     description:
       'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers.',
-    image: '/assets/uploads/tuantanah.png',
+    image: '/assets/projects/tuantanah.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://tuantanah.vercel.app',
     source: 'https://github.com/kalwabed/tuantanah-website'
@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     title: 'Kelas RPL 1',
     description: 'My class official website which lists students and other features that are still in development.',
-    image: '/assets/uploads/kitarpl1.png',
+    image: '/assets/projects/kitarpl1.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://kelasrpl.vercel.app',
     source: 'https://github.com/kalwabed/kelasrpl'

@@ -32,11 +32,11 @@
 }
 
 .article {
-  @apply mt-5 mb-12 text-lg;
+  @apply mt-5 mb-12 text-lg leading-relaxed tracking-wide;
 }
 
 .article p {
-  @apply mt-1;
+  @apply mt-2;
 }
 
 .article a {
@@ -92,8 +92,12 @@
 }
 
 .article img {
-  @apply object-center mx-auto w-full my-2;
+  @apply object-contain w-full my-2;
   height: 20rem;
+}
+
+.article code {
+  @apply font-mono bg-secondary text-base;
 }
 
 .divider {
@@ -102,7 +106,8 @@
 
 @screen md {
   .wrapper {
-    @apply px-64;
+    padding-left: 18rem;
+    padding-right: 18rem;
   }
 
   .title {
@@ -113,7 +118,7 @@
     @apply mb-0;
   }
 
-  .article {
-    @apply text-justify;
+  .article img {
+    @apply object-center;
   }
 }
