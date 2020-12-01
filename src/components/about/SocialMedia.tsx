@@ -5,7 +5,7 @@ const SocialMedia = () => {
   return (
     <>
       <h1>Social media</h1>
-      <div className="flex flex-col flex-wrap md:flex-no-wrap">
+      <div className="flex flex-col flex-wrap md:flex-nowrap">
         Get in touch with me on various platform and social media.
         {Object.entries(siteConfig.socials).map(([k, v]) => (
           <div className="leading-loose" key={k}>

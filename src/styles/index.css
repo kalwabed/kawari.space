@@ -33,7 +33,7 @@ html {
   }
 
   .link-external:focus {
-    @apply shadow-outline;
+    @apply ring;
   }
 }
 

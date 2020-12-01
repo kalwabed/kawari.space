@@ -1,8 +1,4 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  },
   purge: ['./src/**/*.tsx'],
   theme: {
     extend: {
@@ -20,6 +16,5 @@ module.exports = {
   },
   variants: {
     borderColor: ['responsive', 'hover', 'focus', 'group-hover']
-  },
-  plugins: []
+  }
 }
