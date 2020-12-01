@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     const isDev = process.env.NODE_ENV === 'development'
     return (
-      <Html lang="en">
+      <Html>
         <Head>
           <link rel="manifest" href="/manifest.webmanifest" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />

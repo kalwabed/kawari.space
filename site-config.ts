@@ -2,29 +2,37 @@ import { Project } from '@/@types'
 
 const projects: Project[] = [
   {
+    title: 'Perpusin',
+    description: 'Desktop based classic library application',
+    image: '/assets/projects/perpusin.png',
+    stack: 'Electron.js, React, Express, PostgreSql',
+    demoUrl: '',
+    source: 'https://github.com/kalwabed/perpusin'
+  },
+  {
+    title: 'Kopi Konco',
+    description: "Website for blogging and a cafe's product catalog",
+    image: '/assets/projects/kopikonco.png',
+    stack: 'Next.js, Chakra UI, Contentful',
+    demoUrl: 'https://kopikonco.kawari.space',
+    source: 'https://github.com/kalwabed/kopi-konco'
+  },
+  {
     title: 'Nextwind',
-    description: 'Starter template that I made using Nextjs and Tailwindcss.',
+    description: 'Starter template that I made using Nextjs and Tailwindcss',
     image: '/assets/projects/nextwind.png',
-    stack: 'Nextjs, Tailwindcss',
+    stack: 'Next.js, Tailwindcss',
     demoUrl: 'https://nextwind.vercel.app',
     source: 'https://github.com/kalwabed/nextwind'
   },
   {
     title: 'Tuan Tanah',
     description:
-      'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers.',
+      'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers',
     image: '/assets/projects/tuantanah.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://tuantanah.vercel.app',
     source: 'https://github.com/kalwabed/tuantanah-website'
-  },
-  {
-    title: 'Kelas RPL 1',
-    description: 'My class official website which lists students and other features that are still in development.',
-    image: '/assets/projects/kitarpl1.png',
-    stack: 'Express, React, Bootstrap',
-    demoUrl: 'https://kelasrpl.vercel.app',
-    source: 'https://github.com/kalwabed/kelasrpl'
   }
 ]
 

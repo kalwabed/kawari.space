@@ -28,7 +28,7 @@
   }
 
   .slugWrapper {
-    @apply flex-row flex-no-wrap border-transparent;
+    @apply flex-row flex-nowrap border-transparent;
   }
 
   .dateTimeWrap {
