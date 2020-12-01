@@ -26,7 +26,7 @@
     "disqus-react": "^1.0.10",
     "feed": "^4.2.1",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.0",
+    "next": "^10.0.3",
     "next-seo": "^4.10.0",
     "notyf": "^3.9.0",
     "nprogress": "^0.2.0",

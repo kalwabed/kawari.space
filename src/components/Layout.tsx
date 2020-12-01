@@ -84,7 +84,6 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kalwabed/kawari.space" />
         </p>
         <span className={styled.madeWrapper}>
-          Made using <LinkExternal href="nextjs.org" label="Next.js" /> and <LinkExternal href="tailwindcss.com" label="Tailwindcss" />.
           <div className={styled.hosted}>
             Hosted on <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
           </div>
