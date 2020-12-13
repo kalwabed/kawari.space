@@ -5,11 +5,11 @@ import remark from 'remark'
 import html from 'remark-html'
 import RSS from '@/scripts/generate-rss'
 
-const postsDirectory = path.join(process.cwd(), 'src/posts')
+const postsDirectory = path.join(process.cwd(), 'posts')
 
 // eslint-disable-next-line import/prefer-default-export
 export function getSortedPostsData() {
-  // Get file names under /src/posts
+  // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
     // remove ".md" from file name to get slug
@@ -51,7 +51,7 @@ export function getAllPostsSlugs() {
 }
 
 export async function getPostData(slug: string) {
-  const fullPath = path.join(process.cwd(), `src/posts/${slug}.md`)
+  const fullPath = path.join(process.cwd(), `posts/${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
   // use gray-matter to parse the post metadata section

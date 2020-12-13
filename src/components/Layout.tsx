@@ -7,21 +7,6 @@ import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
 import styled from './layout.module.css'
 
-const links = [
-  {
-    href: '/projects',
-    label: 'projects'
-  },
-  {
-    href: '/blog',
-    label: 'blog'
-  },
-  {
-    href: '/about',
-    label: 'about'
-  }
-]
-
 interface Props {
   page?: string
   title?: string
@@ -29,9 +14,24 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki', className = '' }) => {
+  const { asPath, locale, push } = useRouter()
+  const links = [
+    {
+      href: '/projects',
+      label: locale === 'id' ? 'proyek' : 'projects'
+    },
+    {
+      href: '/blog',
+      label: 'blog'
+    },
+    {
+      href: '/about',
+      label: locale === 'id' ? 'tentang' : 'about'
+    }
+  ]
+
   const { socials, url } = siteConfig
-  const router = useRouter()
-  const fullPath = url + router.asPath
+  const fullPath = url + asPath
   return (
     <>
       <NextSeo title={title} canonical={fullPath} openGraph={{ url: fullPath }} />
@@ -53,6 +53,15 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
                 </a>
               </Link>
             ))}
+            <button
+              onClick={() => {
+                push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
+              }}
+              type="button"
+              className="p-4 ml-3 focus:outline-none focus:border-white border hover:bg-gray-500 text-white bg-gray-700"
+            >
+              {locale === 'id' ? 'English' : 'Indonesia'}
+            </button>
           </nav>
           <div className={styled.socialWrapper}>
             <a href={socials.Github} target="_blank" rel="noopener noreferrer" aria-label="github">
@@ -80,12 +89,12 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           </a>
         </Link>
         <p className={styled.license}>
-          © 2020 under MIT License —
+          © 2020 {locale === 'id' ? 'dibawah lisensi MIT' : 'under MIT license'} —
           <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kalwabed/kawari.space" />
         </p>
         <span className={styled.madeWrapper}>
           <div className={styled.hosted}>
-            Hosted on <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
+            {locale === 'id' ? 'Di-host di' : 'Hosted on'} <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
           </div>
         </span>
       </footer>

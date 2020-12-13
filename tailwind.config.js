@@ -1,6 +1,9 @@
+const { colors } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./src/**/*.tsx'],
   theme: {
+    colors: { ...colors },
     extend: {
       colors: {
         dark: '#293241',

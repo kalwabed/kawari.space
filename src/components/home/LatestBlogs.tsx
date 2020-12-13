@@ -1,5 +1,6 @@
 import type { Post } from '@/@types'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { IoMdArrowForward } from 'react-icons/io'
 import Date from '../blog/dateConfig'
 import styled from './LatestBlog.module.css'
@@ -9,9 +10,10 @@ interface Props {
 }
 
 const LatestBlogs = ({ allPostsData }: Props) => {
+  const { locale } = useRouter()
   return (
     <section className={`container ${styled.wrapper}`}>
-      <div className={styled.latestBlogs}>Latest blogs</div>
+      <div className={styled.latestBlogs}>{locale === 'id' ? 'Tulisan terbaru' : 'Latest blogs'}</div>
       {allPostsData.map(
         ({ date, readingTime, slug, title }, i) =>
           i <= 2 && (
@@ -33,7 +35,7 @@ const LatestBlogs = ({ allPostsData }: Props) => {
       )}
       <Link href="/blog">
         <a className={`${styled.morePosts} umami--click--more-posts`}>
-          More posts <IoMdArrowForward className="ml-2" />
+          {locale === 'id' ? 'Lebih banyak' : 'More posts'} <IoMdArrowForward className="ml-2" />
         </a>
       </Link>
     </section>
