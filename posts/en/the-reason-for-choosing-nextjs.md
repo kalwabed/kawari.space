@@ -1,6 +1,6 @@
 ---
-title: 'Alasan Memilih Next.js'
-subtitle: 'mencoba menjawab pertanyaan diri sendiri'
+title: 'The reason for choosing Next.js'
+subtitle: 'trying to answer my own question'
 date: '2020-11-01'
 readingTime: 4
 cover:
@@ -23,7 +23,7 @@ Karena Nextjs berbasis React dan fiturnya keren-keren. Sudah.
 
 Jawaban sesingkat itu kurang menjawab dan menggambarkan pertanyaan 'kenapa memilih Nextjs?', berikut adalah jawaban panjang lebarnya.
 
-## <a name='kalwabed'>Panjang Lebar</a>
+## <a name='panjang-lebar'>Panjang Lebar</a>
 
 Nextjs sendiri adalah salah satu framework Reactjs yang ditemukan dan dikembangkan oleh [Vercel](https://vercel.com) (sebelumnya bernama Zeit) yang menawarkan pengalaman website dengan metode seperti Serverless, SSR, SSG, dan yang terbaru adalah ISR (Incremental Static Generation) dalam satu proyek.
 

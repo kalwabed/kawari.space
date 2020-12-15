@@ -8,15 +8,14 @@ import RSS from '@/scripts/generate-rss'
 const postsDirectory = path.join(process.cwd(), 'posts')
 
 // eslint-disable-next-line import/prefer-default-export
-export function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory)
+export function getSortedPostsData({ locale = 'id' }) {
+  const targetDir = `${postsDirectory}/${locale}`
+  const fileNames = fs.readdirSync(targetDir)
   const allPostsData = fileNames.map(fileName => {
-    // remove ".md" from file name to get slug
     const slug = fileName.replace(/\.md$/, '')
 
     // read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName)
+    const fullPath = path.join(targetDir, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // use gray-matter to parse the post metadata section
@@ -42,16 +41,23 @@ export function getSortedPostsData() {
 }
 
 export function getAllPostsSlugs() {
-  const fileNames = fs.readdirSync(postsDirectory)
-  return fileNames.map(fileName => ({
+  const idPosts = fs.readdirSync(`${postsDirectory}/id`).map(post => ({
     params: {
-      slug: fileName.replace(/\.md$/, '')
-    }
+      slug: post.replace(/\.md$/, '')
+    },
+    locale: 'id'
   }))
+  const enPosts = fs.readdirSync(`${postsDirectory}/en`).map(post => ({
+    params: {
+      slug: post.replace(/\.md$/, '')
+    },
+    locale: 'en'
+  }))
+  return [...idPosts, ...enPosts]
 }
 
-export async function getPostData(slug: string) {
-  const fullPath = path.join(process.cwd(), `posts/${slug}.md`)
+export async function getPostData(slug: string, locale = 'id') {
+  const fullPath = path.join(process.cwd(), `posts/${locale}/${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
   // use gray-matter to parse the post metadata section

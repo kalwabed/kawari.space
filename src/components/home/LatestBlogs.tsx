@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { IoMdArrowForward } from 'react-icons/io'
 import Date from '../blog/dateConfig'
+import Read from '../blog/readConfig'
 import styled from './LatestBlog.module.css'
 
 interface Props {
@@ -25,9 +26,9 @@ const LatestBlogs = ({ allPostsData }: Props) => {
                   </Link>
                 </div>
                 <div className={styled.dateTime}>
-                  <Date dateString={date} />
+                  <Date dateString={date} locale={locale} />
                   <div className="mx-2">|</div>
-                  {readingTime} mins read
+                  <Read locale={locale} readingTime={readingTime} />
                 </div>
               </div>
             </div>

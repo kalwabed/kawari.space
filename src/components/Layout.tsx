@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
@@ -58,9 +58,10 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
                 push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
               }}
               type="button"
-              className="p-4 ml-3 focus:outline-none focus:border-white border hover:bg-gray-500 text-white bg-gray-700"
+              className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700"
             >
-              {locale === 'id' ? 'English' : 'Indonesia'}
+              <IoMdGlobe className="mr-1" />
+              {locale === 'id' ? 'en' : 'id'}
             </button>
           </nav>
           <div className={styled.socialWrapper}>
