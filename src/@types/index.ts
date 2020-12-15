@@ -16,7 +16,10 @@ export interface I18n {
 }
 export interface Project {
   title: string
-  description: string
+  description: {
+    id: string
+    en: string
+  }
   image: string
   stack: string
   demoUrl: string

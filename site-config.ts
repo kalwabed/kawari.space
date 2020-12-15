@@ -3,7 +3,7 @@ import { Project } from '@/@types'
 const projects: Project[] = [
   {
     title: 'Perpusin',
-    description: 'Desktop based classic library application',
+    description: { en: 'Desktop based classic library application', id: 'Aplikasi perpustakaan klasik berbasis desktop' },
     image: '/assets/projects/perpusin.png',
     stack: 'Electron.js, React, Express, PostgreSql',
     demoUrl: '',
@@ -11,7 +11,7 @@ const projects: Project[] = [
   },
   {
     title: 'Kopi Konco',
-    description: "Website for blogging and a cafe's product catalog",
+    description: { en: "Website for blogging and a cafe's product catalog", id: 'Situs web untuk blogging dan katalog produk kafe' },
     image: '/assets/projects/kopikonco.png',
     stack: 'Next.js, Chakra UI, Contentful',
     demoUrl: 'https://kopikonco.kawari.space',
@@ -19,7 +19,10 @@ const projects: Project[] = [
   },
   {
     title: 'Nextwind',
-    description: 'Starter template that I made using Nextjs and Tailwindcss',
+    description: {
+      en: 'Starter template that I made using Nextjs and Tailwindcss',
+      id: 'Template starter yang saya buat menggunakan Next.js dan Tailwindcss'
+    },
     image: '/assets/projects/nextwind.png',
     stack: 'Next.js, Tailwindcss',
     demoUrl: 'https://nextwind.vercel.app',
@@ -27,8 +30,11 @@ const projects: Project[] = [
   },
   {
     title: 'Tuan Tanah',
-    description:
-      'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers',
+    description: {
+      en:
+        'A web application that is intended as a meeting place between land sellers who are marketing their properties and potential buyers',
+      id: 'Aplikasi web yang dimaksudkan sebagai tempat pertemuan antara penjual tanah yang memasarkan propertinya dengan calon pembeli'
+    },
     image: '/assets/projects/tuantanah.png',
     stack: 'Express, React, Bootstrap',
     demoUrl: 'https://tuantanah.vercel.app',

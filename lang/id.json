@@ -1,6 +1,6 @@
 {
   "index": {
-    "about": "Saya seorang siswa jurusan rekayasa perangkat lunak di SMKN 1 Banyuwangi. Saya suka kopi, sastra, diskusi, dan pemrograman. Saat ini mempelajari: arsitektur layanan mikro, Docker, & Kubernetes.",
+    "about": "Saya seorang siswa jurusan rekayasa perangkat lunak di SMKN 1 Banyuwangi. Saya suka kopi, sastra, diskusi, dan pemrograman. Saat ini mempelajari: GraphQL, dan JAMstack.",
     "business": "Untuk pertanyaan bisnis, kirim email ke"
   },
   "about": {
@@ -13,5 +13,9 @@
     "intro7": "aktif di acara komunitas pengembang, dan mempelajari hal-hal baru.",
     "business": "Untuk pertanyaan bisnis, kirim email ke",
     "socialGetInTouch": "Hubungi saya di berbagai platform dan media sosial."
+  },
+  "projects": {
+    "header": "Proyek terbaru",
+    "subtitle": "Beberapa adalah sumber terbuka dan latihan saya"
   }
 }

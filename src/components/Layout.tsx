@@ -58,7 +58,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
                 push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
               }}
               type="button"
-              className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700"
+              className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700 rounded-sm"
             >
               <IoMdGlobe className="mr-1" />
               {locale === 'id' ? 'en' : 'id'}

@@ -1,6 +1,6 @@
 {
   "index": {
-    "about": "I'm a student majoring in software engineering at SMKN 1 Banyuwangi. I love coffee, literature, discussion and programming. Currently learning: microservices architecture, Docker, & Kubernetes.",
+    "about": "I'm a student majoring in software engineering at SMKN 1 Banyuwangi. I love coffee, literature, discussion and programming. Currently learning: GraphQL, and JAMstack.",
     "business": "For business inquiries, drop a mail at"
   },
   "about": {
@@ -13,5 +13,9 @@
     "intro7": "being active at developer community events, and learning new things.",
     "business": "For business inquiries, drop a mail at",
     "socialGetInTouch": "Get in touch with me on various platform and social media."
+  },
+  "projects": {
+    "header": "Recent projects",
+    "subtitle": "Some are open source and my practices"
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .badgeWrapper {
-  @apply font-light text-sm text-gray-500 -mt-1;
+  @apply font-light text-sm text-gray-500;
 }
 
 .title {
@@ -51,8 +51,8 @@
     @apply w-1/2 text-left;
   }
 
-  .title {
-    @apply mt-5;
+  .badgeWrapper {
+    @apply -mt-1;
   }
 
   .imgWrapper {
