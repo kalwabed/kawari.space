@@ -48,14 +48,24 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           <nav className={styled.nav}>
             {links.map(link => (
               <Link href={link.href} key={link.label}>
-                <a href={link.href} className={`${styled.navLink} ${link.label === page && 'border-b-2 border-primary hover:border-info'}`}>
+                <a
+                  href={link.href}
+                  className={`${styled.navLink} ${
+                    link.label === page && 'border-b-2 border-primary hover:border-info'
+                  }`}
+                >
                   {link.label}
                 </a>
               </Link>
             ))}
             <button
               onClick={() => {
-                push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
+                const prefix = asPath.split('/')[1]
+                if (prefix === 'blog' && asPath.split('/')[2]) {
+                  push('/blog', '/blog', { locale: locale === 'id' ? 'en' : 'id' })
+                } else {
+                  push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
+                }
               }}
               type="button"
               className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700 rounded-sm"
@@ -95,7 +105,8 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
         </p>
         <span className={styled.madeWrapper}>
           <div className={styled.hosted}>
-            {locale === 'id' ? 'Di-host di' : 'Hosted on'} <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
+            {locale === 'id' ? 'Di-host di' : 'Hosted on'}{' '}
+            <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
           </div>
         </span>
       </footer>

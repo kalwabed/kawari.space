@@ -33,7 +33,7 @@ export default function Post({ postData }: { postData: Props }) {
         <div className={styled.imgWrapper}>
           <Image width={850} height={360} quality={100} src={cover.image} className={styled.img} alt={title} />
           <div className={styled.imgFromWrapper}>
-            Photo by{' '}
+            {locale === 'id' ? 'Foto dari' : 'Photo by'}{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
               {cover.name}
             </a>{' '}

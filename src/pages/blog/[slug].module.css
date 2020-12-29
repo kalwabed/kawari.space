@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-3xl font-semibold;
+  @apply text-3xl font-semibold mb-1;
 }
 
 .date {
@@ -92,7 +92,7 @@
 }
 
 .article img {
-  @apply object-contain w-full my-2;
+  @apply object-contain rounded w-full my-2;
   height: 20rem;
 }
 

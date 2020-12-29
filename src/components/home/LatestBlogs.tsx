@@ -18,11 +18,11 @@ const LatestBlogs = ({ allPostsData }: Props) => {
       {allPostsData.map(
         ({ date, readingTime, slug, title }, i) =>
           i <= 2 && (
-            <div className={styled.blogWrapper} key={slug}>
+            <div className={`group ${styled.blogWrapper}`} key={slug}>
               <div className="px-2 py-1">
                 <div className={styled.titleWrapper}>
                   <Link href={`/blog/${slug}`}>
-                    <a className={styled.title}>{title}</a>
+                    <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
                   </Link>
                 </div>
                 <div className={styled.dateTime}>

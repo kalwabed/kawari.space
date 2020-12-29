@@ -12,18 +12,23 @@ const Intro: FC<I18n> = ({ locale }) => {
     <>
       <h1 className="mb-5">{locale === 'id' ? 'Tentang' : 'About'}</h1>
       {locale === 'id' ? id.about.intro1 : en.about.intro1} <b>Ka</b>l<b>wa</b>bed <b>Ri</b>zki.{' '}
-      {locale === 'id' ? id.about.intro2 : en.about.intro2} <LinkExternal href="banyuwangikab.go.id/" label="Banyuwangi, Indonesia" />.{' '}
+      {locale === 'id' ? id.about.intro2 : en.about.intro2}{' '}
+      <LinkExternal href="banyuwangikab.go.id/" label="Banyuwangi, Indonesia" />.{' '}
       {locale === 'id' ? id.about.intro3 : en.about.intro3}
-      <div className="leading-normal mt-2">
-        {locale === 'id' ? id.about.intro4 : en.about.intro4} <LinkExternal href="codeigniter.com" label="CodeIgniter" />{' '}
-        {locale === 'id' ? 'dan ' : 'and '}
-        <LinkExternal href="getbootstrap.com" label="Bootstrap" />. {locale === 'id' ? id.about.intro5 : en.about.intro5}
+      <div className="leading-normal mt-2 tracking-wide">
+        {locale === 'id' ? id.about.intro4 : en.about.intro4}{' '}
+        <LinkExternal href="codeigniter.com" label="CodeIgniter" /> {locale === 'id' ? 'dan ' : 'and '}
+        <LinkExternal href="getbootstrap.com" label="Bootstrap" />.{' '}
+        {locale === 'id' ? id.about.intro5 : en.about.intro5}
       </div>
-      <div className="leading-normal mt-2">
+      <div className="leading-normal mt-2 tracking-wide">
         {locale === 'id' ? 'Saya memakai' : "I'm using"} <LinkExternal href="kubuntu.org" label="Kubuntu 20" />{' '}
         {locale === 'id' ? id.about.intro6 : en.about.intro6}{' '}
-        <LinkExternal href="github.com/kaliwa" label={locale === 'id' ? 'proyek sumber terbuka' : 'open source projects'} />,{' '}
-        {locale === 'id' ? id.about.intro7 : en.about.intro7}
+        <LinkExternal
+          href="github.com/kaliwa"
+          label={locale === 'id' ? 'proyek sumber terbuka' : 'open source projects'}
+        />
+        , {locale === 'id' ? id.about.intro7 : en.about.intro7}
       </div>
       <p className="mt-3">
         {locale === 'id' ? id.about.business : en.about.business}{' '}
