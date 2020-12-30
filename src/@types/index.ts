@@ -11,9 +11,15 @@ export interface Post {
   }
 }
 
+export interface I18n {
+  locale: 'id' | 'en' | string
+}
 export interface Project {
   title: string
-  description: string
+  description: {
+    id: string
+    en: string
+  }
   image: string
   stack: string
   demoUrl: string

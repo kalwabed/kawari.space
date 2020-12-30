@@ -1,29 +1,25 @@
 .wrapper {
-  @apply w-full mb-10 px-4 pb-4 pt-2 text-center transition duration-150 ease-out rounded;
+  @apply w-full flex-col justify-center mb-10 px-4 pb-4 pt-2 text-center transition duration-150 ease-out rounded;
 }
 
 .wrapper:hover {
-  @apply shadow-lg transform -translate-y-2;
+  @apply shadow-lg;
 }
 
 .imgWrapper {
-  @apply rounded-lg h-64 overflow-hidden;
-}
-
-.img {
-  @apply object-cover object-center;
+  @apply rounded-lg h-40 overflow-hidden;
 }
 
 .badgeWrapper {
-  @apply -mt-12 flex flex-wrap flex-row items-center justify-center;
+  @apply font-light text-sm text-gray-500;
 }
 
 .title {
-  @apply text-2xl font-medium mt-6 mb-3;
+  @apply text-3xl font-bold mt-3 inline-block;
 }
 
 .description {
-  @apply leading-relaxed text-base text-gray-500;
+  @apply leading-relaxed mt-1;
 }
 
 .buttonLinkWrapper {
@@ -55,12 +51,12 @@
     @apply w-1/2 text-left;
   }
 
-  .img {
-    @apply object-fill;
+  .badgeWrapper {
+    @apply -mt-1;
   }
 
-  .badgeWrapper {
-    @apply mt-1;
+  .imgWrapper {
+    @apply h-64;
   }
 
   .buttonLinkWrapper {

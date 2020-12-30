@@ -27,5 +27,6 @@
   },
   "css.validate": false,
   "scss.validate": false,
-  "less.validate": false
+  "less.validate": false,
+  "god.tsconfig": "./tsconfig.json"
 }

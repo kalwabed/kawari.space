@@ -1,26 +1,11 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
 import styled from './layout.module.css'
-
-const links = [
-  {
-    href: '/projects',
-    label: 'projects'
-  },
-  {
-    href: '/blog',
-    label: 'blog'
-  },
-  {
-    href: '/about',
-    label: 'about'
-  }
-]
 
 interface Props {
   page?: string
@@ -29,9 +14,24 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki', className = '' }) => {
+  const { asPath, locale, push } = useRouter()
+  const links = [
+    {
+      href: '/projects',
+      label: locale === 'id' ? 'proyek' : 'projects'
+    },
+    {
+      href: '/blog',
+      label: 'blog'
+    },
+    {
+      href: '/about',
+      label: locale === 'id' ? 'tentang' : 'about'
+    }
+  ]
+
   const { socials, url } = siteConfig
-  const router = useRouter()
-  const fullPath = url + router.asPath
+  const fullPath = url + asPath
   return (
     <>
       <NextSeo title={title} canonical={fullPath} openGraph={{ url: fullPath }} />
@@ -48,11 +48,26 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           <nav className={styled.nav}>
             {links.map(link => (
               <Link href={link.href} key={link.label}>
-                <a href={link.href} className={`${styled.navLink} ${link.label === page && 'border-b-2 border-primary hover:border-info'}`}>
+                <a
+                  href={link.href}
+                  className={`${styled.navLink} ${
+                    link.label === page && 'border-b-2 border-primary hover:border-info'
+                  }`}
+                >
                   {link.label}
                 </a>
               </Link>
             ))}
+            <button
+              onClick={() => {
+                push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
+              }}
+              type="button"
+              className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700 rounded-sm"
+            >
+              <IoMdGlobe className="mr-1" />
+              {locale === 'id' ? 'en' : 'id'}
+            </button>
           </nav>
           <div className={styled.socialWrapper}>
             <a href={socials.Github} target="_blank" rel="noopener noreferrer" aria-label="github">
@@ -80,12 +95,13 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
           </a>
         </Link>
         <p className={styled.license}>
-          © 2020 under MIT License —
+          © 2020 {locale === 'id' ? 'dibawah lisensi MIT' : 'under MIT license'} —
           <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kalwabed/kawari.space" />
         </p>
         <span className={styled.madeWrapper}>
           <div className={styled.hosted}>
-            Hosted on <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
+            {locale === 'id' ? 'Di-host di' : 'Hosted on'}{' '}
+            <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
           </div>
         </span>
       </footer>

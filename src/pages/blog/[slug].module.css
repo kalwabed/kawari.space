@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-3xl font-semibold;
+  @apply text-4xl font-semibold mb-1;
 }
 
 .date {
@@ -15,8 +15,7 @@
 }
 
 .img {
-  @apply object-fill mx-auto w-full rounded-md shadow;
-  height: 20rem;
+  @apply mx-auto rounded-md shadow;
 }
 
 .imgFromWrapper {
@@ -40,7 +39,7 @@
 }
 
 .article a {
-  @apply text-primary transition-colors ease-out duration-75;
+  @apply text-primary transition-colors ease-out duration-100;
 }
 
 .article a:hover {
@@ -92,7 +91,7 @@
 }
 
 .article img {
-  @apply object-contain w-full my-2;
+  @apply object-contain rounded w-full my-2;
   height: 20rem;
 }
 
@@ -106,8 +105,8 @@
 
 @screen md {
   .wrapper {
-    padding-left: 18rem;
-    padding-right: 18rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .title {
@@ -120,5 +119,13 @@
 
   .article img {
     @apply object-center;
+  }
+}
+
+
+@screen lg {
+  .wrapper {
+    padding-left: 22rem;
+    padding-right: 22rem;
   }
 }
