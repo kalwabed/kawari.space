@@ -25,7 +25,7 @@ This short answer does not answer and describes the question 'why choose Next.js
 
 ## <a name='extensive'>Extensive</a>
 
-Next.js itself is one of the Reactjs frameworks that was discovered and developed by [Vercel](https://vercel.com?ref=kawari.space) (previously called Zeit) which offers website experiences with methods such as Serverless, SSR, SSG, and the latest is ISR (Incremental Static Generation) in one project.
+Next.js itself is one of the Reactjs frameworks that was discovered and developed by [Vercel](https://vercel.com?ref=kawari.space) (previously Zeit) which offers website experiences with methods such as Serverless, SSR, SSG, and the latest is ISR (Incremental Static Generation) in one project.
 
 In addition, there is also a Fast Refresh feature that allows us to change the code without having to completely refresh the browser page. For those of you who prefer to use TypeScript in addition to JavaScript? Next.js is very possible. By simply changing the extension to `.tsx` you will be prompted to install the related dependencies.
 

@@ -28,9 +28,7 @@ const Content = ({ allPostsData }: Props) => {
                   </span>
                 </div>
                 <div className="md:flex-grow ml-2 md:ml-0">
-                  <Link href={`/blog/${slug}`}>
-                    <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
-                  </Link>
+                  <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
                   <p className="leading-relaxed text-gray-500">{subtitle}</p>
                 </div>
               </a>

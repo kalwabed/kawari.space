@@ -105,8 +105,8 @@
 
 @screen md {
   .wrapper {
-    padding-left: 18rem;
-    padding-right: 18rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .title {
@@ -119,5 +119,13 @@
 
   .article img {
     @apply object-center;
+  }
+}
+
+
+@screen lg {
+  .wrapper {
+    padding-left: 22rem;
+    padding-right: 22rem;
   }
 }
