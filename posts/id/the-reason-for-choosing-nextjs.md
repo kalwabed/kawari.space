@@ -45,11 +45,11 @@ Seperti kabar yang beredar Nextjs akan memiliki fitur untuk optimasi gambar pada
 
 2.Menggunakan CDN dari [statically.io](https://statically.io/)
 
-![tanpa optimasi](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/nextjs-reason/statically.png)
+![cdn](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/nextjs-reason/statically.png)
 
 3.Menggunakan optimasi gambar dari Nextjs `next/image`
 
-![tanpa optimasi](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/nextjs-reason/next-image.png)
+![next-image](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/nextjs-reason/next-image.png)
 
 Diluar dugaan, dengan versi terbaru (v.10) dari Nextjs kita bisa banget mengoptimasi gambar dengan mudah dan cepat tanpa memerlukan CDN.
 

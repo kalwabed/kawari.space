@@ -31,7 +31,16 @@ export default function Post({ postData }: { postData: Props }) {
           <Date dateString={date} locale={locale} /> / ~<Read locale={locale} readingTime={readingTime} /> / {subtitle}
         </small>
         <div className={styled.imgWrapper}>
-          <Image width={850} height={360} quality={100} src={cover.image} className={styled.img} alt={title} />
+          <Image
+            width={850}
+            height={360}
+            objectPosition="center"
+            objectFit="cover"
+            quality={90}
+            src={cover.image}
+            className={styled.img}
+            alt={title}
+          />
           <div className={styled.imgFromWrapper}>
             {locale === 'id' ? 'Foto dari' : 'Photo by'}{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>

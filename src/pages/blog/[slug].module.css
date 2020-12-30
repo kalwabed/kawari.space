@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-3xl font-semibold mb-1;
+  @apply text-4xl font-semibold mb-1;
 }
 
 .date {
@@ -15,8 +15,7 @@
 }
 
 .img {
-  @apply object-fill mx-auto w-full rounded-md shadow;
-  height: 20rem;
+  @apply mx-auto rounded-md shadow;
 }
 
 .imgFromWrapper {
