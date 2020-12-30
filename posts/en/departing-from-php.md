@@ -9,18 +9,18 @@ cover:
   name: 'Markus Spiske'
 ---
 
-Sebelum menjadi pengembang JavaScript, dulu saya berangkat mulai membuat website menggunakan PHP pada sisi server.
+Before becoming a JavaScript developer, I first set out to start building websites using PHP on the server side.
 
 ## CodeIgniter
 
-CodeIgniter 3.x adalah framework pertama dan terakhir dari PHP yang sudah pernah saya terapkan untuk produksi. Alasan memilih CI sendiri karena dulu harus magang di tempat yang menggunakan CI sebagai framework utama; belum kenal banyak JavaScript, bahkan nggak suka sama JavaScript, waktu itu.
+[CodeIgniter](https://codeigniter.com/) 3.x is the first and last PHP framework I have implemented for production. The reason for choosing CI myself was because I had to do an internship in a place that used CI as the main framework; I didn't know much JavaScript, I didn't even like JavaScript at that time.
 
-Hikmahnya, dari situ saya lebih banyak mempelajari JavaScript (padahal waktu itu malah jQuery 😂)
+The lesson, from there I learned more about JavaScript (even though at that time it was jQuery 😂)
 
 ## Laravel
 
-Pernah belajar Laravel, saya akui memang powerfull, apa yang tidak ada di CI ada di Laravel. Sempat berpikir ingin pindah ke Laravel, bahkan untuk menandai itu saya sampai beli kelas Laravel di [BWA](https://buildwithangga.com) tapi belum pernah sampai nyentuh materi Laravel-nya karena waktu itu masih sibuk belajar jQuery 😂. Kalaupun saat itu saya sempatkan mencicipi Laravel lebih banyak mungkin saya tidak akan pernah menemukan folder proyek Node.js di laptopku.
+Having studied [Laravel](https://laravel.com/), I admit it is powerful, what CI does not exist in Laravel. I thought about moving to Laravel, even to mark it I bought a Laravel class at [BWA](https://buildwithangga.com) but never touched on the Laravel material because at that time I was still busy learning jQuery 😂. Even if I had time to taste Laravel more, I might never find the Node.js project folder on my laptop.
 
 ## Migrasi
 
-Alasan saya pindah dari PHP ke Node.js bermula dari saya yang malas untuk belajar, terlebih kalau harus mendalami CI dan belajar JavaScript pada sisi yang lain. Saya berpikir bagaimana kalau belajar JavaScript saja, toh bisa diterapkan di sisi server juga. Mulai saya pelajari Node.js sedikit demi sedikit. Akhirnya saya memutuskan untuk mendalami Node.js tapi setelah masa magang selesai. Begitu selesai, pandemi Covid-19 kian mengganas, membuat sekolah harus menerapkan belajar dari rumah. Kesempatan itu tidak saya sia-siakan untuk berkenalan lebih dekat dengan si JavaScript dan ekosistemnya, sampai sekarang.
+The reason I moved from PHP to Node.js stems from me being lazy to learn, especially if I have to explore CI and learn JavaScript on the other side. I thought how about learning JavaScript alone, it can be implemented on the server side anyway. I started learning Node.js little by little. Finally I decided to dive into Node.js but after my internship was over. Once completed, the Covid-19 pandemic has become increasingly violent, making schools have to implement learning from home. I did not waste this opportunity to get acquainted with JavaScript and its ecosystem, until now.

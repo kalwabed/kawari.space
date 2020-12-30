@@ -9,26 +9,26 @@ cover:
   name: 'og-image.vercel.app'
 ---
 
-## Tabel konten
+## Table of Contents
 
-- [Dimulai](#dimulai)
-- [Putuskan](#putuskan)
-- [Selanjutnya](#selanjutnya)
+- [Begin](#begin)
+- [Decide](#decide)
+- [Next](#next)
 
-Tailwindcss sendiri dari cara implementasinya bagi saya yang berangkat dari Bootstrap jujur sih nggak suka dan terlalu ribet; melibatkan banyak sekali class hanya untuk membuat sebuah komponen bekerja dengan semestinya.
+Tailwindcss itself, from the way it is implemented, for me who departs from Bootstrap, to be honest, doesn't like it and it's too complicated; involves lots of classes just to get a component to work properly.
 
-_"kayaknya saya nggak bakal pakai deh nih Tailwind, soalnya bakal makan banyak waktu dan ribet, pokoknya ogah"_, first impression dari saya. Ya, begitu lah, hati manusia mudah terbolak-balik, bilangnya nggak suka sekarang malah bikin sesuatu darinya, huft.
+_"I don't think I'm going to use Tailwind, because it will take a lot of time and hassle, just don't want to"_, my first impression. Yes, that's how it is, people's hearts are easy to turn back and forth, saying they don't like it now instead they make something out of it, huft.
 
-## <a name='dimulai'>Dimulai</a>
+## <a name='begin'>Begin</a>
 
-Ceritanya dimulai, Youtube kirim notifikasi, ada kanal update video terbaru dengan topik membuat website menggunakan Tailwindcss, disitu saya baca beberapa komentar orang-orang dan dari situ perspektif mengenai Tailwindcss saya seketika berubah, saya jadi memiliki sebuah alasan mengapa saya harus menggunakan Tailwind, mengapa saya harus memulai. Permulaan saya coba buat sebuah website statis, saya ingin tahu sejauh mana Tailwind ini bekerja. Hasilnya? Tailwind luar biasa.
+The story started, Youtube sent notifications, there was a new video update channel with the topic of creating a website using Tailwindcss, there I read some people's comments and from there my perspective on Tailwindcss changed immediately, so I have a reason why I should use Tailwind, why I have to start. Initially I tried to make a static website, I wanted to know how far Tailwind works. The result? Tailwind is amazing.
 
-## <a name='putuskan'>Putuskan</a>
+## <a name='decide'>Decide</a>
 
-Saya putuskan membuat sebuah website pribadi yang isinya berupa tulisan, dan dokumentasi tentang apa yang saya pelajari secara sederhana. Teknologi di belakangnya menggunakan Next.js dan Tailwindcss, sekalian langsung implementasi daripada saya habiskan waktu saya untuk belajar lagi (tentu belajar dulu juga penting). Berbekal sedikit pengalaman dari video dan percobaan-percobaan sebelumnya, bantuan [Tailblocks](https://mertjf.github.io/tailblocks/) untuk contoh layouting, dan [dokumentasi](https://tailwindcss.com/docs/installation) dari Tailwind sendiri, jadilah apa yang seperti kita lihat sekarang, tentu masih banyak kekurangan di sana-sini, tapi ini adalah sebuah pencapaian tersendiri bagi saya pribadi.
+I decided to create a personal website with simple writing and documentation about what I had learned. The technology behind it uses Next.js and Tailwindcss, as well as direct implementation rather than spending my time learning more (of course learning first is also important). Armed with some experience from previous videos and experiments, [Tailblocks](https://mertjf.github.io/tailblocks/) help for example layouts, and [documentation](https://tailwindcss.com/docs/installation) from Tailwind itself, be what we see now, of course there are still many shortcomings here and there, but this is an achievement in itself for me personally.
 
-## <a name='selanjutnya'>Selanjutnya</a>
+## <a name='next'>Next</a>
 
-Selanjutnya, kenapa saya bikin template yang mengusung sistem yang sama? yang pertama, karena ini akan berguna untuk projek-projek saya selanjutnya, untuk mempercepat proses setup prototypenya; terakhir, karena saya merasa ini mungkin juga bisa membantu para pengembang lain untuk membangun websitenya, karena dengan adanya template ini pengembang hanya perlu fokus mengembangkan programnya tanpa harus risau dengan setup 'bumbu-bumbu pelengkapnya'.
+Furthermore, why do I make a template that carries the same system? first, because it will be useful for my next projects, to speed up the prototype setup process; lastly, because I feel it might also help other developers to build their websites, because with this template developers only need to focus on developing their programs without having to worry about the 'complementary ingredients' setup.
 
-Kalau penasaran silahkan kunjungi demo websitenya di [nextwind.vercel.app](https://nextwind.vercel.app), atau sumber kodenya langsung [disini](https://github.com/kalwabed/nextwind), anda juga bisa temukan pada akun Github saya di [github.com/kalwabed](https://github.com/kalwabed), terimakasih.
+If you are curious, please visit the website demo at [nextwind.vercel.app](https://nextwind.vercel.app), or the source code is directly [here](https://github.com/kalwabed/nextwind), you can also find it on my Github account at [github.com/kalwabed](https://github.com/kalwabed), thank you.

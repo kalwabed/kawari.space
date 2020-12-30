@@ -9,26 +9,26 @@ cover:
   name: 'Luke Chesser'
 ---
 
-## Tabel konten
+## Table of Contents
 
-- [Apa itu Google Analytics?](#apa-itu-google-analytics)
-- [Kenapa harus pakai Umami?](#kenapa-harus-pakai-umami)
-- [Kesimpulan](#kesimpulan)
+- [What is Google Analytics](#what-is-google-analytics)
+- [Why should you use Umami](#why-you-should-use-umami)
+- [Conclusion](#conclusion)
 
-## <a name='apa-itu-google-analytics'>Apa itu Google Analytics?</a>
+## <a name='what-is-google-analytics'>What is Google Analytics</a>
 
-Bagi anda yang belum mengetahui apa itu Google Analytics(GA), dikutip dari [MonsterInsight](https://www.monsterinsights.com/docs/what-is-google-analytics/) GA adalah _perangkat lunak pelacakan dan statistik gratis yang memberi Anda wawasan penting tentang bagaimana pengunjung menemukan situs Anda, apa yang mereka lakukan ketika sampai di sana, dan informasi penting lainnya tentang kesehatan bisnis Anda: seperti eCommerce dan konversi prospek._
+For those of you who don't know what Google Analytics (GA) is, quoted from [MonsterInsight](https://www.monsterinsights.com/docs/what-is-google-analytics/) _GA is a free tracking and statistical software that provides You provide important insights into how visitors find your site, what they do when they get there, and other important information about the health of your business: such as eCommerce and lead conversions._
 
-Intinya secara kasar kita jadi bisa dapat gambaran _traffic_ pengunjung dari website yang kita kelola melalui sistem analitik seperti GA ini.
+The point is roughly that we can get an overview of traffic visitors from the website that we manage through an analytical system like this GA.
 
-## <a name='kenapa-harus-pakai-umami'>Kenapa harus pakai Umami?</a>
+## <a name='why-you-should-use-umami'>Why should you use Umami</a>
 
-Umami adalah sistem analitik yang semacam GA, cara kerjanya pun bisa dikatakan sama dengan GA, dan sama-sama gratis, bedanya Umami adalah open source yang dikembangkan oleh komunitas dan kontributor yang aktif, sedangkan GA dikelola dan dikembangkan oleh Google.
+Umami is an analytic system like GA, the way it works can be said to be the same as GA, and it's equally free, the difference is that Umami is open source developed by an active community and contributors, while GA is managed and developed by Google.
 
-Umami dibuat di atas arsitektur Nodejs dan dibantu Nextjs yang membuat Umami bisa cepat dengan basis kode yang besar, kita pun bisa berkontribusi langsung di dalamnya. Yang menarik lainnya adalah Umami bisa kita hosting sendiri (self-hosted) di penyedia yang mendukung Nodejs berjalan di sistemnya, dan kita pun bisa bebas mengkustomisasi Umami sesuai kebutuhan kita dan masih ada fitur lainnya yang bisa anda temukan di website resminya di [umami.is](https://umami.is/), atau bisa cek repositorinya di [Github](https://github.com/mikecao/umami).
+Umami is built on the Nodejs architecture and is assisted by Nextjs which makes Umami fast with a large codebase, we can also contribute directly to it. Another interesting thing is that we can self-host Umami at a provider that supports Nodejs running on the system, and we can freely customize Umami according to our needs and there are still other features that you can find on the official website at [umami.is](https://umami.is/?ref=kawari.space), or you can check the repository at [Github](https://github.com/mikecao/umami?ref=kawari.space).
 
-Awal instalasinya mungkin bisa dikatakan tidak mudah apalagi bagi yang belum mengerti struktur aplikasi Nodejs. Saya sendiri beberapa kali stuck di server lokal dan error di server produksi ketika saya coba hosting di Heroku, dan akhirnya berhasil.
+The initial installation may not be easy, especially for those who don't understand the structure of the Nodejs application. I myself got stuck several times on a local server and an error on the production server when I tried hosting on Heroku, and finally it worked.
 
-## <a name='kesimpulan'>Kesimpulan</a>
+## <a name='conclusion'>Conclusion</a>
 
-Jika kita membutuhkan sistem analitik dengan cepat yang nggak butuh banyak konfigurasi yang membingungkan, mungkin Google Analytics adalah jawabannya. Atau jika anda mau sistem analitik alternatif yang tidak kalah kerennya dari Google Analytics, saya menyarankan anda untuk menggunakan Umami.
+If we need a fast analytics system that doesn't need a lot of confusing configurations, maybe Google Analytics is the answer. Or if you want an alternative analytical system that is no less cool than Google Analytics, I recommend you to use Umami.

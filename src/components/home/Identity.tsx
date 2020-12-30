@@ -1,4 +1,5 @@
 import { I18n } from '@/@types'
+import LinkExternal from '@/parts/LinkExternal'
 import Image from 'next/image'
 import type { FC } from 'react'
 
@@ -22,7 +23,11 @@ const Identity: FC<I18n> = ({ locale }) => {
       </div>
       <div className={styled.summaryWrapper}>
         <h1 className={styled.name}>{locale === 'id' ? 'Hai, Saya' : "Hi, I'm"} Kalwabed Rizki</h1>
-        <p className={styled.subtitle}>{home.subtitle}</p>
+        <p className={styled.subtitle}>
+          {home.subtitle}
+          {locale === 'id' ? 'di' : 'at'}{' '}
+          <LinkExternal href="gostartupco.com" label="gostartupco.com" className="text-gray-400" />
+        </p>
       </div>
     </section>
   )

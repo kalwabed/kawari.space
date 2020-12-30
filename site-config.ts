@@ -64,7 +64,7 @@ export default {
     Telegram: 'https://t.me/kalwabed'
   },
   home: {
-    subtitle: 'Fullstack JavaScript developer'
+    subtitle: 'Frontend engineer '
   },
   projects
 }
