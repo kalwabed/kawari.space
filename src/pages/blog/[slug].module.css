@@ -40,7 +40,7 @@
 }
 
 .article a {
-  @apply text-primary transition-colors ease-out duration-75;
+  @apply text-primary transition-colors ease-out duration-100;
 }
 
 .article a:hover {

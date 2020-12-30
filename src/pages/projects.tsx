@@ -14,7 +14,9 @@ const Projects: NextPage = () => {
     <Layout page={pos} title={`kawari | ${pos}`}>
       <section>
         <div className="p-5 mx-auto bg-secondary flex flex-col justify-center items-center">
-          <h1 className="font-bold text-center md:text-4xl text-3xl">{locale === 'id' ? id.projects.header : en.projects.header}</h1>
+          <h1 className="font-bold text-center md:text-4xl text-3xl">
+            {locale === 'id' ? id.projects.header : en.projects.header}
+          </h1>
           <p className="text-center font-light">{locale === 'id' ? id.projects.subtitle : en.projects.subtitle}</p>
         </div>
         <div className="container px-5 pb-24 pt-16 mx-auto">

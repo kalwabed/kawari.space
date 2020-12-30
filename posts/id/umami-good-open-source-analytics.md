@@ -4,21 +4,22 @@ subtitle: 'analitik alternatif selain Google Analytics'
 date: '2020-10-23'
 readingTime: 3
 cover:
-  image: '/assets/blogs/umami-baik.jpg'
+  image: '/assets/blogs/good-umami.jpg'
   source: 'https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Luke Chesser'
 ---
 
-##  Tabel konten
+## Daftar Konten
+
 - [Apa itu Google Analytics?](#apa-itu-google-analytics)
 - [Kenapa harus pakai Umami?](#kenapa-harus-pakai-umami)
 - [Kesimpulan](#kesimpulan)
 
 ## <a name='apa-itu-google-analytics'>Apa itu Google Analytics?</a>
 
-Bagi anda yang belum mengetahui apa itu Google Analytics(GA), dikutip dari [MonsterInsight](https://www.monsterinsights.com/docs/what-is-google-analytics/) GA adalah *perangkat lunak pelacakan dan statistik gratis yang memberi Anda wawasan penting tentang bagaimana pengunjung menemukan situs Anda, apa yang mereka lakukan ketika sampai di sana, dan informasi penting lainnya tentang kesehatan bisnis Anda: seperti eCommerce dan konversi prospek.*
+Bagi anda yang belum mengetahui apa itu Google Analytics(GA), dikutip dari [MonsterInsight](https://www.monsterinsights.com/docs/what-is-google-analytics/) GA adalah _perangkat lunak pelacakan dan statistik gratis yang memberi Anda wawasan penting tentang bagaimana pengunjung menemukan situs Anda, apa yang mereka lakukan ketika sampai di sana, dan informasi penting lainnya tentang kesehatan bisnis Anda: seperti eCommerce dan konversi prospek._
 
-Intinya secara kasar kita jadi bisa dapat gambaran *traffic* pengunjung dari website yang kita kelola melalui sistem analitik seperti GA ini.
+Intinya secara kasar kita jadi bisa dapat gambaran _traffic_ pengunjung dari website yang kita kelola melalui sistem analitik seperti GA ini.
 
 ## <a name='kenapa-harus-pakai-umami'>Kenapa harus pakai Umami?</a>
 

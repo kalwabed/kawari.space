@@ -9,8 +9,7 @@ cover:
   name: 'og-image.vercel.app'
 ---
 
-
-## Tabel konten
+## Daftar Konten
 
 - [Dimulai](#dimulai)
 - [Putuskan](#putuskan)
@@ -18,7 +17,7 @@ cover:
 
 Tailwindcss sendiri dari cara implementasinya bagi saya yang berangkat dari Bootstrap jujur sih nggak suka dan terlalu ribet; melibatkan banyak sekali class hanya untuk membuat sebuah komponen bekerja dengan semestinya.
 
-*"kayaknya saya nggak bakal pakai deh nih Tailwind, soalnya bakal makan banyak waktu dan ribet, pokoknya ogah"*, first impression dari saya. Ya, begitu lah, hati manusia mudah terbolak-balik, bilangnya nggak suka sekarang malah bikin sesuatu darinya, huft.
+_"kayaknya saya nggak bakal pakai deh nih Tailwind, soalnya bakal makan banyak waktu dan ribet, pokoknya ogah"_, first impression dari saya. Ya, begitu lah, hati manusia mudah terbolak-balik, bilangnya nggak suka sekarang malah bikin sesuatu darinya, huft.
 
 ## <a name='dimulai'>Dimulai</a>
 

@@ -17,7 +17,12 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <SocialProfileJsonLd type="person" name={siteConfig.title} url={siteConfig.url} sameAs={Object.values(siteConfig.socials)} />
+      <SocialProfileJsonLd
+        type="person"
+        name={siteConfig.title}
+        url={siteConfig.url}
+        sameAs={Object.values(siteConfig.socials)}
+      />
       <Component {...pageProps} />
     </>
   )

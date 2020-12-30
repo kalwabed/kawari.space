@@ -4,7 +4,7 @@ subtitle: 'pernah menjadi seorang pengembang php'
 date: '2020-10-21'
 readingTime: 2
 cover:
-  image: '/assets/blogs/berangkat-d-php.jpg'
+  image: '/assets/blogs/departing-from-php.jpg'
   source: 'https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Markus Spiske'
 ---
@@ -19,7 +19,7 @@ Hikmahnya, dari situ saya lebih banyak mempelajari JavaScript (padahal waktu itu
 
 ## Laravel
 
-Pernah belajar Laravel, saya akui memang powerfull, apa yang tidak ada di CI ada di Laravel. Sempat berpikir ingin pindah ke Laravel, bahkan untuk menandai itu saya sampai beli kelas Laravel di [BWA](https://buildwithangga.com) tapi belum pernah sampai nyentuh materi Laravel-nya karena waktu itu masih sibuk belajar jQuery 😂.  Kalaupun saat itu saya sempatkan mencicipi Laravel lebih banyak mungkin saya tidak akan pernah menemukan folder proyek Node.js di laptopku.
+Pernah belajar Laravel, saya akui memang powerfull, apa yang tidak ada di CI ada di Laravel. Sempat berpikir ingin pindah ke Laravel, bahkan untuk menandai itu saya sampai beli kelas Laravel di [BWA](https://buildwithangga.com) tapi belum pernah sampai nyentuh materi Laravel-nya karena waktu itu masih sibuk belajar jQuery 😂. Kalaupun saat itu saya sempatkan mencicipi Laravel lebih banyak mungkin saya tidak akan pernah menemukan folder proyek Node.js di laptopku.
 
 ## Migrasi
 

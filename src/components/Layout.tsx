@@ -60,12 +60,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
             ))}
             <button
               onClick={() => {
-                const prefix = asPath.split('/')[1]
-                if (prefix === 'blog' && asPath.split('/')[2]) {
-                  push('/blog', '/blog', { locale: locale === 'id' ? 'en' : 'id' })
-                } else {
-                  push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
-                }
+                push(asPath, asPath, { locale: locale === 'id' ? 'en' : 'id' })
               }}
               type="button"
               className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700 rounded-sm"

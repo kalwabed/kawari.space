@@ -4,7 +4,7 @@ subtitle: 'been a php developer'
 date: '2020-10-21'
 readingTime: 2
 cover:
-  image: '/assets/blogs/berangkat-d-php.jpg'
+  image: '/assets/blogs/departing-from-php.jpg'
   source: 'https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Markus Spiske'
 ---
