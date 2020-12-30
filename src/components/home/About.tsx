@@ -1,15 +1,18 @@
+import { I18n } from '@/@types'
 import { useEmail } from '@/hooks/index'
+import { FC } from 'react'
+
 import siteConfig from 'site-config'
+import { en, id } from 'lang'
 import styled from './About.module.css'
 
-const About = () => {
+const About: FC<I18n> = ({ locale }) => {
   return (
     <section className={`container ${styled.wrapper}`}>
       <div className="">
-        I&apos;m a student majoring in software engineering at SMKN 1 Banyuwangi. I love coffee, literature, discussion and programming.
-        Currently learning: microservices architecture, Docker, & Kubernetes.
-        <p className="mt-3">
-          For business inquiries, drop a mail at{' '}
+        {locale === 'en' ? en.index.about : id.index.about}
+        <div className="mt-3">
+          {locale === 'en' ? en.index.business : id.index.business}{' '}
           <div className={styled.email} onClick={useEmail} aria-hidden="true">
             {siteConfig.email}{' '}
             <svg className="w-4 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -17,8 +20,7 @@ const About = () => {
               <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z" />
             </svg>
           </div>{' '}
-          and let&apos;s talk.
-        </p>
+        </div>
       </div>
     </section>
   )

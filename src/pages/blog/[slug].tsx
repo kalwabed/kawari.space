@@ -6,6 +6,7 @@ import { DiscussionEmbed } from 'disqus-react'
 
 import { getAllPostsSlugs, getPostData } from '@/lib/posts'
 import Date from '@/components/blog/dateConfig'
+import Read from '@/components/blog/readConfig'
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import siteConfig from 'site-config'
@@ -16,7 +17,7 @@ interface Props extends PostType {
 }
 
 export default function Post({ postData }: { postData: Props }) {
-  const router = useRouter()
+  const { asPath, locale } = useRouter()
   const { cover, date, readingTime, slug, subtitle, title, contentHtml } = postData
   return (
     <Layout title={title} page="">
@@ -27,12 +28,21 @@ export default function Post({ postData }: { postData: Props }) {
       <div className={`container ${styled.wrapper}`}>
         <h1 className={styled.title}>{title}</h1>
         <small className={styled.date}>
-          <Date dateString={date} /> / ~{readingTime} menit membaca / {subtitle}
+          <Date dateString={date} locale={locale} /> / ~<Read locale={locale} readingTime={readingTime} /> / {subtitle}
         </small>
         <div className={styled.imgWrapper}>
-          <Image width={850} height={360} quality={100} src={cover.image} className={styled.img} alt={title} />
+          <Image
+            width={850}
+            height={360}
+            objectPosition="center"
+            objectFit="cover"
+            quality={90}
+            src={cover.image}
+            className={styled.img}
+            alt={title}
+          />
           <div className={styled.imgFromWrapper}>
-            Photo by{' '}
+            {locale === 'id' ? 'Foto dari' : 'Photo by'}{' '}
             <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
               {cover.name}
             </a>{' '}
@@ -44,7 +54,7 @@ export default function Post({ postData }: { postData: Props }) {
 
         <DiscussionEmbed
           shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
-          config={{ url: siteConfig.url + router.asPath, identifier: slug, title }}
+          config={{ url: siteConfig.url + asPath, identifier: slug, title }}
         />
       </div>
     </Layout>
@@ -59,10 +69,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
-  const postData = await getPostData(params.slug)
+  const postData = await getPostData(params.slug, locale)
   return {
     props: {
       postData

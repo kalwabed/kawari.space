@@ -1,6 +1,9 @@
+const { colors, fontFamily } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./src/**/*.tsx'],
   theme: {
+    colors: { ...colors },
     extend: {
       colors: {
         dark: '#293241',
@@ -10,7 +13,7 @@ module.exports = {
         info: '#98C1D9'
       },
       fontFamily: {
-        primary: ['Karla']
+        primary: ['Karla', ...fontFamily.sans]
       }
     }
   },

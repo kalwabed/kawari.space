@@ -1,6 +1,9 @@
-import { Post } from '@/@types'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import { Post } from '@/@types'
 import Date from './dateConfig'
+import Read from './readConfig'
 import styled from './bloglist.module.css'
 
 interface Props {
@@ -8,6 +11,7 @@ interface Props {
 }
 
 const Content = ({ allPostsData }: Props) => {
+  const { locale } = useRouter()
   return (
     <section className="overflow-hidden">
       <div className={`container ${styled.wrapper}`}>
@@ -17,14 +21,14 @@ const Content = ({ allPostsData }: Props) => {
               <a className={`group ${styled.slugWrapper}`}>
                 <div className={styled.dateTimeWrap}>
                   <span className="mt-1">
-                    <Date dateString={date} />
+                    <Date dateString={date} locale={locale} />
                   </span>
-                  <span className="mt-1 text-gray-500 text-sm">{readingTime} menit membaca</span>
+                  <span className="mt-1 text-gray-500 text-sm">
+                    <Read locale={locale} readingTime={readingTime} />
+                  </span>
                 </div>
                 <div className="md:flex-grow ml-2 md:ml-0">
-                  <Link href={`/blog/${slug}`}>
-                    <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
-                  </Link>
+                  <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
                   <p className="leading-relaxed text-gray-500">{subtitle}</p>
                 </div>
               </a>

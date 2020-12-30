@@ -7,7 +7,7 @@
 }
 
 .blogWrapper {
-  @apply flex flex-col flex-wrap mt-3 w-full transition ease-in duration-100;
+  @apply flex cursor-pointer flex-col flex-wrap mt-3 w-full transition ease-in duration-100;
 }
 
 .blogWrapper:hover {
@@ -20,10 +20,6 @@
 
 .title {
   @apply border-dark border-b-2;
-}
-
-.title:hover {
-  @apply border-primary;
 }
 
 .dateTime {

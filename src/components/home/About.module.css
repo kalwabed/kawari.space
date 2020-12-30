@@ -1,9 +1,9 @@
 .wrapper {
-  @apply flex flex-col items-center px-5 mx-auto pb-20 text-lg;
+  @apply flex flex-col items-center px-5 mx-auto pb-20 text-lg tracking-wide;
 }
 
 .email {
-  @apply cursor-pointer inline-flex items-baseline text-primary transition-colors duration-75 ease-out;
+  @apply cursor-pointer inline-flex items-baseline text-primary transition-colors duration-100 ease-in-out;
 }
 
 .email:hover {
