@@ -1,9 +1,10 @@
 import { parseISO, format } from 'date-fns'
-import { id } from 'date-fns/locale'
+import { id, enUS } from 'date-fns/locale'
 
-const Date = ({ dateString }) => {
+const Date = ({ dateString, locale }) => {
   const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'd LLLL yyyy', { locale: id })}</time>
+  const dateFormat = locale === 'id' ? 'd LLLL yyyy' : 'LLLL d yyyy'
+  return <time dateTime={dateString}>{format(date, dateFormat, { locale: locale === 'id' ? id : enUS })}</time>
 }
 
 export default Date

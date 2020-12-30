@@ -17,8 +17,8 @@ const Index: NextPage<Props> = ({ allPostsData }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const allPostsData = getSortedPostsData({ locale })
 
   return {
     props: {

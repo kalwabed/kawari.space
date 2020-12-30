@@ -30,7 +30,12 @@ class MyDocument extends Document {
           <meta name="msapplication-config" content="/browserconfig.xml" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png" />
-          <script async defer data-website-id={!isDev && process.env.NEXT_PUBLIC_UMAMI_ID} src={process.env.NEXT_PUBLIC_UMAMI_LINK} />
+          <script
+            async
+            defer
+            data-website-id={!isDev && process.env.NEXT_PUBLIC_UMAMI_ID}
+            src={process.env.NEXT_PUBLIC_UMAMI_LINK}
+          />
         </Head>
 
         <body className="bg-dark text-light font-primary">
