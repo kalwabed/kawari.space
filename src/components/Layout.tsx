@@ -34,7 +34,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
   const fullPath = url + asPath
   return (
     <>
-      <NextSeo title={title} canonical={fullPath} openGraph={{ url: fullPath }} />
+      <NextSeo title={title} canonical={fullPath} openGraph={{ url: fullPath, locale }} />
       <SocialProfileJsonLd
         type="person"
         name={siteConfig.title}

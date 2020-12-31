@@ -9,7 +9,9 @@ const SEO: FC<Post> = ({ title, featuredImage, publishedAt, summary }) => {
   const date = new Date(publishedAt).toISOString()
   const image = {
     url: `${siteConfig.url}${featuredImage.image}`,
-    alt: title
+    alt: title,
+    width: 800,
+    height: 600
   }
   const url = siteConfig.url + asPath
 
@@ -22,7 +24,10 @@ const SEO: FC<Post> = ({ title, featuredImage, publishedAt, summary }) => {
         openGraph={{
           type: 'article',
           article: {
-            publishedTime: date
+            section: 'Technology',
+            publishedTime: date,
+            modifiedTime: date,
+            authors: [siteConfig.socials.Twitter]
           },
           url,
           title,

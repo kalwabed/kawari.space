@@ -5,6 +5,7 @@ import path from 'path'
 import renderToString from 'next-mdx-remote/render-to-string'
 import RSS from '@/scripts/generate-rss'
 
+// TODO: implement readingTime library
 const postDir = path.join(process.cwd(), 'posts')
 
 export async function getFiles({ locale = 'id' }: { locale: string[] | string }) {
