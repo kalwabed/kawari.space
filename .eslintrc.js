@@ -20,6 +20,7 @@ module.exports = {
       rules: {
         'no-undef': 'off',
         'no-unused-vars': 'off',
+        'global-require': 'off',
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
         'import/no-unresolved': 'off',
         'react/no-danger': 'off',

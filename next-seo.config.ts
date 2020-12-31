@@ -17,7 +17,7 @@ export default {
       }
     ],
     type: 'website',
-    site_name: 'kawari'
+    site_name: 'Kalwabed Rizki personal landing page'
   },
   twitter: {
     handle: siteConfig.twitterUsername,
@@ -31,7 +31,7 @@ export default {
     },
     {
       name: 'keyword',
-      content: 'Kalwabed-Rizki Porfolio Kalwabed Kawari'
+      content: 'Kalwabed-Rizki Portfolio Kawari Kalwabed Rizki'
     }
   ]
 }

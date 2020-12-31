@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col pb-20 pt-16 mx-auto px-5;
+  @apply flex flex-col pb-20 pt-5 mx-auto px-5;
 }
 
 .title {
@@ -11,7 +11,7 @@
 }
 
 .imgWrapper {
-  @apply mb-8 py-5 w-full flex flex-col overflow-hidden;
+  @apply pt-5 w-full flex flex-col overflow-hidden;
 }
 
 .img {
@@ -31,7 +31,7 @@
 }
 
 .article {
-  @apply mt-5 mb-12 text-lg leading-relaxed tracking-wide;
+  @apply mt-5 mb-12 text-lg leading-relaxed tracking-wide break-words;
 }
 
 .article p {
@@ -50,16 +50,16 @@
   @apply text-4xl font-semibold mt-2;
 }
 
+.article h2 {
+  @apply mt-8;
+}
+
 .article h1 a {
   @apply border-b-0 text-current;
 }
 
 .article h1 a:hover {
   @apply text-current no-underline;
-}
-
-.article h2 {
-  @apply mt-5;
 }
 
 .article h2 a {
@@ -70,16 +70,20 @@
   @apply text-current no-underline;
 }
 
-.article ul {
-  @apply list-disc mb-10;
-}
-
 .article li {
-  @apply ml-8 transition-colors text-light ease-out duration-75;
+  @apply transition-colors text-light ease-out duration-75;
 }
 
 .article li:hover {
   @apply underline text-info;
+}
+
+.article ul {
+  @apply list-decimal mb-10;
+}
+
+.article li {
+  @apply ml-5 transition-colors text-light ease-out duration-75;
 }
 
 .article li a {

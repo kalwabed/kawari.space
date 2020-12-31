@@ -11,9 +11,8 @@ const feed = new Feed({
   description,
   id: url,
   link: url,
-  language: 'en',
   favicon: `${url}/favicon.ico`,
-  image: `${url}/assets/resources/profile.png`,
+  image: `${url}/assets/examples/profile.png`,
   copyright: `All rights reserved ${new Date().getFullYear()}, Kalwabed Rizki`,
   generator: `${url} RSS API`,
   feed: `${url}/rss.xml`,
@@ -24,7 +23,7 @@ const feed = new Feed({
   },
   author: {
     email,
-    link: siteConfig.socials.Github,
+    link: siteConfig.socials.Twitter,
     name: title
   }
 })
@@ -34,8 +33,8 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
   posts.forEach(post =>
     feed.addItem({
       title: post.title,
-      description: post.subtitle,
-      date: new Date(post.date),
+      description: post.summary,
+      date: new Date(post.publishedAt),
       author: [
         {
           email,
@@ -45,7 +44,7 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
       ],
       copyright: `All rights reserved ${new Date().getFullYear()}, Kalwabed Rizki`,
       link: `${url}/blog/${post.slug}`,
-      image: `${url}/assets/uploads${post.cover.image}`,
+      image: `${url}${post.featuredImage.image}`,
       id: `${url}/blog/${post.slug}`
     })
   )
