@@ -25,7 +25,7 @@ export async function getFileBySlug(locale = 'id', slug = '') {
   const source = fs.readFileSync(path.join(postDir, locale, `${slug}.mdx`), 'utf8')
   const { data, content } = matter(source)
   const mdxSource = await renderToString(content)
-  // TODO add component for mdx
+  // TODO add component for mdx [remark]
 
   return { mdxSource, ...data, slug }
 }

@@ -13,6 +13,7 @@ import ReadConfig from './readConfig'
 interface Props extends Post {
   mdxSource: string
 }
+
 const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource }) => {
   const { locale, asPath } = useRouter()
 
@@ -49,7 +50,7 @@ const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, sum
 
       <DiscussionEmbed
         shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
-        config={{ url: siteConfig.url + asPath, identifier: slug, title }}
+        config={{ url: siteConfig.url + asPath, identifier: slug, title, language: locale }}
       />
     </article>
   )

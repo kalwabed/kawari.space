@@ -89,7 +89,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
         </div>
       </header>
 
-      <main className={className}>{children}</main>
+      <main className={className || ''}>{children}</main>
 
       <footer className={`container ${styled.footerWrapper}`}>
         <Link href="/">
