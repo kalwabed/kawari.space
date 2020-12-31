@@ -58,10 +58,6 @@
   @apply text-current no-underline;
 }
 
-.article h2 {
-  @apply mt-5;
-}
-
 .article h2 a {
   @apply border-b-0 text-current;
 }
@@ -70,12 +66,8 @@
   @apply text-current no-underline;
 }
 
-.article ul {
-  @apply list-disc mb-10;
-}
-
 .article li {
-  @apply ml-8 transition-colors text-light ease-out duration-75;
+  @apply transition-colors text-light ease-out duration-75;
 }
 
 .article li:hover {

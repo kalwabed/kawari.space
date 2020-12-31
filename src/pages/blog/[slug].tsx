@@ -2,7 +2,7 @@ import type { GetStaticPaths, GetStaticProps } from 'next'
 
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
-import BlogLayout from '@/components/blog/Layout'
+import Content from '@/components/blog/Content'
 import { getFileBySlug, getFiles } from '@/lib/mdx'
 import SEO from '@/components/blog/SEO'
 
@@ -14,7 +14,7 @@ export default function Post({ posts }: { posts: Props }) {
   return (
     <Layout page="">
       <SEO {...posts} />
-      <BlogLayout {...posts} />
+      <Content {...posts} />
     </Layout>
   )
 }

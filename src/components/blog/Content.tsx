@@ -7,13 +7,13 @@ import hydrate from 'next-mdx-remote/hydrate'
 
 import siteConfig from 'site-config'
 import Date from './dateConfig'
-import styled from './Layout.module.css'
+import styled from './Content.module.css'
 import ReadConfig from './readConfig'
 
 interface Props extends Post {
   mdxSource: string
 }
-const Layout: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource }) => {
+const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource }) => {
   const { locale, asPath } = useRouter()
 
   const content = hydrate(mdxSource)
@@ -55,4 +55,4 @@ const Layout: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summ
   )
 }
 
-export default Layout
+export default Content
