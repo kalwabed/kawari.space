@@ -16,7 +16,7 @@ const SEO: FC<Post> = ({ title, featuredImage, publishedAt, summary }) => {
   return (
     <>
       <NextSeo
-        title={`${title} - Kalwabed Rizki`}
+        title={`${title} | Kalwabed Rizki`}
         description={summary}
         canonical={url}
         openGraph={{

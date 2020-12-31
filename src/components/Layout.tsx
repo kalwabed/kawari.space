@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { NextSeo } from 'next-seo'
+import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-icons/io'
 
 import LinkExternal from '@/parts/LinkExternal'
@@ -35,6 +35,12 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
   return (
     <>
       <NextSeo title={title} canonical={fullPath} openGraph={{ url: fullPath }} />
+      <SocialProfileJsonLd
+        type="person"
+        name={siteConfig.title}
+        url={siteConfig.url}
+        sameAs={Object.values(siteConfig.socials)}
+      />
       <header>
         <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">

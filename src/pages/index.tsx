@@ -6,28 +6,28 @@ import About from '@/components/home/About'
 import Layout from '@/components/Layout'
 import LatestBlogs from '@/components/home/LatestBlogs'
 import type { I18n, Post } from '@/@types'
-import { getSortedPostsData } from '@/lib/posts'
+import { getAllFilesFrontMatter } from '../lib/mdx'
 
 interface Props extends I18n {
-  allPostsData: Post[]
+  posts: Post[]
 }
 
-const Index: NextPage<Props> = ({ allPostsData, locale }) => {
+const Index: NextPage<Props> = ({ posts, locale }) => {
   return (
     <Layout>
       <Identity locale={locale} />
       <About locale={locale} />
-      <LatestBlogs allPostsData={allPostsData} />
+      <LatestBlogs allPostsData={posts} />
     </Layout>
   )
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const allPostsData = getSortedPostsData({ locale })
+  const posts = await getAllFilesFrontMatter({ locale })
 
   return {
     props: {
-      allPostsData,
+      posts,
       locale
     }
   }
