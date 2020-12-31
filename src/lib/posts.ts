@@ -1,8 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
 import RSS from '@/scripts/generate-rss'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
@@ -64,7 +62,7 @@ export async function getPostData(slug: string, locale = 'id') {
   const matterResult = matter(fileContents)
 
   // use remark to convert markdown into HTML string
-  const processedContent = await remark().use(html).process(matterResult.content)
+  const processedContent = []
   const contentHtml = processedContent.toString()
 
   // combine the data with the slug and contentHtml

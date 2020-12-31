@@ -3,12 +3,13 @@ import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import { DiscussionEmbed } from 'disqus-react'
+import hydrate from 'next-mdx-remote/hydrate'
 
-import { getAllPostsSlugs, getPostData } from '@/lib/posts'
 import Date from '@/components/blog/dateConfig'
 import Read from '@/components/blog/readConfig'
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
+import { getFileBySlug, getFiles } from '@/lib/mdx'
 import siteConfig from 'site-config'
 import styled from './[slug].module.css'
 
@@ -16,16 +17,17 @@ interface Props extends PostType {
   contentHtml: string
 }
 
-export default function Post({ postData }: { postData: Props }) {
+export default function Post({ posts }: { posts: Props }) {
   const { asPath, locale } = useRouter()
-  const { cover, date, readingTime, slug, subtitle, title, contentHtml } = postData
+  const { cover, date, readingTime, slug, subtitle, title, contentHtml } = posts
+  const content = hydrate(contentHtml)
   return (
     <Layout title={title} page="">
       <NextSeo
         description={subtitle}
         openGraph={{ images: [{ url: `https://cdn.statically.io/og/theme=dark/${encodeURI(title)}.png`, alt: title }] }}
       />
-      <div className={`container ${styled.wrapper}`}>
+      <article className={`container ${styled.wrapper}`}>
         <h1 className={styled.title}>{title}</h1>
         <small className={styled.date}>
           <Date dateString={date} locale={locale} /> / ~<Read locale={locale} readingTime={readingTime} /> / {subtitle}
@@ -49,20 +51,20 @@ export default function Post({ postData }: { postData: Props }) {
           </div>
         </div>
 
-        <article className={styled.article} dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <div className={styled.article}>{content}</div>
         <div className={styled.divider} />
 
         <DiscussionEmbed
           shortname={process.env.NEXT_PUBLIC_DISQUS_SHORTNAME}
           config={{ url: siteConfig.url + asPath, identifier: slug, title }}
         />
-      </div>
+      </article>
     </Layout>
   )
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostsSlugs()
+  const paths = await getFiles({ locale: [] })
   return {
     paths,
     fallback: false
@@ -70,12 +72,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-  // @ts-ignore
-  const postData = await getPostData(params.slug, locale)
+  const posts = await getFileBySlug(locale, params.slug as string)
   return {
     props: {
-      postData
+      posts
     }
   }
 }

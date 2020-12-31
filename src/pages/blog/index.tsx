@@ -1,28 +1,29 @@
 import { GetStaticProps, NextPage } from 'next'
 
 import { Post } from '@/@types'
-import { getSortedPostsData } from '@/lib/posts'
 import Layout from '@/components/Layout'
 import BlogList from '@/components/blog/BlogList'
+import { getAllFilesFrontMatter } from '@/lib/mdx'
 
 interface Props {
-  allPostsData: Post[]
+  posts: Post[]
 }
 
-const Index: NextPage<Props> = ({ allPostsData }) => {
+const Index: NextPage<Props> = ({ posts }) => {
   return (
     <Layout title="kawari | blog" page="blog" className="pb-24 md:pb-56">
-      <BlogList allPostsData={allPostsData} />
+      <BlogList allPostsData={posts} />
     </Layout>
   )
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const allPostsData = getSortedPostsData({ locale })
+  // const allPostsData = getSortedPostsData({ locale })
+  const posts = await getAllFilesFrontMatter({ locale })
 
   return {
     props: {
-      allPostsData
+      posts
     }
   }
 }
