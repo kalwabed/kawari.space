@@ -8,7 +8,7 @@ const SEO: FC<Post> = ({ title, featuredImage, publishedAt, summary }) => {
   const { asPath } = useRouter()
   const date = new Date(publishedAt).toISOString()
   const image = {
-    url: `${siteConfig.url}${featuredImage.image}`,
+    url: siteConfig.url + featuredImage.image,
     alt: title,
     width: 800,
     height: 600
