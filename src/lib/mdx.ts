@@ -26,7 +26,7 @@ export async function getFileBySlug(locale = 'id', slug = '') {
   const mdxSource = await renderToString(content)
   // TODO add component
 
-  return { contentHtml: mdxSource, ...data, slug }
+  return { mdxSource, ...data, slug }
 }
 
 export async function getAllFilesFrontMatter({ locale = 'id' }) {

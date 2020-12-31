@@ -11,26 +11,26 @@ import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import { getFileBySlug, getFiles } from '@/lib/mdx'
 import siteConfig from 'site-config'
+import SEO from '@/components/blog/SEO'
 import styled from './[slug].module.css'
 
 interface Props extends PostType {
-  contentHtml: string
+  mdxSource: string
 }
 
 export default function Post({ posts }: { posts: Props }) {
   const { asPath, locale } = useRouter()
-  const { cover, date, readingTime, slug, subtitle, title, contentHtml } = posts
-  const content = hydrate(contentHtml)
+  const { featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource } = posts
+  const content = hydrate(mdxSource)
+
   return (
     <Layout title={title} page="">
-      <NextSeo
-        description={subtitle}
-        openGraph={{ images: [{ url: `https://cdn.statically.io/og/theme=dark/${encodeURI(title)}.png`, alt: title }] }}
-      />
+      <SEO {...posts} />
       <article className={`container ${styled.wrapper}`}>
         <h1 className={styled.title}>{title}</h1>
-        <small className={styled.date}>
-          <Date dateString={date} locale={locale} /> / ~<Read locale={locale} readingTime={readingTime} /> / {subtitle}
+        <small className={styled.publishedAt}>
+          <Date dateString={publishedAt} locale={locale} /> / ~<Read locale={locale} readingTime={readingTime} /> /{' '}
+          {summary}
         </small>
         <div className={styled.imgWrapper}>
           <Image
@@ -39,14 +39,14 @@ export default function Post({ posts }: { posts: Props }) {
             objectPosition="center"
             objectFit="cover"
             quality={90}
-            src={cover.image}
+            src={featuredImage.image}
             className={styled.img}
             alt={title}
           />
           <div className={styled.imgFromWrapper}>
             {locale === 'id' ? 'Foto dari' : 'Photo by'}{' '}
-            <a href={cover.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
-              {cover.name}
+            <a href={featuredImage.source} target="_blank" rel="noopener noreferrer" className={styled.imgFromLink}>
+              {featuredImage.name}
             </a>{' '}
           </div>
         </div>

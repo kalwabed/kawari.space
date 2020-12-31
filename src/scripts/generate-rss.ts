@@ -34,8 +34,8 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
   posts.forEach(post =>
     feed.addItem({
       title: post.title,
-      description: post.subtitle,
-      date: new Date(post.date),
+      description: post.summary,
+      date: new Date(post.publishedAt),
       author: [
         {
           email,
@@ -45,7 +45,7 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
       ],
       copyright: `All rights reserved ${new Date().getFullYear()}, Kalwabed Rizki`,
       link: `${url}/blog/${post.slug}`,
-      image: `${url}/assets/uploads${post.cover.image}`,
+      image: `${url}/assets/uploads${post.featuredImage.image}`,
       id: `${url}/blog/${post.slug}`
     })
   )

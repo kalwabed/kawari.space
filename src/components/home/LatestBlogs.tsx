@@ -16,7 +16,7 @@ const LatestBlogs = ({ allPostsData }: Props) => {
     <section className={`container ${styled.wrapper}`}>
       <div className={styled.latestBlogs}>{locale === 'id' ? 'Tulisan terbaru' : 'Latest blogs'}</div>
       {allPostsData.map(
-        ({ date, readingTime, slug, title }, i) =>
+        ({ publishedAt, readingTime, slug, title }, i) =>
           i <= 2 && (
             <Link href={`/blog/${slug}`} key={slug}>
               <a className={`group ${styled.blogWrapper}`}>
@@ -25,7 +25,7 @@ const LatestBlogs = ({ allPostsData }: Props) => {
                     <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
                   </div>
                   <div className={styled.dateTime}>
-                    <Date dateString={date} locale={locale} />
+                    <Date dateString={publishedAt} locale={locale} />
                     <div className="mx-2">|</div>
                     <Read locale={locale} readingTime={readingTime} />
                   </div>

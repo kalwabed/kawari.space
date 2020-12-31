@@ -1,10 +1,10 @@
 export interface Post {
   title: string
   slug: string
-  subtitle: string
-  date: string
+  summary: string
+  publishedAt: string
   readingTime: number
-  cover: {
+  featuredImage: {
     image: string
     source: string
     name: string

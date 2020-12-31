@@ -16,12 +16,12 @@ const Content = ({ allPostsData }: Props) => {
     <section className="overflow-hidden">
       <div className={`container ${styled.wrapper}`}>
         <div className="-my-8">
-          {allPostsData.map(({ title, subtitle, date, readingTime, slug }) => (
+          {allPostsData.map(({ title, summary, publishedAt, readingTime, slug }) => (
             <Link href={`/blog/${slug}`} key={slug}>
               <a className={`group ${styled.slugWrapper}`}>
                 <div className={styled.dateTimeWrap}>
                   <span className="mt-1">
-                    <Date dateString={date} locale={locale} />
+                    <Date dateString={publishedAt} locale={locale} />
                   </span>
                   <span className="mt-1 text-gray-500 text-sm">
                     <Read locale={locale} readingTime={readingTime} />
@@ -29,7 +29,7 @@ const Content = ({ allPostsData }: Props) => {
                 </div>
                 <div className="md:flex-grow ml-2 md:ml-0">
                   <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
-                  <p className="leading-relaxed text-gray-500">{subtitle}</p>
+                  <p className="leading-relaxed text-gray-500">{summary}</p>
                 </div>
               </a>
             </Link>
