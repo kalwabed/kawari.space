@@ -6,6 +6,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-ic
 import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
 import styled from './layout.module.css'
+import { NotyfArrayEvent } from 'notyf'
 
 interface Props {
   page?: string
@@ -13,12 +14,16 @@ interface Props {
   className?: string
 }
 
-const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki', className = '' }) => {
+const Layout: React.FC<Props> = ({ page = 'home', children, title = 'Kalwabed Rizki', className = '' }) => {
   const { asPath, locale, push } = useRouter()
   const links = [
     {
+      href: '/',
+      label: 'home'
+    },
+    {
       href: '/projects',
-      label: locale === 'id' ? 'proyek' : 'projects'
+      label: 'projects'
     },
     {
       href: '/blog',
@@ -26,7 +31,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
     },
     {
       href: '/about',
-      label: locale === 'id' ? 'tentang' : 'about'
+      label: 'about'
     }
   ]
 
@@ -44,7 +49,7 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
       <header>
         <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">
-            <a className="flex items-center mb-4 md:mb-0">
+            <a className="flex items-center mb-4 md:ml-48 md:mb-0">
               <span className={styled.logo}>
                 kawari
                 <span className={`animate-pulse ${styled.planet}`} />
@@ -75,41 +80,36 @@ const Layout: React.FC<Props> = ({ page = '', children, title = 'Kalwabed Rizki'
               {locale === 'id' ? 'en' : 'id'}
             </button>
           </nav>
-          <div className={styled.socialWrapper}>
-            <a href={socials.Github} target="_blank" rel="noopener noreferrer" aria-label="github">
-              <IoLogoGithub className={styled.icon} />
-            </a>
-            <a href={socials.LinkedIn} target="_blank" rel="noopener noreferrer" aria-label="linkedin" className="mx-2">
-              <IoLogoLinkedin className={styled.icon} />
-            </a>
-            <a href={socials.Twitter} target="_blank" rel="noopener noreferrer" aria-label="twitter">
-              <IoLogoTwitter className={styled.icon} />
-            </a>
-          </div>
         </div>
       </header>
 
-      <main className={className || ''}>{children}</main>
+      <main className={className}>{children}</main>
 
       <footer className={`container ${styled.footerWrapper}`}>
-        <Link href="/">
-          <a className="flex items-center w-10 h-5 justify-center">
-            <span className={styled.logo}>
-              kawari
-              <span className={`animate-pulse ${styled.planet}`} />
-            </span>
+        <nav className="space-x-5">
+          {links.map(link => (
+            <Link href={link.href} key={link.label}>
+              <a
+                href={link.href}
+                className={`${styled.navLink} ${link.label === page && 'border-b-2 border-primary hover:border-info'}`}
+              >
+                {link.label}
+              </a>
+            </Link>
+          ))}
+        </nav>
+        <div className={styled.socialWrapper}>
+          <a href={socials.Github} target="_blank" rel="noopener noreferrer" aria-label="github">
+            <IoLogoGithub className={styled.icon} />
           </a>
-        </Link>
-        <p className={styled.license}>
-          © 2020 {locale === 'id' ? 'dibawah lisensi MIT' : 'under MIT license'} —
-          <LinkExternal label="Kalwabed Rizki" className="ml-1" href="github.com/kalwabed/kawari.space" />
-        </p>
-        <span className={styled.madeWrapper}>
-          <div className={styled.hosted}>
-            {locale === 'id' ? 'Di-host di' : 'Hosted on'}{' '}
-            <LinkExternal href="vercel.com" label="Vercel" className="ml-1 md:ml-0" />
-          </div>
-        </span>
+          <a href={socials.LinkedIn} target="_blank" rel="noopener noreferrer" aria-label="linkedin" className="mx-2">
+            <IoLogoLinkedin className={styled.icon} />
+          </a>
+          <a href={socials.Twitter} target="_blank" rel="noopener noreferrer" aria-label="twitter">
+            <IoLogoTwitter className={styled.icon} />
+          </a>
+        </div>
+        <p className="font-serif">Kalwabed</p>
       </footer>
     </>
   )
