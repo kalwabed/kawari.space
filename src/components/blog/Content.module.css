@@ -99,6 +99,7 @@
   height: 20rem;
 }
 
+
 .article code {
   @apply font-mono bg-secondary text-base;
 }

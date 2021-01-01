@@ -2,10 +2,13 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
+import autoLink from 'remark-autolink-headings'
+import codeTitle from 'remark-code-titles'
+import remarkSLug from 'remark-slug'
 import renderToString from 'next-mdx-remote/render-to-string'
 import RSS from '@/scripts/generate-rss'
+import MDXComponents from '@/components/MDXComponents'
 
-// TODO: implement readingTime library
 const postDir = path.join(process.cwd(), 'posts')
 
 export async function getFiles({ locale = 'id' }: { locale: string[] | string }) {
@@ -21,12 +24,16 @@ export async function getFiles({ locale = 'id' }: { locale: string[] | string })
   }
   return fs.readdirSync(path.join(postDir, locale))
 }
-
+// TODO: add syntax highlighting
 export async function getFileBySlug(locale = 'id', slug = '') {
   const source = fs.readFileSync(path.join(postDir, locale, `${slug}.mdx`), 'utf8')
   const { data, content } = matter(source)
-  const mdxSource = await renderToString(content)
-  // TODO add component for mdx [remark]
+  const mdxSource = await renderToString(content, {
+    components: MDXComponents,
+    mdxOptions: {
+      remarkPlugins: [remarkSLug, autoLink, codeTitle]
+    }
+  })
 
   return { mdxSource, ...data, slug }
 }
