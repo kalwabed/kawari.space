@@ -19,19 +19,18 @@ const BlogList = ({ allPostsData }: Props) => {
           {allPostsData.map(({ title, summary, publishedAt, readingTime, slug }) => (
             <Link href={`/blog/${slug}`} key={slug}>
               <a className={`group ${styled.slugWrapper}`}>
-                <div className="md:flex-grow ml-8">
-                  <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
+                <div className="md:flex-grow mx-5">
+                  <div className="flex flex-row justify-between">
+                    <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
 
-                  <div className="flex flex-row space-x-1 space-y-1 text-gray-600 text-sm items-center content-center ">
-                    <span className="-mb-1 mr-0.5">
-                      <Date dateString={publishedAt} locale={locale} />
-                    </span>
-                    •
-                    <span>
-                      <Read locale={locale} readingTime={readingTime} />
-                    </span>
+                    <div className="hidden md:flex flex-row text-gray-500 text-sm items-center text-right">
+                      <span>
+                        <Read locale={locale} readingTime={readingTime} />
+                      </span>
+                    </div>
                   </div>
-                  <p className="leading-relaxed text-gray-500">{summary}</p>
+
+                  <p className="leading-relaxed text-gray-400">{summary}</p>
                 </div>
               </a>
             </Link>

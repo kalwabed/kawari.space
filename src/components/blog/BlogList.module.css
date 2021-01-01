@@ -6,10 +6,6 @@
   @apply py-4 flex flex-col flex-wrap transition-shadow ease-out duration-150;
 }
 
-.slugWrapper:hover {
-  @apply shadow-lg;
-}
-
 .dateTimeWrap {
   @apply hidden;
 }
