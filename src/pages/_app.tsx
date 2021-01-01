@@ -1,4 +1,5 @@
-import '@/styles/index.css'
+import '@/styles/global.css'
+import '@/styles/syntax.css'
 import '@/styles/nprogress.css'
 import 'notyf/notyf.min.css'
 import { DefaultSeo } from 'next-seo'

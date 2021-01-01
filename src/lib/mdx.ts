@@ -5,6 +5,7 @@ import path from 'path'
 import autoLink from 'remark-autolink-headings'
 import codeTitle from 'remark-code-titles'
 import remarkSLug from 'remark-slug'
+import mdxPrism from 'mdx-prism'
 import renderToString from 'next-mdx-remote/render-to-string'
 import RSS from '@/scripts/generate-rss'
 import MDXComponents from '@/components/MDXComponents'
@@ -31,7 +32,8 @@ export async function getFileBySlug(locale = 'id', slug = '') {
   const mdxSource = await renderToString(content, {
     components: MDXComponents,
     mdxOptions: {
-      remarkPlugins: [remarkSLug, autoLink, codeTitle]
+      remarkPlugins: [remarkSLug, autoLink, codeTitle],
+      rehypePlugins: [mdxPrism]
     }
   })
 
