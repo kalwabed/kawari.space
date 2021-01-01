@@ -34,6 +34,22 @@ Talking about hackers, so what are hackers? referring to [Wikipedia](https://en.
 
 In practice, hacking can use any means; it doesn't matter whether it's legal or illegal. Hackers, in this 'white hat' group, prefer to use legal (but non-standard) means to get into the target system without destroying the system until _down_, retrieving unauthorized data, etc. This technique is called _[ethical-hacking](https://www.secjuice.com/ethical-hacking-a-brief-overview/)_.
 
+```jsx:index.jsx
+import { useTheme } from 'next-themes'
+
+const ThemeChanger = () => {
+  const { theme, setTheme } = useTheme()
+
+  return (
+    <div>
+      The current theme is: {theme}
+      <button onClick={() => setTheme('light')}>Light Mode</button>
+      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+    </div>
+  )
+}
+```
+
 So it can be an analogy like: _A stranger comes to the house, then someone wants to enter the house. Because the front door is locked, the person's job is to enter without taking action that could harm the home owner. So the person tried to find out the combination of the locks on the door, and after a few tries the door was finally successfully opened and the person, because of the 'white hat', just left a 'message' to the owner of the house and told him that he got in and how to solve it. After that, he closed the door and locked it again, leaving the house without the owner's property with him_.
 
 To know more clearly how a hacker's step-by-step process works, there is a competition called Capture The Flag.

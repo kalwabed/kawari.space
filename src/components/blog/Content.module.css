@@ -100,7 +100,13 @@
 }
 
 .article code {
-  @apply font-mono bg-secondary text-base;
+  @apply p-0.5 border border-gray-500 font-semibold text-base rounded-md;
+  background-color: #282c34;
+}
+
+.article code::before,
+.article code::after {
+  content: "`"
 }
 
 .divider {

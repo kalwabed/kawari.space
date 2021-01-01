@@ -9,6 +9,7 @@ import siteConfig from 'site-config'
 import Date from './dateConfig'
 import styled from './Content.module.css'
 import ReadConfig from './readConfig'
+import MDXComponents from '../MDXComponents'
 
 interface Props extends Post {
   mdxSource: string
@@ -16,8 +17,7 @@ interface Props extends Post {
 
 const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource }) => {
   const { locale, asPath } = useRouter()
-
-  const content = hydrate(mdxSource)
+  const content = hydrate(mdxSource, { components: MDXComponents })
 
   return (
     <article className={`container ${styled.wrapper}`}>

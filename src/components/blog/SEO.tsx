@@ -25,7 +25,7 @@ const SEO: FC<Post> = ({ title, featuredImage, publishedAt, summary }) => {
             section: 'Technology',
             publishedTime: date,
             modifiedTime: date,
-            authors: [siteConfig.socials.Twitter]
+            authors: [siteConfig.twitterUsername]
           },
           url,
           title,
