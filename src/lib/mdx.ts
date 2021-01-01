@@ -25,7 +25,7 @@ export async function getFiles({ locale = 'id' }: { locale: string[] | string })
   }
   return fs.readdirSync(path.join(postDir, locale))
 }
-// TODO: add syntax highlighting
+
 export async function getFileBySlug(locale = 'id', slug = '') {
   const source = fs.readFileSync(path.join(postDir, locale, `${slug}.mdx`), 'utf8')
   const { data, content } = matter(source)
