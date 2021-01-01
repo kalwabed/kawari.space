@@ -3,7 +3,7 @@ import { id, enUS } from 'date-fns/locale'
 
 const Date = ({ dateString, locale }) => {
   const date = parseISO(dateString)
-  const dateFormat = locale === 'id' ? 'd LLLL yyyy' : 'LLLL d yyyy'
+  const dateFormat = locale === 'id' ? 'd LLL yyyy' : 'LLL d yyyy'
   return <time dateTime={dateString}>{format(date, dateFormat, { locale: locale === 'id' ? id : enUS })}</time>
 }
 

@@ -61,7 +61,7 @@
   }
 
   .nav {
-    @apply ml-auto mr-48 py-1 pl-4;
+    @apply ml-auto mr-40 py-1 pl-4;
   }
 
   .socialWrapper {

@@ -3,10 +3,8 @@ import { useRouter } from 'next/router'
 import { NextSeo, SocialProfileJsonLd } from 'next-seo'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-icons/io'
 
-import LinkExternal from '@/parts/LinkExternal'
 import siteConfig from 'site-config'
 import styled from './layout.module.css'
-import { NotyfArrayEvent } from 'notyf'
 
 interface Props {
   page?: string
@@ -49,7 +47,7 @@ const Layout: React.FC<Props> = ({ page = 'home', children, title = 'Kalwabed Ri
       <header>
         <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">
-            <a className="flex items-center mb-4 md:ml-48 md:mb-0">
+            <a className="flex items-center mb-4 md:ml-40 md:mb-0">
               <span className={styled.logo}>
                 kawari
                 <span className={`animate-pulse ${styled.planet}`} />

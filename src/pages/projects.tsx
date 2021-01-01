@@ -9,9 +9,8 @@ import siteConfig from 'site-config'
 
 const Projects: NextPage = () => {
   const { locale } = useRouter()
-  const pos = locale === 'id' ? 'proyek' : 'projects'
   return (
-    <Layout page={pos} title={`${pos} | Kalwabed Rizki`}>
+    <Layout page="projects" title="projects | Kalwabed Rizki">
       <section>
         <div className="p-5 mx-auto bg-secondary flex flex-col justify-center items-center">
           <h1 className="font-bold text-center md:text-4xl text-3xl">
