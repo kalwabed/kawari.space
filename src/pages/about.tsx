@@ -9,11 +9,11 @@ const About: NextPage = () => {
   const { locale } = useRouter()
   return (
     <Layout title="about | Kalwabed Rizki" page="about">
-      <div className="container mx-auto my-12 flex flex-col md:px-24 pb-24 text-lg">
-        <section className="px-5 md:px-20">
+      <div className="container mx-auto my-12 flex flex-col md:px-48 pb-24 text-lg">
+        <section className="px-5 md:px-24">
           <Intro locale={locale} />
         </section>
-        <section className="px-5 md:px-20 mt-5">
+        <section className="px-5 md:px-24 mt-5">
           <SocialMedia />
         </section>
       </div>
