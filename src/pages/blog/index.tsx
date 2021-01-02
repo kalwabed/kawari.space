@@ -11,7 +11,7 @@ interface Props {
 
 const Index: NextPage<Props> = ({ posts }) => {
   return (
-    <Layout title="blog | Kalwabed Rizki" page="blog" className="pb-24 md:pb-56">
+    <Layout title="Blog | Kalwabed Rizki" page="Blog" className="pb-24 md:pb-10">
       <BlogList allPostsData={posts} />
     </Layout>
   )

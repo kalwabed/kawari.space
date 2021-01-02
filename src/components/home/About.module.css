@@ -12,6 +12,6 @@
 
 @screen md {
   .wrapper {
-    @apply px-56;
+    @apply px-60;
   }
 }

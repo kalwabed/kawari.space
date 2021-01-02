@@ -7,14 +7,13 @@ import { useRouter } from 'next/router'
 
 const About: NextPage = () => {
   const { locale } = useRouter()
-  const pos = locale === 'id' ? 'tentang' : 'about'
   return (
-    <Layout title={`${pos} | Kalwabed Rizki`} page={pos}>
-      <div className="container mx-auto my-12 flex flex-col md:px-24 pb-24 text-lg">
-        <section className="px-5 md:px-20">
+    <Layout title="About | Kalwabed Rizki" page="About">
+      <div className="container mx-auto my-12 flex flex-col md:px-48 pb-24 text-lg">
+        <section className="px-5 md:px-24">
           <Intro locale={locale} />
         </section>
-        <section className="px-5 md:px-20 mt-5">
+        <section className="px-5 md:px-24 mt-5">
           <SocialMedia />
         </section>
       </div>

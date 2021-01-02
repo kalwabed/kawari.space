@@ -1,5 +1,5 @@
 .wrapper {
-  @apply flex flex-col items-start px-5 mx-auto pb-40;
+  @apply flex flex-col items-start px-5 mx-auto pb-20;
 }
 
 .latestBlogs {
@@ -36,6 +36,6 @@
 
 @screen md {
   .wrapper {
-    @apply px-56;
+    @apply px-60;
   }
 }
