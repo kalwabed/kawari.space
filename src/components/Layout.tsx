@@ -12,24 +12,24 @@ interface Props {
   className?: string
 }
 
-const Layout: React.FC<Props> = ({ page = 'home', children, title = 'Kalwabed Rizki', className = '' }) => {
+const Layout: React.FC<Props> = ({ page = 'Home', children, title = 'Kalwabed Rizki', className = '' }) => {
   const { asPath, locale, push } = useRouter()
   const links = [
     {
       href: '/',
-      label: 'home'
+      label: 'Home'
     },
     {
       href: '/projects',
-      label: 'projects'
+      label: 'Projects'
     },
     {
       href: '/blog',
-      label: 'blog'
+      label: 'Blog'
     },
     {
       href: '/about',
-      label: 'about'
+      label: 'About'
     }
   ]
 
@@ -75,7 +75,7 @@ const Layout: React.FC<Props> = ({ page = 'home', children, title = 'Kalwabed Ri
               className="p-2 ml-3 inline-flex items-center focus:outline-none focus:ring hover:bg-gray-500 text-white bg-gray-700 rounded-sm"
             >
               <IoMdGlobe className="mr-1" />
-              {locale === 'id' ? 'en' : 'id'}
+              {locale === 'id' ? 'EN' : 'ID'}
             </button>
           </nav>
         </div>
@@ -107,7 +107,7 @@ const Layout: React.FC<Props> = ({ page = 'home', children, title = 'Kalwabed Ri
             <IoLogoTwitter className={styled.icon} />
           </a>
         </div>
-        <p className="font-serif">Kalwabed</p>
+        <p className="font-light text-sm ">© {new Date().getFullYear()} Kalwabed Rizki</p>
       </footer>
     </>
   )

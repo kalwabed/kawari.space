@@ -48,7 +48,7 @@
 }
 
 .footerWrapper {
-  @apply px-5 pt-8 pb-5 mx-auto flex items-center flex-col;
+  @apply px-5 pt-5 pb-8 mx-auto flex items-center flex-col;
 }
 
 .madeWrapper {
@@ -69,6 +69,6 @@
   }
 
   .footerWrapper {
-    @apply justify-center space-y-2;
+    @apply justify-center space-y-3;
   }
 }
