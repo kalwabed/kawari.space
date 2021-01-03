@@ -24,6 +24,7 @@ module.exports = {
         'spaced-comment': ['error', 'always', { markers: ['/'] }],
         'import/no-unresolved': 'off',
         'react/no-danger': 'off',
+        '@typescript-eslint/ban-ts-ignore': 'off',
         '@typescript-eslint/camelcase': 'off',
         '@typescript-eslint/explicit-function-return-type': ['off'],
         '@typescript-eslint/no-explicit-any': 'off',
