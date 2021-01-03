@@ -13,9 +13,19 @@ import MDXComponents from '../MDXComponents'
 
 interface Props extends Post {
   mdxSource: string
+  ImgBase64: string
 }
 
-const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, summary, title, mdxSource }) => {
+const Content: FC<Props> = ({
+  featuredImage,
+  publishedAt,
+  readingTime,
+  slug,
+  summary,
+  title,
+  mdxSource,
+  ImgBase64
+}) => {
   const { locale, asPath } = useRouter()
   const content = hydrate(mdxSource, { components: MDXComponents })
 
@@ -27,6 +37,7 @@ const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, sum
         {summary}
       </small>
       <div className={styled.imgWrapper}>
+        <ImgBase64Component ImgBase64={ImgBase64} />
         <Image
           width={850}
           height={360}
@@ -55,5 +66,22 @@ const Content: FC<Props> = ({ featuredImage, publishedAt, readingTime, slug, sum
     </article>
   )
 }
+
+const ImgBase64Component = ({ ImgBase64 }) => (
+  <img
+    aria-hidden="true"
+    alt="blurhash"
+    src={ImgBase64}
+    style={{
+      position: 'absolute',
+      width: '850',
+      height: '360',
+      objectFit: 'cover',
+      objectPosition: 'center',
+      filter: 'blur(2rem)',
+      transform: 'scale(1.2)'
+    }}
+  />
+)
 
 export default Content

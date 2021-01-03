@@ -23,6 +23,8 @@
     "validate": "yarn lint && yarn type-check"
   },
   "dependencies": {
+    "@plaiceholder/base64": "^1.0.0",
+    "@plaiceholder/next": "^1.0.0",
     "autoprefixer": "^10.0.4",
     "copee": "^1.0.6",
     "date-fns": "^2.16.1",
