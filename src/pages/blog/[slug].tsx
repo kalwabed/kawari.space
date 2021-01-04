@@ -15,9 +15,9 @@ interface Props extends PostType {
 
 export default function Post({ post }: { post: Props }) {
   return (
-    <Layout page="">
+    <Layout>
       <SEO {...post} />
-      <Content {...post} />
+      <Content post={post} />
     </Layout>
   )
 }

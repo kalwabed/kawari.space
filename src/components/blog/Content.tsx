@@ -2,7 +2,6 @@ import { Post } from '@/@types'
 import { DiscussionEmbed } from 'disqus-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { FC } from 'react'
 import hydrate from 'next-mdx-remote/hydrate'
 
 import siteConfig from 'site-config'
@@ -16,17 +15,9 @@ interface Props extends Post {
   ImgBase64: string
 }
 
-const Content: FC<Props> = ({
-  featuredImage,
-  publishedAt,
-  readingTime,
-  slug,
-  summary,
-  title,
-  mdxSource,
-  ImgBase64
-}) => {
+const Content = ({ post }: { post: Props }) => {
   const { locale, asPath } = useRouter()
+  const { ImgBase64, featuredImage, mdxSource, publishedAt, readingTime, slug, summary, title } = post
   const content = hydrate(mdxSource, { components: MDXComponents })
 
   return (
