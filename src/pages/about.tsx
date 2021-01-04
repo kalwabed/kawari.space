@@ -8,8 +8,8 @@ import { useRouter } from 'next/router'
 const About: NextPage = () => {
   const { locale } = useRouter()
   return (
-    <Layout title="About | Kalwabed Rizki" page="About">
-      <div className="container mx-auto my-12 flex flex-col md:px-48 pb-24 text-lg">
+    <Layout title="About | Kalwabed Rizki">
+      <div className="container mx-auto flex flex-col md:px-48 pb-24 text-lg">
         <section className="px-5 md:px-24">
           <Intro locale={locale} />
         </section>

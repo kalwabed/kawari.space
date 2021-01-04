@@ -7,12 +7,11 @@ import siteConfig from 'site-config'
 import styled from './layout.module.css'
 
 interface Props {
-  page?: string
   title?: string
   className?: string
 }
 
-const Layout: React.FC<Props> = ({ page = 'Home', children, title = 'Kalwabed Rizki', className = '' }) => {
+const Layout: React.FC<Props> = ({ children, title = 'Kalwabed Rizki', className = '' }) => {
   const { asPath, locale, push } = useRouter()
   const links = [
     {
@@ -60,7 +59,7 @@ const Layout: React.FC<Props> = ({ page = 'Home', children, title = 'Kalwabed Ri
                 <a
                   href={link.href}
                   className={`${styled.navLink} ${
-                    link.label === page && 'border-b-2 border-primary hover:border-info'
+                    link.href === asPath && 'border-b-2 border-primary hover:border-info'
                   }`}
                 >
                   {link.label}
@@ -89,7 +88,7 @@ const Layout: React.FC<Props> = ({ page = 'Home', children, title = 'Kalwabed Ri
             <Link href={link.href} key={link.label}>
               <a
                 href={link.href}
-                className={`${styled.navLink} ${link.label === page && 'border-b-2 border-primary hover:border-info'}`}
+                className={`${styled.navLink} ${link.href === asPath && 'border-b-2 border-primary hover:border-info'}`}
               >
                 {link.label}
               </a>

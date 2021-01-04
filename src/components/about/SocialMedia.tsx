@@ -7,7 +7,7 @@ const SocialMedia = () => {
   const { locale } = useRouter()
   return (
     <>
-      <h1 className="my-5">{locale === 'id' ? 'Sosial media' : 'Social media'}</h1>
+      <h1 className="my-3">{locale === 'id' ? 'Sosial media' : 'Social media'}</h1>
       <div className="flex flex-col flex-wrap md:flex-nowrap">
         {locale === 'id' ? id.about.socialGetInTouch : en.about.socialGetInTouch}
         {Object.entries(siteConfig.socials).map(([k, v]) => (

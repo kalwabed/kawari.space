@@ -10,7 +10,7 @@ import styled from './intro.module.css'
 const Intro: FC<I18n> = ({ locale }) => {
   return (
     <>
-      <h1 className="mb-5">{locale === 'id' ? 'Tentang' : 'About'}</h1>
+      <h1 className="mb-3">{locale === 'id' ? 'Tentang' : 'About'}</h1>
       {locale === 'id' ? id.about.intro1 : en.about.intro1} <b>Ka</b>l<b>wa</b>bed <b>Ri</b>zki.{' '}
       {locale === 'id' ? id.about.intro2 : en.about.intro2}{' '}
       <LinkExternal href="banyuwangikab.go.id/" label="Banyuwangi, Indonesia" />.{' '}

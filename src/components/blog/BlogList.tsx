@@ -16,7 +16,7 @@ const BlogList = ({ allPostsData }: Props) => {
     <section className="overflow-hidden">
       <div className={`container ${styled.wrapper}`}>
         <div className="-my-8">
-          {allPostsData.map(({ title, summary, publishedAt, readingTime, slug }) => (
+          {allPostsData.map(({ title, summary, readingTime, slug }) => (
             <Link href={`/blog/${slug}`} key={slug}>
               <a className={`group ${styled.slugWrapper}`}>
                 <div className="md:flex-grow mx-5">
