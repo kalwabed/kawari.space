@@ -1,7 +1,8 @@
 import siteConfig from 'site-config'
 
 export default {
-  title: siteConfig.title,
+  title: 'Home',
+  titleTemplate: '%s | Kalwabed Rizki',
   description: siteConfig.description,
   canonical: siteConfig.url,
   openGraph: {

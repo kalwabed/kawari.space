@@ -11,7 +11,7 @@ interface Props {
   className?: string
 }
 
-const Layout: React.FC<Props> = ({ children, title = 'Kalwabed Rizki', className = '' }) => {
+const Layout: React.FC<Props> = ({ children, title = '', className = '' }) => {
   const { asPath, locale, push } = useRouter()
   const links = [
     {
