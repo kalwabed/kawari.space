@@ -28,7 +28,7 @@
     "autoprefixer": "^10.2.1",
     "copee": "^1.0.6",
     "date-fns": "^2.16.1",
-    "disqus-react": "^1.0.10",
+    "disqus-react": "^1.0.11",
     "feed": "^4.2.1",
     "gray-matter": "^4.0.2",
     "mdx-prism": "^0.3.1",
