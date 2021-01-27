@@ -4,10 +4,10 @@ import path from 'path'
 import siteConfig from 'site-config'
 import { Post } from '@/@types'
 
-const { description, email, title, url } = siteConfig
+const { description, email, siteName, name, url } = siteConfig
 
 const feed = new Feed({
-  title,
+  title: siteName + '.space',
   description,
   id: url,
   link: url,
@@ -24,7 +24,7 @@ const feed = new Feed({
   author: {
     email,
     link: siteConfig.socials.Twitter,
-    name: title
+    name
   }
 })
 
@@ -39,7 +39,7 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
         {
           email,
           link: siteConfig.socials.Twitter,
-          name: title
+          name
         }
       ],
       copyright: `All rights reserved ${new Date().getFullYear()}, Kalwabed Rizki`,

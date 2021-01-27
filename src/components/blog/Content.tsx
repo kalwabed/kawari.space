@@ -18,7 +18,8 @@ interface Props extends Post {
 const Content = ({ post }: { post: Props }) => {
   const { locale, asPath } = useRouter()
   const { ImgBase64, featuredImage, mdxSource, publishedAt, readingTime, slug, summary, title } = post
-  const content = hydrate(mdxSource, { components: MDXComponents })
+  // @ts-ignore
+  const content = hydrate(mdxSource, { components: MDXComponents }) //* error from next-mdx-remote, currently ignore
 
   return (
     <article className={`container ${styled.wrapper}`}>
