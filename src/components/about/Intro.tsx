@@ -22,7 +22,7 @@ const Intro: FC<I18n> = ({ locale }) => {
         {locale === 'id' ? id.about.intro5 : en.about.intro5}
       </div>
       <div className="leading-normal mt-2 tracking-wide">
-        {locale === 'id' ? 'Saya menggunakan' : "I'm using"} <LinkExternal href="kubuntu.org" label="Kubuntu 20" />{' '}
+        {locale === 'id' ? 'Saya menggunakan' : "I'm using"} <LinkExternal href="manjaro.org" label="Manjaro" />{' '}
         {locale === 'id' ? id.about.intro6 : en.about.intro6}{' '}
         <LinkExternal label="gostartupco.com" href="gostartupco.com" />,{' '}
         {locale === 'id' ? id.about.intro7 : en.about.intro7}

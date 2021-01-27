@@ -6,7 +6,7 @@ import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
 import Content from '@/components/blog/Content'
 import { getFileBySlug, getFiles } from '@/lib/mdx'
-import SEO from '@/components/blog/SEO'
+import SEO from '@/components/SEO'
 
 interface Props extends PostType {
   mdxSource: string
@@ -16,7 +16,7 @@ interface Props extends PostType {
 export default function Post({ post }: { post: Props }) {
   return (
     <Layout>
-      <SEO {...post} />
+      <SEO title={post.title} isBlog post={post} />
       <Content post={post} />
     </Layout>
   )

@@ -18,7 +18,7 @@ const Identity: FC<I18n> = ({ locale }) => {
           height={260}
           priority
           alt="profile"
-          src="/assets/examples/profile.png"
+          src={siteConfig.profile}
         />
       </div>
       <div className={styled.summaryWrapper}>

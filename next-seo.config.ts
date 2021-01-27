@@ -7,7 +7,7 @@ export default {
   canonical: siteConfig.url,
   openGraph: {
     url: siteConfig.url,
-    title: siteConfig.title,
+    title: siteConfig.name,
     description: siteConfig.description,
     images: [
       {

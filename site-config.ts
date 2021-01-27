@@ -43,14 +43,16 @@ const projects: Project[] = [
         'Aplikasi web yang dimaksudkan sebagai tempat pertemuan antara penjual tanah yang memasarkan propertinya dengan calon pembeli'
     },
     image: '/assets/projects/tuantanah.png',
-    stack: 'Express, React, Bootstrap',
-    demoUrl: 'https://tuantanah.vercel.app',
-    source: 'https://github.com/kalwabed/tuantanah-website'
+    stack: 'Express, Next.js, Bootstrap 4',
+    demoUrl: 'https://tuantanah.kawari.space',
+    source: 'https://github.com/kalwabed/tuantanah-website-v2'
   }
 ]
 
 export default {
-  title: 'Kalwabed Rizki',
+  name: 'Kalwabed Rizki',
+  profile: '/assets/profile.jpg',
+  siteName: 'kawari',
   description: 'Kawari | Kalwabed Rizki personal landing page',
   url: 'https://kawari.space',
   email: 'kalwabedrzk@pm.me',

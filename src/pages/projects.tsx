@@ -6,11 +6,13 @@ import { useRouter } from 'next/router'
 
 import { id, en } from 'lang'
 import siteConfig from 'site-config'
+import SEO from '@/components/SEO'
 
 const Projects: NextPage = () => {
   const { locale } = useRouter()
   return (
-    <Layout title="Projects | Kalwabed Rizki">
+    <Layout>
+      <SEO title="Projects" />
       <section>
         <div className="p-5 mx-auto bg-secondary flex flex-col justify-center items-center">
           <h1 className="font-bold text-center md:text-4xl text-3xl">
