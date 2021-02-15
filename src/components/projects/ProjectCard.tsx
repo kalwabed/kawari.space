@@ -9,7 +9,7 @@ interface Props extends Project {
   locale: string
 }
 
-const ProjectLists = ({ demoUrl, description, image, source, stack, title, keyProp, locale }: Props) => {
+const ProjectCard = ({ demoUrl, description, image, source, stack, title, keyProp, locale }: Props) => {
   return (
     <div className={styled.wrapper} key={keyProp}>
       <div className={styled.imgWrapper}>
@@ -33,16 +33,18 @@ const ProjectLists = ({ demoUrl, description, image, source, stack, title, keyPr
         <div className={styled.buttonLinkWrapper}>
           <a href={demoUrl} hidden={!demoUrl}>
             <button className={styled.button} type="button">
-              Demo
+              Visit <IcExternal />
             </button>
           </a>
-          <a href={source} rel="noopener noreferrer" target="_blank" className={styled.sourceLink}>
-            {locale === 'id' ? 'sumber' : 'source'} <IcExternal />
-          </a>
+          {source && (
+            <a href={source} rel="noopener noreferrer" target="_blank" className={styled.sourceLink}>
+              {locale === 'id' ? 'sumber' : 'source'} <IcExternal />
+            </a>
+          )}
         </div>
       </div>
     </div>
   )
 }
 
-export default ProjectLists
+export default ProjectCard
