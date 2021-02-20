@@ -33,7 +33,7 @@ const ProjectCard = ({ demoUrl, description, image, source, stack, title, keyPro
         <div className={styled.buttonLinkWrapper}>
           <a href={demoUrl} hidden={!demoUrl}>
             <button className={styled.button} type="button">
-              Visit <IcExternal />
+              {locale === 'id' ? 'Kunjungi' : 'Visit'} <IcExternal />
             </button>
           </a>
           {source && (

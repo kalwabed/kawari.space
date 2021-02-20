@@ -40,7 +40,7 @@ export async function getFileBySlug(locale = 'id', slug = '') {
   return { mdxSource, ...data, slug }
 }
 
-export async function getAllFilesFrontMatter({ locale = 'id', sort = true }) {
+export async function getAllFilesFrontMatter({ locale = 'id' }) {
   const files = fs.readdirSync(path.join(postDir, locale))
 
   const posts = files.reduce((allPosts, postSlug) => {
@@ -52,8 +52,5 @@ export async function getAllFilesFrontMatter({ locale = 'id', sort = true }) {
   // Generating RSS
   RSS({ posts })
 
-  if (sort) {
-    return posts.sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))
-  }
-  return posts
+  return posts.sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1))
 }
