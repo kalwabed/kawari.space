@@ -32,12 +32,20 @@ const ProjectCard = ({ demoUrl, description, image, source, stack, title, keyPro
         <p className={styled.description}>{locale === 'id' ? description.id : description.en}</p>
         <div className={styled.buttonLinkWrapper}>
           <a href={demoUrl} hidden={!demoUrl}>
-            <button className={styled.button} type="button">
-              {locale === 'id' ? 'Kunjungi' : 'Visit'} <IcExternal />
+            <button
+              className={`${styled.button} umami--click--visit-${title.replace(' ', '-').toLowerCase()}`}
+              type="button"
+            >
+              {locale === 'id' ? 'Kunjungi' : 'Visit'}
             </button>
           </a>
           {source && (
-            <a href={source} rel="noopener noreferrer" target="_blank" className={styled.sourceLink}>
+            <a
+              href={source}
+              rel="noopener noreferrer"
+              target="_blank"
+              className={`${styled.sourceLink} umami--click--source-${title.replace(' ', '-').toLowerCase()}`}
+            >
               {locale === 'id' ? 'sumber' : 'source'} <IcExternal />
             </a>
           )}
