@@ -1,18 +1,11 @@
 import '@/styles/global.css'
 import '@/styles/syntax.css'
-import '@/styles/nprogress.css'
 import 'notyf/notyf.min.css'
 import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
-import NProgress from 'nprogress'
-import Router from 'next/router'
 import Head from 'next/head'
 
 import SEO from 'next-seo.config'
-
-Router.events.on('routeChangeStart', () => NProgress.start())
-Router.events.on('routeChangeComplete', () => NProgress.done())
-Router.events.on('routeChangeError', () => NProgress.done())
 
 function App({ Component, pageProps }: AppProps) {
   const isDev = process.env.NODE_ENV === 'development'

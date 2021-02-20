@@ -1,6 +1,4 @@
 import type { GetStaticPaths, GetStaticProps } from 'next'
-import { getBase64 } from '@plaiceholder/base64'
-import { getImage } from '@plaiceholder/next'
 
 import { Post as PostType } from '@/@types'
 import Layout from '@/components/Layout'
@@ -10,7 +8,6 @@ import SEO from '@/components/SEO'
 
 interface Props extends PostType {
   mdxSource: string
-  ImgBase64: string
 }
 
 export default function Post({ post }: { post: Props }) {
@@ -32,13 +29,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const post = await getFileBySlug(locale, params.slug as string)
-  // @ts-ignore
-  const img = await getImage(post.featuredImage.image)
-  const ImgBase64 = await getBase64(img)
   return {
     props: {
-      post,
-      ImgBase64
+      post
     }
   }
 }

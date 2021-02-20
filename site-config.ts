@@ -2,15 +2,15 @@ import { Project } from '@/@types'
 
 const projects: Project[] = [
   {
-    title: 'Perpusin',
+    title: 'NAM Logistic',
     description: {
-      en: 'Desktop based classic library application',
-      id: 'Aplikasi perpustakaan klasik berbasis desktop'
+      en: 'Website for a shipping company',
+      id: 'Website untuk sebuah perusahaan ekspedisi'
     },
-    image: '/assets/projects/perpusin.png',
-    stack: 'Electron.js, React, Express, PostgreSql',
-    demoUrl: '',
-    source: 'https://github.com/kalwabed/perpusin'
+    image: '/assets/projects/nam.png',
+    stack: 'Next.js, Chakra UI',
+    demoUrl: 'https://namlogistic.co.id',
+    source: ''
   },
   {
     title: 'Kopi Konco',

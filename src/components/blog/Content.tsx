@@ -12,12 +12,11 @@ import MDXComponents from '../MDXComponents'
 
 interface Props extends Post {
   mdxSource: string
-  ImgBase64: string
 }
 
 const Content = ({ post }: { post: Props }) => {
   const { locale, asPath } = useRouter()
-  const { ImgBase64, featuredImage, mdxSource, publishedAt, readingTime, slug, summary, title } = post
+  const { featuredImage, mdxSource, publishedAt, readingTime, slug, summary, title } = post
   // @ts-ignore
   const content = hydrate(mdxSource, { components: MDXComponents }) //* error from next-mdx-remote, currently ignore
 
@@ -29,7 +28,6 @@ const Content = ({ post }: { post: Props }) => {
         {summary}
       </small>
       <div className={styled.imgWrapper}>
-        <ImgBase64Component ImgBase64={ImgBase64} />
         <Image
           width={850}
           height={360}
@@ -58,22 +56,4 @@ const Content = ({ post }: { post: Props }) => {
     </article>
   )
 }
-
-const ImgBase64Component = ({ ImgBase64 }) => (
-  <img
-    aria-hidden="true"
-    alt="blurhash"
-    src={ImgBase64}
-    style={{
-      position: 'absolute',
-      width: '850',
-      height: '360',
-      objectFit: 'cover',
-      objectPosition: 'center',
-      filter: 'blur(2rem)',
-      transform: 'scale(1.2)'
-    }}
-  />
-)
-
 export default Content
