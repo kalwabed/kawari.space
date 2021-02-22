@@ -23,7 +23,7 @@ const Projects: NextPage = () => {
         <div className="container px-5 pb-24 pt-16 mx-auto">
           <div className="flex flex-wrap -mx-4 -mb-10">
             {siteConfig.projects.map(pr => (
-              <ProjectCard {...pr} keyProp={pr.title} locale={locale} key={pr.title} />
+              <ProjectCard {...pr} locale={locale} keyProp={pr.title} key={pr.title} />
             ))}
           </div>
         </div>

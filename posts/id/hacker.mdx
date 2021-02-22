@@ -4,7 +4,7 @@ summary: 'bukan peretas, pada akhirnya'
 publishedAt: '2020-12-30'
 readingTime: 8
 featuredImage:
-  image: '/assets/blogs/hacker/banner.jpg'
+  image: '/assets/posts/hacker/banner.jpg'
   source: 'https://unsplash.com/@nahelabdlhadi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
   name: 'Nahel Abdi Hadi'
 ---
@@ -72,17 +72,17 @@ Ketika sudah mengunjungi laman tersebut, kira-kira ada yang aneh?
 
 Silahkan anda masuk dengan username & password terserah anda. Jika sudah masuk maka kita akan disajikan dengan halaman `home`:
 
-![advanced-home](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/advanced-home.png)
+![advanced-home](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/advanced-home.png)
 
 Sekarang sudah merasa ada yang aneh? Jika sudah, mungkin akan timbul pertanyaan di benak kita, _"kok bisa masuk?"_ Dari sini kita harus mulai curiga dengan si pembuat soal. Berhasil masuk tapi kok tidak ada _flag_ untuk kita? Mari kita telusuri bersama sumber persoalannya.
 
 Pertama, kita harus pastikan tidak ada 'kotak misteri' yang harus kita pecahkan terlebih dahulu saat di halaman awal.
 
-![checked-login](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/checked-login.png)
+![checked-login](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/checked-login.png)
 
 Kedua, perhatikan perilaku laman ketika ketika berhasil masuk tanpa ada validasi input, peringatan, ataupun yang lainnya dari browser.
 
-![two-circles](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/two-circles.png)
+![two-circles](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/two-circles.png)
 
 Pada lingkaran nomor 1 kita diberitahu bahwa kita berhasil melakukannya dan _flag_ sebenarnya sudah ada disini tapi tidak nampak dalam pandangan kita.
 
@@ -90,25 +90,25 @@ Pada lingkaran nomor 2 si pembuat soal seakan memberi sinyal kepada kita bahwa _
 
 Maka yang kita telusuri pertama kali adalah `elements` pada HTML.
 
-![elements](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/elements.png)
+![elements](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/elements.png)
 
 Apakah ada yang aneh? Apakah si pembuat soal meninggalkan pesan atau sesuatu? Hm... Saya rasa tidak ada keanehan.
 
 Langkah selanjutnya, kita akan mengecek [browser cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies), untuk melihat apakah si pembuat soal meninggalkan _clue_ atau apapun yang membantu.
 
-![application](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/application.png)
+![application](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/application.png)
 
 Pada `application`, buka bagian Cookies, dan klik alamat url yang ada disitu.
 
 Perhatikan gambar dibawah ini
 
-![cookie](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/cookie-url.png)
+![cookie](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/cookie-url.png)
 
 Titik terang mulai muncul. Si pembuat soal sudah memberikan kita _clue_ untuk mendapatkan _flag_ yang kita cari.
 
 Sadar atau tidak username dan password yang kita masukkan tadi berada di dalam situ (username & password)? Lalu kita juga 'dikasih tahu' oleh si pembuat soal kalau kita itu bukan admin, benar? Maka jika kita bukan admin dan _flag_ itu ada disini maka kita butuh akses admin untuk membuat _flag_ itu muncul. Maka cara termudah untuk membuat kita bisa mempunyai akses admin adalah mengubah _value_ dari admin yang sebelumnya False menjadi ~~true~~ True.
 
-![admin](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/admin-true.png)
+![admin](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/admin-true.png)
 
 _"Sudah diubah halamannya kok masih munculin yang sama?"_ Karena kita mengubahnya pada bagian _[client](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs)_ maka kita harus memberi tahu _[server](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction#What_is_server-side_website_programming)_ kalau kita sudah mengubah _value_ dari admin dan biarkan _server_ memproses permintaan kita dengan cara me-refresh halaman.
 
@@ -116,7 +116,7 @@ Dengan kita me-refresh halaman, _client_ akan mengirim Cookies kepada _server,_ 
 
 Hasilnya:
 
-![picoctf](https://cdn.statically.io/img/kawari.space/f=auto/assets/blogs/hacker/picoctf.png)
+![picoctf](https://cdn.statically.io/img/kawari.space/f=auto/assets/posts/hacker/picoctf.png)
 
 ## Kesimpulan
 
