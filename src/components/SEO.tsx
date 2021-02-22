@@ -6,12 +6,12 @@ import siteConfig from 'site-config'
 
 interface Props {
   post?: Post
-  isBlog?: boolean
+  isPost?: boolean
   title: string
 }
 
 const SEO = (props: Props) => {
-  const { post, title, isBlog = false } = props
+  const { post, title, isPost = false } = props
   const router = useRouter()
   const logo = 'assets/icons/android-icon-192x192.png'
   const postDate = post && new Date(post.publishedAt).toISOString()
@@ -58,7 +58,7 @@ const SEO = (props: Props) => {
     )
   }
 
-  const BlogSeo = () => {
+  const PostSEO = () => {
     const openGraph: OpenGraph = {
       locale: router.locale,
       title,
@@ -72,10 +72,10 @@ const SEO = (props: Props) => {
     return <NextSeo title={title} description={post.summary} canonical={fullPath} openGraph={openGraph} />
   }
 
-  if (isBlog && post) {
+  if (isPost && post) {
     return (
       <>
-        <BlogSeo />
+        <PostSEO />
         <ArticleJson />
       </>
     )

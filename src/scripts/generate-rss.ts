@@ -43,9 +43,9 @@ const MyFeed = ({ posts }: { posts: Post[] }) => {
         }
       ],
       copyright: `All rights reserved ${new Date().getFullYear()}, Kalwabed Rizki`,
-      link: `${url}/blog/${post.slug}`,
+      link: `${url}/posts/${post.slug}`,
       image: `${url}${post.featuredImage.image}`,
-      id: `${url}/blog/${post.slug}`
+      id: `${url}/posts/${post.slug}`
     })
   )
   fs.writeFileSync(path.resolve(process.cwd(), 'public', 'rss.xml'), feed.rss2())

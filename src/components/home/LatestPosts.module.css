@@ -2,15 +2,15 @@
   @apply flex flex-col items-start px-5 mx-auto pb-20;
 }
 
-.latestBlogs {
+.latestPosts {
   @apply text-4xl tracking-wide font-semibold;
 }
 
-.blogWrapper {
+.postWrapper {
   @apply flex cursor-pointer flex-col flex-wrap mt-3 w-full transition ease-in duration-100;
 }
 
-.blogWrapper:hover {
+.postWrapper:hover {
   @apply shadow-lg;
 }
 

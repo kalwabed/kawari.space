@@ -2,22 +2,21 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { Post } from '@/@types'
-import Date from './dateConfig'
 import Read from './readConfig'
-import styled from './BlogList.module.css'
+import styled from './PostList.module.css'
 
 interface Props {
   allPostsData: Post[]
 }
 
-const BlogList = ({ allPostsData }: Props) => {
+const PostList = ({ allPostsData }: Props) => {
   const { locale } = useRouter()
   return (
     <section className="overflow-hidden">
       <div className={`container ${styled.wrapper}`}>
         <div className="-my-8">
           {allPostsData.map(({ title, summary, readingTime, slug }) => (
-            <Link href={`/blog/${slug}`} key={slug}>
+            <Link href={`/posts/${slug}`} key={slug}>
               <a className={`group ${styled.slugWrapper}`}>
                 <div className="md:flex-grow mx-5">
                   <div className="flex flex-row justify-between">
@@ -41,4 +40,4 @@ const BlogList = ({ allPostsData }: Props) => {
   )
 }
 
-export default BlogList
+export default PostList

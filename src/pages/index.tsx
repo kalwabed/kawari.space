@@ -4,7 +4,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import Identity from '@/components/home/Identity'
 import About from '@/components/home/About'
 import Layout from '@/components/Layout'
-import LatestBlogs from '@/components/home/LatestBlogs'
+import LatestPosts from '@/components/home/LatestPosts'
 import type { I18n, Post } from '@/@types'
 import { getAllFilesFrontMatter } from '../lib/mdx'
 import SEO from '@/components/SEO'
@@ -19,7 +19,7 @@ const Index: NextPage<Props> = ({ posts, locale }) => {
       <SEO title="" />
       <Identity locale={locale} />
       <About locale={locale} />
-      <LatestBlogs allPostsData={posts} />
+      <LatestPosts allPostsData={posts} />
     </Layout>
   )
 }

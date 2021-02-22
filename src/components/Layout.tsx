@@ -13,20 +13,16 @@ const Layout: React.FC<Props> = ({ children, className = '' }) => {
   const { asPath, locale, push } = useRouter()
   const links = [
     {
-      href: '/',
-      label: 'Home'
+      href: '/about',
+      label: 'About'
     },
     {
       href: '/projects',
       label: 'Projects'
     },
     {
-      href: '/blog',
-      label: 'Blog'
-    },
-    {
-      href: '/about',
-      label: 'About'
+      href: '/posts',
+      label: 'Posts'
     }
   ]
 

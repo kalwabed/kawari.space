@@ -2,24 +2,24 @@ import type { Post } from '@/@types'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { IoMdArrowForward } from 'react-icons/io'
-import Date from '../blog/dateConfig'
-import Read from '../blog/readConfig'
-import styled from './LatestBlog.module.css'
+import Date from '../posts/dateConfig'
+import Read from '../posts/readConfig'
+import styled from './LatestPosts.module.css'
 
 interface Props {
   allPostsData: Post[]
 }
 
-const LatestBlogs = ({ allPostsData }: Props) => {
+const LatestPosts = ({ allPostsData }: Props) => {
   const { locale } = useRouter()
   return (
     <section className={`container ${styled.wrapper}`}>
-      <div className={styled.latestBlogs}>{locale === 'id' ? 'Tulisan terbaru' : 'Latest blogs'}</div>
+      <div className={styled.latestPosts}>{locale === 'id' ? 'Tulisan terbaru' : 'Latest posts'}</div>
       {allPostsData.map(
         ({ publishedAt, readingTime, slug, title }, i) =>
           i <= 2 && (
-            <Link href={`/blog/${slug}`} key={slug}>
-              <a className={`group ${styled.blogWrapper}`}>
+            <Link href={`/posts/${slug}`} key={slug}>
+              <a className={`group ${styled.postsWrapper}`}>
                 <div className="px-2 py-1">
                   <div className={styled.titleWrapper}>
                     <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
@@ -34,7 +34,7 @@ const LatestBlogs = ({ allPostsData }: Props) => {
             </Link>
           )
       )}
-      <Link href="/blog">
+      <Link href="/posts">
         <a className={`${styled.morePosts} umami--click--more-posts`}>
           {locale === 'id' ? 'Lebih banyak' : 'More posts'} <IoMdArrowForward className="ml-2" />
         </a>
@@ -43,4 +43,4 @@ const LatestBlogs = ({ allPostsData }: Props) => {
   )
 }
 
-export default LatestBlogs
+export default LatestPosts
