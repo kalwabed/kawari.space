@@ -22,7 +22,7 @@ const LatestPosts = ({ allPostsData }: Props) => {
               <a className={`group ${styled.postsWrapper}`}>
                 <div className="px-2 py-1">
                   <div className={styled.titleWrapper}>
-                    <a className={`group-hover:border-primary ${styled.title}`}>{title}</a>
+                    <span className={`group-hover:border-primary ${styled.title}`}>{title}</span>
                   </div>
                   <div className={styled.dateTime}>
                     <Date dateString={publishedAt} locale={locale} />
