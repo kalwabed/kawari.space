@@ -22,13 +22,20 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-<!--         <script
+        {/* <script
           async
           defer
           data-website-id={!isDev && process.env.NEXT_PUBLIC_UMAMI_ID}
           src={process.env.NEXT_PUBLIC_UMAMI_LINK}
-        /> -->
-        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0cb86e484b1040b3acc4d9f5f9de5c95"}'></script><!-- End Cloudflare Web Analytics -->
+        /> */}
+
+        {/* Cloudflare Web Analytics */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "0cb86e484b1040b3acc4d9f5f9de5c95"}'
+        />
+        {/* End Cloudflare Web Analytics  */}
       </Head>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
