@@ -3,6 +3,9 @@ module.exports = {
   experimental: {
     optimizeCss: true
   },
+  future: {
+    webpack5: true
+  },
   i18n: {
     locales: ['id', 'en'],
     defaultLocale: 'id',
