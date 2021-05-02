@@ -11,6 +11,15 @@ module.exports = {
     defaultLocale: 'id',
     localeDetection: true
   },
+  async redirects() {
+    return [
+      {
+        source: '/bukber',
+        destination: 'https://forms.gle/BFAR2ax4PwzjMNFcA',
+        permanent: true
+      }
+    ]
+  },
   webpack: (config, { dev, isServer }) => {
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
