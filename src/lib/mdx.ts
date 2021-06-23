@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import fs from 'fs'
 import matter from 'gray-matter'
 import path from 'path'
@@ -6,9 +5,8 @@ import autoLink from 'remark-autolink-headings'
 import codeTitle from 'remark-code-titles'
 import remarkSLug from 'remark-slug'
 import mdxPrism from 'mdx-prism'
-import renderToString from 'next-mdx-remote/render-to-string'
+import { serialize } from 'next-mdx-remote/serialize'
 import RSS from '@/scripts/generate-rss'
-import MDXComponents from '@/components/MDXComponents'
 
 const postDir = path.join(process.cwd(), 'posts')
 
@@ -21,6 +19,7 @@ export async function getFiles({ locale = 'id' }: { locale: string[] | string })
     const enPosts = fs
       .readdirSync(path.join(postDir, 'en'))
       .map(post => ({ params: { slug: post.replace('.mdx', '') }, locale: 'en' }))
+
     return [...idPosts, ...enPosts]
   }
   return fs.readdirSync(path.join(postDir, locale))
@@ -29,8 +28,7 @@ export async function getFiles({ locale = 'id' }: { locale: string[] | string })
 export async function getFileBySlug(locale = 'id', slug = '') {
   const source = fs.readFileSync(path.join(postDir, locale, `${slug}.mdx`), 'utf8')
   const { data, content } = matter(source)
-  const mdxSource = await renderToString(content, {
-    components: MDXComponents,
+  const mdxSource = await serialize(content, {
     mdxOptions: {
       remarkPlugins: [remarkSLug, autoLink, codeTitle],
       rehypePlugins: [mdxPrism]

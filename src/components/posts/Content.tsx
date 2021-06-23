@@ -1,24 +1,21 @@
-import { Post } from '@/@types'
 import { DiscussionEmbed } from 'disqus-react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import hydrate from 'next-mdx-remote/hydrate'
+import { MDXRemote } from 'next-mdx-remote'
 
 import siteConfig from 'site-config'
+import { Post } from '@/@types'
 import Date from './dateConfig'
 import styled from './Content.module.css'
 import ReadConfig from './readConfig'
-import MDXComponents from '../MDXComponents'
 
 interface Props extends Post {
-  mdxSource: string
+  mdxSource: { compiledSource: string; scope: {} }
 }
 
 const Content = ({ post }: { post: Props }) => {
   const { locale, asPath } = useRouter()
   const { featuredImage, mdxSource, publishedAt, readingTime, slug, summary, title } = post
-  // @ts-ignore
-  const content = hydrate(mdxSource, { components: MDXComponents }) //* error from next-mdx-remote, currently ignore
 
   return (
     <article className={`container ${styled.wrapper}`}>
@@ -46,7 +43,9 @@ const Content = ({ post }: { post: Props }) => {
         </div>
       </div>
 
-      <div className={styled.article}>{content}</div>
+      <div className={styled.article}>
+        <MDXRemote {...mdxSource} lazy />
+      </div>
       <div className={styled.divider} />
 
       <DiscussionEmbed

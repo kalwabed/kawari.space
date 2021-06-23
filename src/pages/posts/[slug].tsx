@@ -7,7 +7,7 @@ import { getFileBySlug, getFiles } from '@/lib/mdx'
 import SEO from '@/components/SEO'
 
 interface Props extends PostType {
-  mdxSource: string
+  mdxSource: { compiledSource: string; scope: {} }
 }
 
 export default function Post({ post }: { post: Props }) {
