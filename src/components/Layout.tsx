@@ -4,6 +4,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter, IoMdGlobe } from 'react-ic
 
 import siteConfig from 'site-config'
 import styled from './layout.module.css'
+import RedirectBanner from './RedirectBanner'
 
 interface Props {
   className?: string
@@ -30,6 +31,7 @@ const Layout: React.FC<Props> = ({ children, className = '' }) => {
   return (
     <>
       <header>
+        <RedirectBanner />
         <div className={`container ${styled.headerWrapper}`}>
           <Link href="/">
             <a className="flex items-center mb-4 md:ml-40 md:mb-0">
